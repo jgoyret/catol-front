@@ -1,4 +1,4 @@
-export interface ProjectWithPoems {
+export interface ProjectStructure {
   title: string;
   credits: string;
   description: string;
@@ -6,26 +6,15 @@ export interface ProjectWithPoems {
     head: string;
     end: string;
   };
-}
-
-export interface ProjectWithStringPoems {
-  title: string;
-  credits: string;
-  description: string;
-  poems: string;
-}
-
-export interface ProjectWithInspirations {
-  title: string;
-  credits: string;
-  description: string;
   inspirations: string;
+  media: {
+    head: string;
+    single: string;
+    dual: string[];
+  };
 }
 
-export type ProjectType =
-  | ProjectWithPoems
-  | ProjectWithStringPoems
-  | ProjectWithInspirations;
+export type ProjectType = ProjectStructure;
 
 export const projects: Record<string, ProjectType> = {
   "clashes-licking": {
@@ -92,6 +81,13 @@ surrendering while
 whispering whispering 
 `,
     },
+    inspirations: ``,
+    media: {
+      head: "",
+      single:
+        "https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia/ClashesLicking01.jpg",
+      dual: ["", ""],
+    },
   },
   "zona-de-derrama": {
     title: "ZONA DE DERRAMA",
@@ -112,7 +108,8 @@ visit it within own relation to it, with its own emotions and embodied experienc
 Dealing with an idea of composing with fragments, “zona de derrama” is a wonder into movement language that englobes such fragments to form a
 dance. The work is made through the collaborations, each artist offers and create the journey that we are constructing together to built this piece and its dance and aesthetic language. Dancing is for me a radical stubbornness to remember a dream.
 `,
-    poems: `
+    poems: {
+      head: `
 ZONES ZONING
 AN INVITATION TO AN EVENT WHERE WE EVOKE LIMINAL SPACES: OR TRANSITIONS, OF INTIMACY AND PROTECTION, ZONES TO ES- CAPE OR TO STAY, DEALING WITH AN IDEA OR COMPOSING WITH FRAGMENTS, “ZONA DE DERRAMA” IS A WONDER INTO A MOVEMENT LANGUAGE THAT ENGLOBES SUCH FRAGMENTS TO FORM A DANCE, THE WORK IS MADE THROUGH THE COLLABORATIONS, EACH ARTIST OFFERS AND CREATES THE JOURNEY THAT WE ARE CONSTRUCTING TOGETHER TO BUILD THIS PIECE AND ITS DANCE AND AESTHETIC LANGUAGE.
 
@@ -135,6 +132,14 @@ Dancing as gesture of belonging.
 (I wish to rest, to drop my very heavy bones. I wish to listen to the
 echoes with you)
 `,
+      end: ``,
+    },
+    inspirations: ``,
+    media: {
+      head: "",
+      single: "",
+      dual: ["", ""],
+    },
   },
   "la-peaux-entre-les-doigts": {
     title: "LA PEAUX ENTRE LES DOIGTS",
@@ -163,6 +168,10 @@ The performance is built on the oscillation between presence and absence, on off
 the audience. la peau entre les doigts is a dance about intimacy, distance and separation. A dance dedicated to what is left behind, abandoned. The work wishes to evoke the collective archive that one’s body carry - and move with, from, against, through it.
 La Peau Entre Les Doigts does not seek clarity or purity, it goes hand in hand with uncertainty, with the unknown, observing opposition and the surrender of the body to gravity. Catol dances, moving where there is a crack to be crossed, surrendering and resisting, in perpetual transition, without a destination.
 `,
+    poems: {
+      head: ``,
+      end: ``,
+    },
     inspirations: `
 ++ Inspirations ++
 orientations toward a queer phenomenology : https://static1.squarespace.com/static/58ad660603596eec00ce71a3/t/58bec800b8a79b7c599de24a/1488898050432/Orientations+Toward+a+Queer+Phenomenology.pdf
@@ -171,5 +180,10 @@ encantamento : https://morula.com.br/wp-content/uploads/2020/05/Encantamento.pdf
 
 não vão nos matar agora : https://www.cobogo.com.br/produto/nao-vao-nos-matar-agora-they-won-t-kill-us-now-665
 `,
+    media: {
+      head: "",
+      single: "",
+      dual: ["", ""],
+    },
   },
 };

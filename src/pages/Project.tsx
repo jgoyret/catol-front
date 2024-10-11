@@ -15,7 +15,7 @@ const Project: React.FC = () => {
     <div className=" pl-10">
       <h1 className="text-4xl text-center font-bold mb-4">{project.title}</h1>
       <div className="h-96 w-full bg-red-600">
-        <img src="" alt="" />
+        <img src={`${project.media.head}`} alt="" />
       </div>
       <p className="whitespace-pre-line text-center">{project.credits}</p>
       <p className="whitespace-pre-line text-2xl text-center  m-10">
@@ -27,8 +27,8 @@ const Project: React.FC = () => {
           {project.poems.head}
         </p>
       )}
-      <div className="h-96 w-full bg-red-600">
-        <img src="" alt="" />
+      <div className=" w-full flex justify-center">
+        <img src={`${project.media.single}`} alt="" />
       </div>
       {"poems" in project && typeof project.poems === "object" && (
         <p className="whitespace-pre-line text-lg text-center mx-auto m-10 max-w-96">
