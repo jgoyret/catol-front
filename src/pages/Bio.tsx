@@ -1,18 +1,24 @@
 import React from "react";
+import { biotext } from "../data/data";
+import EnhancedText from "../components/EnhancedText";
 
 const Bio: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto">
-      <h1 className="text-4xl font-bold mb-4">BIO</h1>
-      <p className="text-lg mb-4">
-        Catol Teixeira performs and creates dances. Born in Porto Alegre (1993*)
-        Brazil, with a diverse journey across various cities, including Rio de
-        Janeiro, Belo Horizonte, Salzburg, Berlin, and currently Geneva,
-        Switzerland, living experiences that have shaped their artistic practice
-        and way of living.
-      </p>
-      {/* Add more paragraphs from the provided bio */}
-    </div>
+    <>
+      <div className="absolute top-0 left-0">
+        <video
+          className="w-screen"
+          autoPlay
+          loop
+          muted
+          playsInline
+          src="https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia/biovideo.mp4?t=2024-10-11T17%3A07%3A38.511Z"
+        ></video>
+      </div>
+      <div className="relative flex justify-center text-xl items-center text-center min-h-screen w-screen h-screen max-w-6xl mx-auto text-white">
+        <EnhancedText>{biotext}</EnhancedText>
+      </div>
+    </>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 interface CircleTextProps {
   text: string;
@@ -9,6 +9,10 @@ const CircleText: React.FC<CircleTextProps> = ({ text }) => {
   const radius = 80; // Radio del círculo
   const characters = text.split(""); // Divide el texto en caracteres individuales
   const angle = 360 / characters.length; // Ángulo entre cada carácter
+
+  const location = useLocation();
+
+  console.log(location.pathname);
 
   return (
     <div className=" relative flex justify-center  ">
@@ -20,7 +24,9 @@ const CircleText: React.FC<CircleTextProps> = ({ text }) => {
         return (
           <span
             key={index}
-            className="absolute top-3 text-xl font-bold"
+            className={`absolute top-3 text-xl font-bold ${
+              location.pathname === "/bio" ? "text-white" : "text-black"
+            }`}
             style={{
               transform: `translate(${x}px, ${y}px) rotate(${rotation}deg)`,
               transformOrigin: "center",
