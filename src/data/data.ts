@@ -1,4 +1,33 @@
-const projects = {
+export interface ProjectWithPoems {
+  title: string;
+  credits: string;
+  description: string;
+  poems: {
+    head: string;
+    end: string;
+  };
+}
+
+export interface ProjectWithStringPoems {
+  title: string;
+  credits: string;
+  description: string;
+  poems: string;
+}
+
+export interface ProjectWithInspirations {
+  title: string;
+  credits: string;
+  description: string;
+  inspirations: string;
+}
+
+export type ProjectType =
+  | ProjectWithPoems
+  | ProjectWithStringPoems
+  | ProjectWithInspirations;
+
+export const projects: Record<string, ProjectType> = {
   "clashes-licking": {
     title: "CLASHES LICKING",
     credits: `
@@ -31,7 +60,8 @@ living and trans bodies. Dancing here is gravitating towards embodiments and inc
 
 In a wish to challenge the frontiers of gender and cis-hetero normativity, the dance that is presented is oriented towards fragments that constitute queer living and trans bodies. Dancing here is gravitating towards embodiments and incorporations, on its clashes, contradictions and pleasures. The piece is built trusting dance as a material manifestation of memories, dreams and unknown stories that inhabit the space and the time we are in.
 `,
-    poems: `
+    poems: {
+      head: `
 To where does this dance belongs to?
 What am I haunting while dancing?
 What is haunting me?
@@ -40,59 +70,25 @@ Which ghosts do I dance with? Which ones I scape from?
 How is queer imagination blended with the dances forms?
 How to contaminate forms?
 How to dance with ghosts? How memories are registered in the flesh of one’s body?
-Is dance a celebration of living or a ceremony of dying?
+Is dance a celebration of living or a ceremony of dying?`,
 
-
-
-
-I hear you calling, 
- as in a tale of a dream, 
- and I touch you from far while floating. 
- 
- a smell of wet stone, that blended smell 
- of wetness
-
+      end: `
+I hear you calling,
+as in a tale of a dream,
+and I touch you from far while floating.
+a smell of wet stone, that blended smell
+of wetness
 A far away noise
- A dog barks, someone screams, a ventilator, a piano
- And in my thoughts all that desire clashing 
- A memory left in the middle of the crossing
- deep currents, water carrying 
- 
- that dance of when flesh can melt , do you remember? 
- 
- - maliciously, they were looking at me knowing something I couldn’t yet know myself 
- 
- surrendering while
- whispering whispering 
-
-on the corner of your ears 
- 
- while in a perpetual fall in the break of languages 
- of changes of dreaming of screaming of wiling of leaving 
-
-(…)
-to secretly do the decomposition
-
-to know how to infiltrate
-
-there will be a demolition
-
-a premeditated demolition of the future promised by the past that must die
- a demolition
-
-but it's o morro that collapses
-
-it's from this future where o morro collapses
-
-that I want to escape
-
-how do we change the place of the collapse?
-
-which future do we escape?
-
-sometimes I feel inside a noisy silence
-(…)
+A dog barks, someone screams, a ventilator, a piano
+And in my thoughts all that desire clashing
+A memory left in the middle of the crossing
+deep currents, water carrying
+that dance of when flesh can melt , do you remember?
+- maliciously, they were looking at me knowing something I couldn’t yet know myself
+surrendering while
+whispering whispering 
 `,
+    },
   },
   "zona-de-derrama": {
     title: "ZONA DE DERRAMA",
@@ -174,5 +170,3 @@ não vão nos matar agora : https://www.cobogo.com.br/produto/nao-vao-nos-matar-
 `,
   },
 };
-
-export { projects };

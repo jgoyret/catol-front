@@ -6,12 +6,12 @@ interface CircleTextProps {
 }
 
 const CircleText: React.FC<CircleTextProps> = ({ text }) => {
-  const radius = 60; // Radio del círculo
+  const radius = 80; // Radio del círculo
   const characters = text.split(""); // Divide el texto en caracteres individuales
   const angle = 360 / characters.length; // Ángulo entre cada carácter
 
   return (
-    <div className="absolute top-20 left-20 flex justify-center items-center ">
+    <div className=" relative flex justify-center  ">
       {characters.map((char, index) => {
         const rotation = angle * index;
         const x = radius * Math.cos((rotation * Math.PI) / 180);
@@ -20,7 +20,7 @@ const CircleText: React.FC<CircleTextProps> = ({ text }) => {
         return (
           <span
             key={index}
-            className="absolute ptext-xl font-bold"
+            className="absolute top-3 text-xl font-bold"
             style={{
               transform: `translate(${x}px, ${y}px) rotate(${rotation}deg)`,
               transformOrigin: "center",
@@ -48,10 +48,7 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
     for (let i = 0; i < gridSize; i++) {
       for (let j = 0; j < gridSize; j++) {
         icons.push(
-          <Icon
-            key={`${i}-${j}`}
-            className="text-black h-24 w-24 m-2 hover:text-gray-600 transition-colors"
-          />
+          <Icon key={`${i}-${j}`} className="text-black h-24  m-2  " />
         );
       }
     }
@@ -60,9 +57,12 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full h-full p-4 z-10">
+    <header className="fixed top-0 left-0 w-1/12 h-full z-10">
       <div className=" mx-auto w-full h-full relative">
-        <Link to="/" className="inline-block relative">
+        <Link
+          to="/"
+          className="flex justify-center items-center relative w-full h-48 "
+        >
           {/* Este contenedor es el área de hover */}
           <div
             className="inline-block"
@@ -70,12 +70,12 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
             onMouseLeave={() => setHovered(false)}
           >
             <CircleText text="HOME HOME HOME HOME" />
-            <Icon className="text-black h-16 m-12 hover:text-gray-600 transition-colors" />
+            <Icon className="text-black h-12   " />
           </div>
 
           {/* Los íconos se renderizan fuera del área de hover */}
           {hovered && (
-            <div className="absolute inset-0 z-[-1] grid grid-cols-6 gap-2 w-screen h-screen">
+            <div className="absolute space-x-24 inset-0 z-[-1] grid grid-cols-6 gap-2 w-screen h-screen">
               {generateIconGrid()}
             </div>
           )}

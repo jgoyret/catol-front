@@ -32,11 +32,11 @@ const Layout = ({
   children: React.ReactNode;
   icon: React.ElementType;
 }) => (
-  <div className="flex space-x-36 min-h-screen bg-gray-100">
+  <div className="flex space-x-48 min-h-screen bg-gray-100">
     <div className="">
       <Header icon={icon} />
     </div>
-    <main className=" px-4 py-8">{children}</main>
+    <main className="px-4 py-8">{children}</main>
   </div>
 );
 
