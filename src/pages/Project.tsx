@@ -18,12 +18,12 @@ const Project: React.FC = () => {
         <img src="" alt="" />
       </div>
       <p className="whitespace-pre-line text-center">{project.credits}</p>
-      <p className="whitespace-pre-line text-lg text-center  m-10">
+      <p className="whitespace-pre-line text-2xl text-center  m-10">
         {project.description}
       </p>
 
       {"poems" in project && typeof project.poems === "object" && (
-        <p className="whitespace-pre-line text-sm text-center mx-auto m-10 max-w-96">
+        <p className="whitespace-pre-line text-lg text-center mx-auto m-10 max-w-96">
           {project.poems.head}
         </p>
       )}
@@ -31,7 +31,7 @@ const Project: React.FC = () => {
         <img src="" alt="" />
       </div>
       {"poems" in project && typeof project.poems === "object" && (
-        <p className="whitespace-pre-line text-sm text-center mx-auto m-10 max-w-96">
+        <p className="whitespace-pre-line text-lg text-center mx-auto m-10 max-w-96">
           {project.poems.end}
         </p>
       )}

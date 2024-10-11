@@ -46,19 +46,22 @@ Coproduction: Theatre de l’Usine & Emergentia - temps fort pour la création c
 Realized with the support of Ville de Genève and Loterie Romande
 `,
     description: `
-        Clashes Licking drew some of its inspiration in the figure of the Faune, represented by Nijinsky, and part of the Western Dance History; not wishing to
-review or comment on it, but with a personal approach that comes from Catol’s dance formation. The piece interrogates how learned techniques can form a body. Understanding cultural and political inscriptions designing one’s corporeity.
-
+Clashes licking drew some of its inspiration in the figure of the Faune, represented by Nijinsky, and part of the Western Dance History; not wishing to
+review or comment on it, but with a personal approach that comes from Catol’s dance formation. The piece interrogates how learned techniques can
+form a body. Understanding cultural and political inscriptions designing one’s corporeity.
 For the building of this dance work, Catol uses techniques they learned, such as circus and classical ballet, blended with partying and cultural references
-of their life. The movement language flirts with these forms as prosthesis and embodiments. In a creation of a self-fiction, Catol evoke memories of their trajectory where dancing was always being a simultaneous channel of social and personal understanding.
-
+of their life. The movement language flirts with these forms as prosthesis and embodiments. In a creation of a self-fiction, Catol evoke memories of their
+trajectory where dancing was always being a simultaneous channel of social and personal understanding.
 This dance language raise in conversation with Catol’s memory of a specific Nijinskys’ portrait hanged on a wall of their ballet school in Rio de Janeiro.
 Nijinsky appears as a queer ghost from Western dance history, where the Faune represented by Nijinsky in the 20’s century dances with suspicious eyes.
 The relation with that specific context of Rio de Janeiro and these picture haunts catol’s imagination in a search of a memory, of a movement dislocation
-in relation with a western classical dance form. While instigating these memories and intimate relation to such technique, the proposal of the work is to research into the transmutation of forms , to cultivate a possible dream: of queer affection, of a blended border of languages. In a wish to challenge the frontiers of gender and cis-hetero normativity, the dance that is presented is oriented towards fragments that constitute queer
+in relation with a western classical dance form. While instigating these memories and intimate relation to such technique, the proposal of the work is to
+research into the transmutation of forms , to cultivate a possible dream: of queer affection, of a blended border of languages.
+In a wish to challenge the frontiers of gender and cis-hetero normativity, the dance that is presented is oriented towards fragments that constitute queer
+living and trans bodies. Dancing here is gravitating towards embodiments and incorporations, on its clashes, contradictions and pleasures. 
+The piece is in a wish to challenge the frontiers of gender and cis-hetero normativity, the dance that is presented is oriented towards fragments that constitute queer
 living and trans bodies. Dancing here is gravitating towards embodiments and incorporations, on its clashes, contradictions and pleasures. The piece is
-
-In a wish to challenge the frontiers of gender and cis-hetero normativity, the dance that is presented is oriented towards fragments that constitute queer living and trans bodies. Dancing here is gravitating towards embodiments and incorporations, on its clashes, contradictions and pleasures. The piece is built trusting dance as a material manifestation of memories, dreams and unknown stories that inhabit the space and the time we are in.
+built trusting dance as a material manifestation of memories, dreams and unknown stories that inhabit the space and the time we are in.
 `,
     poems: {
       head: `

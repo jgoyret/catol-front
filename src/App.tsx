@@ -36,7 +36,7 @@ const Layout = ({
     <div className="">
       <Header icon={icon} />
     </div>
-    <main className="px-4 py-8">{children}</main>
+    <main className="px-4 py-8 w-full">{children}</main>
   </div>
 );
 
