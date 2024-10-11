@@ -14,8 +14,14 @@ const Project: React.FC = () => {
   return (
     <div className=" pl-10">
       <h1 className="text-4xl text-center font-bold mb-4">{project.title}</h1>
-      <div className="h-96 w-full bg-red-600">
-        <img src={`${project.media.head}`} alt="" />
+      <div className="">
+        <iframe
+          src={`${project.media.head}?autoplay=1&loop=1`}
+          className=" w-full h-[1080px] md:h-[720px] lg:h-[1080px] xl:h-[720px] 2xl:h-[1080px]"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+          title="Vimeo Video"
+        ></iframe>
       </div>
       <p className="whitespace-pre-line text-center">{project.credits}</p>
       <p className="whitespace-pre-line text-2xl text-center  m-10">
