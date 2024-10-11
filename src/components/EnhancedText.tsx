@@ -25,7 +25,7 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             return (
               <span
                 key={index}
-                className="font-bold text-2xl text-pink-500 whitespace-pre-line"
+                className="font-bold text-xl 2xl:text-2xl text-pink-500 whitespace-pre-line"
               >
                 {content}
               </span>
