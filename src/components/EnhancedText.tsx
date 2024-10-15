@@ -10,7 +10,10 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
     return text.split(/(<enhanced[\s\S]*?<\/enhanced>)/).map((part, index) => {
       if (part.startsWith("<enhanced")) {
         const style = part.match(/style="(.*?)"/)?.[1];
-        const content = part.replace(/<enhanced.*?>(.*?)<\/enhanced>/, "$1");
+        const content = part.replace(
+          /<enhanced.*?>([\s\S]*?)<\/enhanced>/,
+          "$1"
+        );
 
         switch (style) {
           case "cutie":
@@ -26,7 +29,16 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             return (
               <span
                 key={index}
-                className="font-bold font-mattoneBold text-xl 2xl:text-2xl text-pink-500 whitespace-pre-line"
+                className="font-bold font-mattoneBold text-sm md:text-lg lg:text-xl 2xl:text-2xl text-pink-500 whitespace-pre-line"
+              >
+                {content}
+              </span>
+            );
+          case "blackbold":
+            return (
+              <span
+                key={index}
+                className="font-bold font-jugleMedium  text-black whitespace-pre-line"
               >
                 {content}
               </span>

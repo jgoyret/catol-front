@@ -1,12 +1,13 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import useDeviceType from "../hooks/useDeviceType";
 
 interface CircleTextProps {
   text: string;
 }
 
 const CircleText: React.FC<CircleTextProps> = ({ text }) => {
-  const radius = 80; // Radio del círculo
+  const radius = 70; // Radio del círculo
   const characters = text.split(""); // Divide el texto en caracteres individuales
   const angle = 360 / characters.length; // Ángulo entre cada carácter
 
@@ -15,7 +16,7 @@ const CircleText: React.FC<CircleTextProps> = ({ text }) => {
   console.log(location.pathname);
 
   return (
-    <div className=" relative flex justify-center font-jungaMedium">
+    <div className=" relative flex justify-center font-jungaMedium left-10 2xl:left-3">
       {characters.map((char, index) => {
         const rotation = angle * index;
         const x = radius * Math.cos((rotation * Math.PI) / 180);
@@ -24,7 +25,7 @@ const CircleText: React.FC<CircleTextProps> = ({ text }) => {
         return (
           <span
             key={index}
-            className={`absolute top-3 text-xl font-bold ${
+            className={`absolute top-3 text-sm font-bold ${
               location.pathname === "/bio" ? "text-white" : "text-black"
             }`}
             style={{
@@ -46,6 +47,8 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
   const [hovered, setHovered] = React.useState(false);
+  const isMobile = useDeviceType();
+  console.log(isMobile);
 
   const generateIconGrid = () => {
     const icons = [];
@@ -62,7 +65,11 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
     return icons;
   };
 
-  return (
+  return isMobile ? (
+    <header className="fixed flex  text-2xl md:text-4xl justify-center items-center text-center top-0 left-0 w-full h-[50px] md:h-[100px] z-10 bg-red-700">
+      <Link to={"/"}>HOME</Link>
+    </header>
+  ) : (
     <header className="fixed top-0 left-0 w-1/12 h-full z-10">
       <div className=" mx-auto w-full h-full relative">
         <Link
@@ -71,12 +78,12 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
         >
           {/* Este contenedor es el área de hover */}
           <div
-            className="inline-block"
+            className="inline-block "
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
             <CircleText text="HOME HOME HOME HOME" />
-            <Icon className="text-black h-12   " />
+            <Icon className="text-black h-12 ml-14 xl:ml-16 2xl:ml-5" />
           </div>
 
           {/* Los íconos se renderizan fuera del área de hover */}

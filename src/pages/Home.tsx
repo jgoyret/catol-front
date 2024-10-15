@@ -53,14 +53,14 @@ const Home: React.FC = () => {
           {menuItems.map((item, index) => (
             <li
               key={index}
-              className="text-6xl font-bold relative font-mattoneBold"
+              className="text-sm md:text-xl lg:text-4xl 2xl:text-6xl font-bold relative font-mattoneBold"
               onMouseEnter={() => setHoveredItem(item.name)}
               onMouseLeave={() => setHoveredItem(null)}
             >
               {hoveredItem === item.name && (
                 <>
-                  <item.Icon className="absolute right-full top-1/2 transform -translate-y-1/2  h-20 max-w-40" />
-                  <item.Icon className="absolute left-full top-1/2 transform -translate-y-1/2  h-20 max-w-40" />
+                  <item.Icon className="absolute right-full top-1/2 transform -translate-y-1/2  h-20 2xl:h-32 max-w-40 2xl:max-w-64" />
+                  <item.Icon className="absolute left-full top-1/2 transform -translate-y-1/2  h-20 2xl:h-32 max-w-40 2xl:max-w-64" />
                 </>
               )}
               {item.path ? (

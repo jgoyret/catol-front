@@ -31,28 +31,29 @@ const Project: React.FC = () => {
 
   return (
     <div className=" lg:pl-10">
-      <h1 className="text-4xl text-center font-bold mb-4">{project.title}</h1>
+      <h1 className="text-4xl 2xl:text-6xl text-center font-jungaMedium font-bold mb-4">
+        {project.title}
+      </h1>
       <div className="">{renderMedia(project.media.head)}</div>
-      <p className="whitespace-pre-line text-center font-jungaBook">
-        {project.credits}
+      <p className="whitespace-pre-line text-center text-base 2xl:text-xl font-jungaBook">
+        <EnhancedText>{project.credits}</EnhancedText>
       </p>
       <p className="whitespace-pre-line text-2xl text-center  m-10 font-jungaBook">
-        {project.description}
+        <EnhancedText>{project.description}</EnhancedText>
       </p>
 
       {"poems" in project && typeof project.poems === "object" && (
-        <p className="whitespace-pre-line text-lg text-center mx-auto m-10 max-w-96">
+        <p className="whitespace-pre-line text-lg 2xl:text-2xl text-center mx-auto m-10 max-w-2xl">
           {project.poems.head}
         </p>
       )}
       <div className=" w-full flex justify-center">
         <img src={`${project.media.single}`} alt="" />
       </div>
-      {"poems" in project && typeof project.poems === "object" && (
-        <div className="whitespace-pre-line text-lg text-center mx-auto m-10 max-w-2xl">
-          <EnhancedText>{project.poems.end}</EnhancedText>
-        </div>
-      )}
+
+      <div className="text-lg text-center mx-auto m-10 max-w-2xl">
+        <EnhancedText>{project.poems.end}</EnhancedText>
+      </div>
     </div>
   );
 };

@@ -20,22 +20,22 @@ export const projects: Record<string, ProjectType> = {
   "clashes-licking": {
     title: "CLASHES LICKING",
     credits: `
-      Choreography, Performance, Concept - Catol Teixeira
-Sound Creation - Sandar Tun Tun
-Costume Creation - Auguste de Boursetty
-Lights Creation - Alessandra Domnigues
-External Eye - Dominique Gilliot
-Conceptual Provocation - Fabian Barba
-Administration - Michael Scheuplein
-Production&Administration - Rabea Grand
-Distribution - Jerome Pique
-thanks to Mayara Yamada, Yhuri Cruz, Ghalas Charara
-Production - Cie UÁ
-Coproduction: Theatre de l’Usine & Emergentia - temps fort pour la création chorégraphique émergente réalisé par L’Abri, le TU et l’ADC Genève
-Realized with the support of Ville de Genève and Loterie Romande
+      Choreography, Performance, Concept - <enhanced style="blackbold">Catol Teixeira</enhanced>
+Sound Creation - <enhanced style="blackbold">Sandar Tun Tun</enhanced>
+Costume Creation - <enhanced style="blackbold">Auguste de Boursetty</enhanced>
+Lights Creation - <enhanced style="blackbold">Alessandra Domnigues</enhanced>
+External Eye - <enhanced style="blackbold">Dominique Gilliot</enhanced>
+Conceptual Provocation - <enhanced style="blackbold">Fabian Barba</enhanced>
+Administration - <enhanced style="blackbold">Michael Scheuplein</enhanced>
+Production&Administration - <enhanced style="blackbold">Rabea Grand</enhanced>
+Distribution - <enhanced style="blackbold">Jerome Pique</enhanced>
+thanks to <enhanced style="blackbold">Mayara Yamada, Yhuri Cruz, Ghalas Charara</enhanced>
+Production - <enhanced style="blackbold">Cie UÁ</enhanced>
+Coproduction: <enhanced style="blackbold">Theatre de l’Usine & Emergentia</enhanced> - temps fort pour la création chorégraphique émergente réalisé par L’Abri, le TU et l’ADC Genève
+<enhanced style="blackbold">Realized with the support of Ville de Genève and Loterie Romande</enhanced>
 `,
     description: `
-Clashes licking drew some of its inspiration in the figure of the Faune, represented by Nijinsky, and part of the Western Dance History; not wishing to
+<enhanced style="cutie">Clashes licking</enhanced> drew some of its inspiration in the figure of the Faune, represented by Nijinsky, and part of the Western Dance History; not wishing to
 review or comment on it, but with a personal approach that comes from Catol’s dance formation. The piece interrogates how learned techniques can
 form a body. Understanding cultural and political inscriptions designing one’s corporeity.
 For the building of this dance work, Catol uses techniques they learned, such as circus and classical ballet, blended with partying and cultural references
@@ -64,8 +64,8 @@ How to contaminate forms?
 How to dance with ghosts? How memories are registered in the flesh of one’s body?
 Is dance a celebration of living or a ceremony of dying?`,
 
-      end: `<enhanced style="cutie">
-I hear you calling,
+      end: `
+<enhanced style="cutie">I hear you calling,
 as in a tale of a dream,
 and I touch you from far while floating.
 a smell of wet stone, that blended smell
