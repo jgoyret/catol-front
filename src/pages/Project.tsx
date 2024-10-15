@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { projects, biotext } from "../data/data";
+import { projects } from "../data/data";
 import EnhancedText from "../components/EnhancedText";
 
 const Project: React.FC = () => {
