@@ -64,7 +64,7 @@ How to contaminate forms?
 How to dance with ghosts? How memories are registered in the flesh of one’s body?
 Is dance a celebration of living or a ceremony of dying?`,
 
-      end: `
+      end: `<enhanced style="cutie">
 I hear you calling,
 as in a tale of a dream,
 and I touch you from far while floating.
@@ -78,7 +78,7 @@ deep currents, water carrying
 that dance of when flesh can melt , do you remember?
 - maliciously, they were looking at me knowing something I couldn’t yet know myself
 surrendering while
-whispering whispering 
+whispering whispering</enhanced>
 `,
     },
     inspirations: ``,
@@ -136,7 +136,7 @@ echoes with you)
     },
     inspirations: ``,
     media: {
-      head: "",
+      head: "https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia/Derrama02.jpg",
       single: "",
       dual: ["", ""],
     },
@@ -181,7 +181,7 @@ encantamento : https://morula.com.br/wp-content/uploads/2020/05/Encantamento.pdf
 não vão nos matar agora : https://www.cobogo.com.br/produto/nao-vao-nos-matar-agora-they-won-t-kill-us-now-665
 `,
     media: {
-      head: "",
+      head: "https://player.vimeo.com/video/844613915",
       single: "",
       dual: ["", ""],
     },
@@ -189,11 +189,10 @@ não vão nos matar agora : https://www.cobogo.com.br/produto/nao-vao-nos-matar-
 };
 
 export const biotext = `
-<enhanced style="header">Catol Teixeira performs and creates dances</enhanced>. Born in Porto Alegre (1993*) Brazil, with a diverse journey across various cities, including Rio de Janeiro, Belo Horizonte, Salzburg, Berlin, and currently Geneva, Switzerland, living experiences that have
+<enhanced style="cutie">Catol Teixeira performs and creates dances</enhanced>. Born in Porto Alegre (1993) Brazil, with a diverse journey across various cities, including Rio de Janeiro, Belo Horizonte, Salzburg, Berlin, and currently Geneva, Switzerland, living experiences that have
 shaped their artistic practice and way of living. They obtained a Bachelor’s degree in Contemporary Dance from La Manufacture in Lausanne in 2021. Prior to formal dance education, Catol worked as an interpreter for dance companies in Brazil such as “Cia Palacio das Artes” and “Cia Mário Nascimento” in Belo Horizonte, Brazil, during 2013 and 2014. They also worked as artistic collaborator and acrobat to the contemporary circus group “Intrepida Trupe” from to 2010 to 2012 as in 2016. They were resident artist at Ponderosa Tanzland, a place they visited and studied several times.
 
-<enhanced style="highlight">CATOL DANCES WHILE TRANSITIONING AND CRAFT PERFORMANCES AS INVOCATIONS</enhanced>. They are curious to deal with physical endurance, somatic practices and drawing influence from sources
-as diverse as circus aerial dances, classical ballet, partying and celebrations.
+<enhanced style="readme">CATOL DANCES WHILE TRANSITIONING AND CRAFT PERFORMANCES AS INVOCATIONS</enhanced>. They are curious to deal with physical endurance, somatic practices and drawing influence from sources as diverse as circus aerial dances, classical ballet, partying and celebrations.
 
 Their first choreographic work “La Peau Entre Les Doigts” deals with questions of orientation and gaze. 
 It was shown at Grütli (CH), Belluard Bollwerk (CH), Sevelin36 (CH), La Friche Belle de Mai (FR), Santarcangelo Festival (IT), Gessneralle (CH), Les Subs (FR), TQW Studios/Rakete Festival (AU), Thèatre Vidy (CH) and keeps touring nowadays. Catol latest work “Clashes Licking”, was premiered in November 2022 at Theatre de l’Usine as part of “Emergentia - ADC, l’Abri, TU”. It was shown at SCH - Festival de Avignon (FR), Santarcangelo Festival (IT), Bienal de dança de Maputo (MZ), Infecting the City- ICA Cape Town (SA), Festival Actoral Marseille (FR), among others. Their next work will premiere in November 2024.

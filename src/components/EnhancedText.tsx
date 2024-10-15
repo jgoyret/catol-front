@@ -5,27 +5,28 @@ interface EnhancedTextProps {
 }
 
 const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
+  console.log(children);
   const renderText = (text: string) => {
-    return text.split(/(<enhanced.*?<\/enhanced>)/).map((part, index) => {
+    return text.split(/(<enhanced[\s\S]*?<\/enhanced>)/).map((part, index) => {
       if (part.startsWith("<enhanced")) {
         const style = part.match(/style="(.*?)"/)?.[1];
         const content = part.replace(/<enhanced.*?>(.*?)<\/enhanced>/, "$1");
 
         switch (style) {
-          case "header":
+          case "cutie":
             return (
               <span
                 key={index}
-                className=" font-bold italic text-pink-500 font-serif whitespace-pre-line"
+                className=" font-bold font-tangerineBold text-4xl 2xl:text-6xl italic text-pink-500 whitespace-pre-line"
               >
                 {content}
               </span>
             );
-          case "highlight":
+          case "readme":
             return (
               <span
                 key={index}
-                className="font-bold text-xl 2xl:text-2xl text-pink-500 whitespace-pre-line"
+                className="font-bold font-mattoneBold text-xl 2xl:text-2xl text-pink-500 whitespace-pre-line"
               >
                 {content}
               </span>

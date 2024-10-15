@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "JungaBook";
+  src: url("/fonts/Jungka-Book.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JungaMedium";
+  src: url("/fonts/Jungka-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "MattoneBold";
+  src: url("/fonts/Mattone-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "MattonRegular";
+  src: url("/fonts/Mattone-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TangerineBold";
+  src: url("/fonts/Tangerine_Bold.woff2") format("woff2");
+  weight: ;
+}

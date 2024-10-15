@@ -47,13 +47,13 @@ const Home: React.FC = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <div className="flex justify-center items-center min-h-screen bg-gray-950">
       <nav className="text-center">
         <ul className="space-y-6">
           {menuItems.map((item, index) => (
             <li
               key={index}
-              className="text-6xl font-bold relative"
+              className="text-6xl font-bold relative font-mattoneBold"
               onMouseEnter={() => setHoveredItem(item.name)}
               onMouseLeave={() => setHoveredItem(null)}
             >
@@ -66,14 +66,14 @@ const Home: React.FC = () => {
               {item.path ? (
                 <Link
                   to={item.path}
-                  className="hover:text-gray-600 transition-colors"
+                  className="text-white hover:text-catolPink transition-colors"
                 >
                   {item.name}
                 </Link>
               ) : (
                 <Link
                   to={`/project/${item.id}`}
-                  className="hover:text-gray-600 transition-colors"
+                  className="text-white hover:text-catolPink transition-colors"
                 >
                   {item.name}
                 </Link>

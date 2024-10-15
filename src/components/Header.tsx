@@ -15,7 +15,7 @@ const CircleText: React.FC<CircleTextProps> = ({ text }) => {
   console.log(location.pathname);
 
   return (
-    <div className=" relative flex justify-center  ">
+    <div className=" relative flex justify-center font-jungaMedium">
       {characters.map((char, index) => {
         const rotation = angle * index;
         const x = radius * Math.cos((rotation * Math.PI) / 180);

@@ -32,8 +32,8 @@ const Layout = ({
   children: React.ReactNode;
   icon: React.ElementType;
 }) => (
-  <div className="flex space-x-48 min-h-screen bg-gray-100">
-    <div className="">
+  <div className="flex lg:space-x-48 bg-gray-100">
+    <div className="hidden lg:inline-block">
       <Header icon={icon} />
     </div>
     <main className="px-4 py-8 w-full">{children}</main>
