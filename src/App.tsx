@@ -11,7 +11,7 @@ import {
   EspiralGif,
   EstrellitaGif,
   MariposaGif,
-  TesoroGif,
+  BioGif,
   UnicornioGif,
   YinyangGif,
 } from "./components/Gifs";
@@ -36,7 +36,7 @@ const Layout = ({
     <div className="inline-block ">
       <Header icon={icon} />
     </div>
-    <main className="mt-10 md:mt-24 lg:mt-0 px-4 py-8 w-full h-full">
+    <main className="mt-10 md:mt-24 lg:mt-0 px-0 xl:px-4 py-8 w-full h-full">
       {children}
     </main>
   </div>
@@ -86,7 +86,7 @@ const router = createBrowserRouter([
   {
     path: "/bio",
     element: (
-      <Layout icon={TesoroGif}>
+      <Layout icon={BioGif}>
         <Bio />
       </Layout>
     ),

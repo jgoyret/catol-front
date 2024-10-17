@@ -35,10 +35,10 @@ const Project: React.FC = () => {
         {project.title}
       </h1>
       <div className="">{renderMedia(project.media.head)}</div>
-      <p className="whitespace-pre-line text-center text-base 2xl:text-xl font-jungaBook">
+      <p className="whitespace-pre-line text-center px-2 text-base 2xl:text-xl font-jungaBook">
         <EnhancedText>{project.credits}</EnhancedText>
       </p>
-      <p className="whitespace-pre-line text-2xl text-center  m-10 font-jungaBook">
+      <p className="whitespace-pre-line text-lg md:text-2xl text-center  m-10 font-jungaBook">
         <EnhancedText>{project.description}</EnhancedText>
       </p>
 
@@ -48,19 +48,23 @@ const Project: React.FC = () => {
         </p>
       )}
       {project.media.single !== "" && (
-        <div className=" w-full flex justify-center">
-          <img src={`${project.media.single}`} alt={`${project.title}`} />
+        <div className=" w-full min-h-[500px] md:h-full flex justify-center">
+          <img
+            src={`${project.media.single}`}
+            alt={`${project.title}`}
+            className="object-cover"
+          />
         </div>
       )}
       {project.media.dual[0] !== "" && project.media.dual[1] !== "" && (
-        <div className=" w-full flex justify-center space-x-2">
+        <div className=" w-full flex flex-col md:flex-row justify-center">
           <img
-            className="w-1/2"
+            className="w-full min-h-96 md:w-1/2 object-cover"
             src={`${project.media.dual[0]}`}
             alt={`${project.title}`}
           />
           <img
-            className="w-1/2"
+            className="w-full min-h-96 md:w-1/2 object-cover"
             src={`${project.media.dual[1]}`}
             alt={`${project.title}`}
           />

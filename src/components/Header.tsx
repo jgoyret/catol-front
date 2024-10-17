@@ -53,13 +53,11 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
 
   const generateIconGrid = () => {
     const icons = [];
-    const gridSize = 10; // Cambia este número para modificar el tamaño de la cuadrícula
+    const gridSize = 6; // Cambia este número para modificar el tamaño de la cuadrícula
 
     for (let i = 0; i < gridSize; i++) {
       for (let j = 0; j < gridSize; j++) {
-        icons.push(
-          <Icon key={`${i}-${j}`} className="text-black h-24  m-2  " />
-        );
+        icons.push(<Icon key={`${i}-${j}`} className="text-black h-24 " />);
       }
     }
 
@@ -105,7 +103,7 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
 
           {/* Los íconos se renderizan fuera del área de hover */}
           {hovered && (
-            <div className="absolute space-x-24 inset-0 z-[-1] grid grid-cols-6 gap-2 w-screen h-screen">
+            <div className="absolute space-x-36 inset-0 z-[-1] grid grid-cols-6 gap-4 w-screen h-screen">
               {generateIconGrid()}
             </div>
           )}

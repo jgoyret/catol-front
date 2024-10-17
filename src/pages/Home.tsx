@@ -7,7 +7,8 @@ import {
   EspiralGif,
   EstrellitaGif,
   MariposaGif,
-  TesoroGif,
+  preloadGifs,
+  BioGif,
   UnicornioGif,
   YinyangGif,
 } from "../components/Gifs";
@@ -33,7 +34,7 @@ const menuItems: MenuItem[] = [
     Icon: EspadaGif,
   },
   { name: "PERFORMANCE", path: "/performance", Icon: YinyangGif },
-  { name: "BIO", path: "/bio", Icon: TesoroGif },
+  { name: "BIO", path: "/bio", Icon: BioGif },
   {
     name: "INTERVIEWS AND PRESS",
     path: "/interviews-and-press",
@@ -45,6 +46,10 @@ const menuItems: MenuItem[] = [
 
 const Home: React.FC = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+
+  React.useEffect(() => {
+    preloadGifs();
+  }, []);
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-950">

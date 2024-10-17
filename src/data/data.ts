@@ -5,7 +5,7 @@ import {
   EspiralGif,
   EstrellitaGif,
   MariposaGif,
-  TesoroGif,
+  BioGif,
   UnicornioGif,
   YinyangGif,
 } from "../components/Gifs";
@@ -241,7 +241,7 @@ export const menuItems = [
     Icon: EspadaGif,
   },
   { name: "PERFORMANCE", path: "/performance", Icon: YinyangGif },
-  { name: "BIO", path: "/bio", Icon: TesoroGif },
+  { name: "BIO", path: "/bio", Icon: BioGif },
   {
     name: "INTERVIEWS AND PRESS",
     path: "/interviews-and-press",

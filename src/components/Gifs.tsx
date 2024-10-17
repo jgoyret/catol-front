@@ -2,6 +2,27 @@
 interface GifProps {
   className?: string;
 }
+
+// Precarga de GIFs
+export function preloadGifs() {
+  const gifUrls = [
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/contacto.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/espada.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/espiral.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/estrellita.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/mariposa.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/tesoro.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/unicornio.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/yinyang.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/delfin.gif`,
+  ];
+
+  gifUrls.forEach((url) => {
+    const img = new Image();
+    img.src = url;
+  });
+}
+
 function ContactoGif({ className }: GifProps) {
   return (
     <img
@@ -47,11 +68,11 @@ function MariposaGif({ className }: GifProps) {
     />
   );
 }
-function TesoroGif({ className }: GifProps) {
+function BioGif({ className }: GifProps) {
   return (
     <img
-      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/tesoro.gif`}
-      alt="tesoro"
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/bio.gif`}
+      alt="bio gif"
       className={className}
     />
   );
@@ -91,7 +112,7 @@ export {
   EspiralGif,
   EstrellitaGif,
   MariposaGif,
-  TesoroGif,
+  BioGif,
   UnicornioGif,
   YinyangGif,
 };
