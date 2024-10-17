@@ -24,6 +24,7 @@ import Bio from "./pages/Bio";
 import InterviewsAndPress from "./pages/InterviewsAndPress";
 import Contact from "./pages/Contact";
 import CV from "./pages/CV";
+import ZonaDeDerremaChapters from "./pages/ZonaDeDerramaChapters";
 
 const Layout = ({
   children,
@@ -44,7 +45,8 @@ const Layout = ({
 
 const projectIcons = {
   "clashes-licking": EstrellitaGif,
-  "zona-de-derrama": UnicornioGif,
+  "zona-de-derrama-1": UnicornioGif,
+  "zona-de-derrama-2": UnicornioGif,
   "la-peaux-entre-les-doigts": MariposaGif,
 };
 
@@ -66,6 +68,10 @@ const router = createBrowserRouter([
   {
     path: "/project/:id",
     element: <ProjectWrapper />,
+  },
+  {
+    path: "/project/zona-de-derrama",
+    element: <ZonaDeDerremaChapters />,
   },
   {
     path: "/writing-dancing-around",

@@ -102,8 +102,8 @@ whispering whispering</enhanced>
       dual: ["", ""],
     },
   },
-  "zona-de-derrama": {
-    title: "ZONA DE DERRAMA",
+  "zona-de-derrama-1": {
+    title: "ZONA DE DERRAMA - first chapter",
     credits: `
     Coproduction Pavillon ADC - Genève, VIDY - Lausanne, EFFEA -Santarcangelo Festival, Points Communs - Nouvelle Scène Nationale - Cergy- Pontoise , far°festival + SudPol (Extra Time Plus)
 RESO - Swiss Coproduction Founding
@@ -146,6 +146,45 @@ Dancing as gesture of belonging.
 echoes with you)
 `,
       end: ``,
+    },
+    inspirations: ``,
+    media: {
+      head: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama02.jpg`,
+      single: "",
+      dual: ["", ""],
+    },
+  },
+  "zona-de-derrama-2": {
+    title: "ARREBENTAÇÃO - last chapter",
+    credits: `
+    Coproduction: Pavillon ADC - Geneva, Théâtre Vidy-Lausanne, EFFEA -Santarcangelo Festival, Points Communs - Nouvelle Scène Nationale - Cergy-Pontoise
+
+Choreography, concept and performance: Catol Teixeira
+Choreography and performance: Acauā Shereya, Auguste De Boursetty, Collin Cabanis, Luara Raio
+Sound creation: Chaos Clay
+Lighting design: Lui L’Abbate
+Outside view and dramaturgy: Jonas Van, Lea Genoud
+Rigging: Rive Vayrou
+Costume: Yumi Ikeda Ferretti
+Style: Yann slattery
+Body extensions: Naggi Giani
+Administration and production: Rabea Grand
+Production assistant: Dylan Huido
+Distribution: Jerome Pique
+Tour management: Jerome Pique
+
+With the support of: Actoral - Marseille, BNM - Marseille
+This project is part of RESO Coproduction Found
+
+`,
+    description: `
+    Arrebentação - zona de derrama last chapter is built on a multiplicity of overlapping images on stage, on encounters that sometimes contradict each other, and on the vibration and harmony they create. In its collective dimension and at the heart of its message, this choreographic composition explores notions of harmony, agreement and disagreement, and transformation. The zone is noisy and hybrid; it is where the multitude meets and forms a common ground that resonates.
+Movement, transitions, and fragments of a choreographic composition: we dance in “zones” of tenderness, risk, danger, love, disagreement, resonance, celebration, security and memory. In Arrebentação - zona de derrama last chapter, these zones are activated in a score that follows a precise chronological order. Each zone is made up of speciﬁc movement material, but each dancer inscribes a dialogue between the score and their own relationship to the choreography, to the zone. The dialogue takes place in the emotions and experiences that make up the dancers’ bodies. The piece is thus written in a dramaturgy of fragments, each fragment the individual actualisation of a shared memory. The creative process is nourished by encounters and collaborations. Each artist proposes and creates the journey we build together, and the piece creates its own language over time. For me, dancing is a gesture of belonging.
+
+`,
+    poems: {
+      head: "",
+      end: "",
     },
     inspirations: ``,
     media: {
