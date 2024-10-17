@@ -2,43 +2,96 @@
 interface GifProps {
   className?: string;
 }
-
-export function ContactoGif({ className }: GifProps) {
-  return <img src="/gifs/contacto.gif" alt="contacto" className={className} />;
-}
-
-export function EspadaGif({ className }: GifProps) {
-  return <img src="/gifs/espada.gif" alt="espada" className={className} />;
-}
-
-export function EspiralGif({ className }: GifProps) {
-  return <img src="/gifs/espiral.gif" alt="espiral" className={className} />;
-}
-
-export function EstrellitaGif({ className }: GifProps) {
+function ContactoGif({ className }: GifProps) {
   return (
-    <img src="/gifs/estrellita.gif" alt="estrellita" className={className} />
+    <img
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/contacto.gif`}
+      alt="contacto"
+      className={className}
+    />
+  );
+}
+function EspadaGif({ className }: GifProps) {
+  return (
+    <img
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/espada.gif`}
+      alt="espada"
+      className={className}
+    />
+  );
+}
+function EspiralGif({ className }: GifProps) {
+  return (
+    <img
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/espiral.gif`}
+      alt="espiral"
+      className={className}
+    />
+  );
+}
+function EstrellitaGif({ className }: GifProps) {
+  return (
+    <img
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/estrellita.gif`}
+      alt="estrellita"
+      className={className}
+    />
+  );
+}
+function MariposaGif({ className }: GifProps) {
+  return (
+    <img
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/mariposa.gif`}
+      alt="mariposa"
+      className={className}
+    />
+  );
+}
+function TesoroGif({ className }: GifProps) {
+  return (
+    <img
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/tesoro.gif`}
+      alt="tesoro"
+      className={className}
+    />
+  );
+}
+function UnicornioGif({ className }: GifProps) {
+  return (
+    <img
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/unicornio.gif`}
+      alt="unicornio"
+      className={className}
+    />
+  );
+}
+function YinyangGif({ className }: GifProps) {
+  return (
+    <img
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/yinyang.gif`}
+      alt="yinyang"
+      className={className}
+    />
+  );
+}
+function DelfinGif({ className }: GifProps) {
+  return (
+    <img
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/delfin.gif`}
+      alt="delfin"
+      className={className}
+    />
   );
 }
 
-export function MariposaGif({ className }: GifProps) {
-  return <img src="/gifs/mariposa.gif" alt="mariposa" className={className} />;
-}
-
-export function TesoroGif({ className }: GifProps) {
-  return <img src="/gifs/tesoro.gif" alt="tesoro" className={className} />;
-}
-
-export function UnicornioGif({ className }: GifProps) {
-  return (
-    <img src="/gifs/unicornio.gif" alt="unicornio" className={className} />
-  );
-}
-
-export function YinyangGif({ className }: GifProps) {
-  return <img src="/gifs/yinyang.gif" alt="yinyang" className={className} />;
-}
-
-export function DelfinGif({ className }: GifProps) {
-  return <img src="/gifs/delfin.gif" alt="delfin" className={className} />;
-}
+export {
+  ContactoGif,
+  DelfinGif,
+  EspadaGif,
+  EspiralGif,
+  EstrellitaGif,
+  MariposaGif,
+  TesoroGif,
+  UnicornioGif,
+  YinyangGif,
+};

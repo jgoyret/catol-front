@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import useDeviceType from "../hooks/useDeviceType";
+import Marquee from "react-fast-marquee";
+import { menuItems } from "../data/data";
 
 interface CircleTextProps {
   text: string;
@@ -12,8 +14,6 @@ const CircleText: React.FC<CircleTextProps> = ({ text }) => {
   const angle = 360 / characters.length; // Ángulo entre cada carácter
 
   const location = useLocation();
-
-  console.log(location.pathname);
 
   return (
     <div className=" relative flex justify-center font-jungaMedium left-10 2xl:left-3">
@@ -48,7 +48,8 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
   const [hovered, setHovered] = React.useState(false);
   const isMobile = useDeviceType();
-  console.log(isMobile);
+  const activeItem = menuItems.find((item) => item.path === location.pathname);
+  console.log(activeItem);
 
   const generateIconGrid = () => {
     const icons = [];
@@ -66,8 +67,24 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
   };
 
   return isMobile ? (
-    <header className="fixed flex  text-2xl md:text-4xl justify-center items-center text-center top-0 left-0 w-full h-[50px] md:h-[100px] z-10 bg-red-700">
-      <Link to={"/"}>HOME</Link>
+    <header className="fixed flex  text-2xl md:text-4xl justify-center items-center text-center top-0 left-0 w-full h-[50px] md:h-[100px] z-10">
+      <Link
+        to={"/"}
+        className="w-full h-full transparent bg-slate-100 border border-b-black"
+      >
+        <Marquee
+          pauseOnHover
+          direction={"right"}
+          className="h-full mx-auto font-jungaBook"
+        >
+          <div className="mx-10">HOME</div>
+          {activeItem && <activeItem.Icon className="h-5 md:h-10" />}
+          <div className="mx-10">HOME</div>
+          {activeItem && <activeItem.Icon className="h-5 md:h-10" />}
+          <div className="mx-10">HOME</div>
+          {activeItem && <activeItem.Icon className="h-5 md:h-10" />}
+        </Marquee>
+      </Link>
     </header>
   ) : (
     <header className="fixed top-0 left-0 w-1/12 h-full z-10">

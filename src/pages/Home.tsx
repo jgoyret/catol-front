@@ -59,8 +59,8 @@ const Home: React.FC = () => {
             >
               {hoveredItem === item.name && (
                 <>
-                  <item.Icon className="absolute right-full top-1/2 transform -translate-y-1/2  h-20 2xl:h-32 max-w-40 2xl:max-w-64" />
-                  <item.Icon className="absolute left-full top-1/2 transform -translate-y-1/2  h-20 2xl:h-32 max-w-40 2xl:max-w-64" />
+                  <item.Icon className="hidden md:block absolute right-full top-1/2 transform -translate-y-1/2  h-20 2xl:h-32 max-w-40 2xl:max-w-64" />
+                  <item.Icon className="hidden md:block absolute left-full top-1/2 transform -translate-y-1/2  h-20 2xl:h-32 max-w-40 2xl:max-w-64" />
                 </>
               )}
               {item.path ? (

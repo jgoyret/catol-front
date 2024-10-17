@@ -36,7 +36,9 @@ const Layout = ({
     <div className="inline-block ">
       <Header icon={icon} />
     </div>
-    <main className="px-4 py-8 w-full h-full">{children}</main>
+    <main className="mt-10 md:mt-24 lg:mt-0 px-4 py-8 w-full h-full">
+      {children}
+    </main>
   </div>
 );
 

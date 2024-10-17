@@ -5,7 +5,6 @@ interface EnhancedTextProps {
 }
 
 const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
-  console.log(children);
   const renderText = (text: string) => {
     return text.split(/(<enhanced[\s\S]*?<\/enhanced>)/).map((part, index) => {
       if (part.startsWith("<enhanced")) {

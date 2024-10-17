@@ -47,9 +47,25 @@ const Project: React.FC = () => {
           {project.poems.head}
         </p>
       )}
-      <div className=" w-full flex justify-center">
-        <img src={`${project.media.single}`} alt="" />
-      </div>
+      {project.media.single !== "" && (
+        <div className=" w-full flex justify-center">
+          <img src={`${project.media.single}`} alt={`${project.title}`} />
+        </div>
+      )}
+      {project.media.dual[0] !== "" && project.media.dual[1] !== "" && (
+        <div className=" w-full flex justify-center space-x-2">
+          <img
+            className="w-1/2"
+            src={`${project.media.dual[0]}`}
+            alt={`${project.title}`}
+          />
+          <img
+            className="w-1/2"
+            src={`${project.media.dual[1]}`}
+            alt={`${project.title}`}
+          />
+        </div>
+      )}
 
       <div className="text-lg text-center mx-auto m-10 max-w-2xl">
         <EnhancedText>{project.poems.end}</EnhancedText>

@@ -1,3 +1,15 @@
+import {
+  ContactoGif,
+  DelfinGif,
+  EspadaGif,
+  EspiralGif,
+  EstrellitaGif,
+  MariposaGif,
+  TesoroGif,
+  UnicornioGif,
+  YinyangGif,
+} from "../components/Gifs";
+
 export interface ProjectStructure {
   title: string;
   credits: string;
@@ -84,8 +96,9 @@ whispering whispering</enhanced>
     inspirations: ``,
     media: {
       head: "https://player.vimeo.com/video/811341435",
-      single:
-        "https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia/ClashesLicking01.jpg",
+      single: `${
+        import.meta.env.VITE_SUPABASE_STORAGE_URL
+      }/ClashesLicking01.jpg`,
       dual: ["", ""],
     },
   },
@@ -136,7 +149,7 @@ echoes with you)
     },
     inspirations: ``,
     media: {
-      head: "https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia/Derrama02.jpg",
+      head: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama02.jpg`,
       single: "",
       dual: ["", ""],
     },
@@ -183,7 +196,10 @@ não vão nos matar agora : https://www.cobogo.com.br/produto/nao-vao-nos-matar-
     media: {
       head: "https://player.vimeo.com/video/844613915",
       single: "",
-      dual: ["", ""],
+      dual: [
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/laPeau01.jpg`,
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/laPeau02.jpg`,
+      ],
     },
   },
 };
@@ -199,3 +215,38 @@ It was shown at Grütli (CH), Belluard Bollwerk (CH), Sevelin36 (CH), La Friche 
 CATOL’S CHOREOGRAPHIC EXPERIMENTATION WITH DANCE SERVES AS A CONDUIT FOR UNCOVERING NUANCES AND TACTICS OF TOGETHERNESS. THEIR INTEREST IS ORIENTED TO COLLABORATIVE PROCESSES, AMIDST
 PERSONAL CONCERNS, ARTISTIC PRACTICES AND ARTISTS, ESTABLISHING WITH DANCING AND COMPOSITIONAL WORK AN INTIMATE DIALOGUE WITH KUIR (QUEER) (DIS)ORIENTATIONS TO REMEMBER A DREAM, A STUBBORN ACT TO ESCAPE THE PLOT, TO UNLEARN, TO CRY AND TO CELEBRATE.
 `;
+
+export const menuItems = [
+  {
+    id: "clashes-licking",
+    name: "CLASHES LICKING",
+    path: "/project/clashes-licking",
+    Icon: EstrellitaGif,
+  },
+  {
+    id: "zona-de-derrama",
+    name: "ZONA DE DERRAMA",
+    path: "/project/zona-de-derrama",
+    Icon: UnicornioGif,
+  },
+  {
+    id: "la-peaux-entre-les-doigts",
+    name: "LA PEAUX ENTRE LES DOIGTS",
+    path: "/project/la-peaux-entre-les-doigts",
+    Icon: MariposaGif,
+  },
+  {
+    name: "WRITING DANCING AROUND",
+    path: "/writing-dancing-around",
+    Icon: EspadaGif,
+  },
+  { name: "PERFORMANCE", path: "/performance", Icon: YinyangGif },
+  { name: "BIO", path: "/bio", Icon: TesoroGif },
+  {
+    name: "INTERVIEWS AND PRESS",
+    path: "/interviews-and-press",
+    Icon: EspiralGif,
+  },
+  { name: "CONTACT", path: "/contact", Icon: ContactoGif },
+  { name: "CV", path: "/cv", Icon: DelfinGif },
+];
