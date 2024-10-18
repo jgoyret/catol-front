@@ -22,8 +22,8 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  { id: "clashes-licking", name: "CLASHES LICKING", Icon: EstrellitaGif },
   { id: "zona-de-derrama", name: "ZONA DE DERRAMA", Icon: UnicornioGif },
+  { id: "clashes-licking", name: "CLASHES LICKING", Icon: EstrellitaGif },
   {
     id: "la-peaux-entre-les-doigts",
     name: "LA PEAUX ENTRE LES DOIGTS",
@@ -56,11 +56,11 @@ const Home: React.FC = () => {
     <div className="flex justify-center items-center min-h-screen">
       <BackgroundHome />
       <nav className="text-center">
-        <ul className="space-y-6">
+        <ul className="space-y-6 md:space-y-10">
           {menuItems.map((item, index) => (
             <li
               key={index}
-              className="text-sm md:text-xl lg:text-4xl 2xl:text-6xl font-bold relative font-mattoneBold"
+              className="text-md md:text-xl lg:text-4xl 2xl:text-6xl font-bold relative font-mattoneBold"
               onMouseEnter={() => setHoveredItem(item.name)}
               onMouseLeave={() => setHoveredItem(null)}
             >

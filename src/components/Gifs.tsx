@@ -89,7 +89,7 @@ function UnicornioGif({ className }: GifProps) {
 function YinyangGif({ className }: GifProps) {
   return (
     <img
-      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/yinyang.gif`}
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/perfo.gif`}
       alt="yinyang"
       className={className}
     />

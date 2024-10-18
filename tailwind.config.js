@@ -13,6 +13,9 @@ export default {
       colors: {
         catolPink: "#FF00FF",
       },
+      screens: {
+        "3xl": "2000px",
+      },
     },
   },
   plugins: [],

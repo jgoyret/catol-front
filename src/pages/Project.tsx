@@ -18,7 +18,7 @@ const Project: React.FC = () => {
         <div className="aspect-w-16 aspect-h-9 mb-8">
           <iframe
             src={`${mediaUrl}?autoplay=1&loop=1`}
-            className=" w-full h-[210px] md:h-[420px] lg:h-[540px] xl:h-[660px] 2xl:h-[1300px]"
+            className=" w-full h-[230px] md:h-[440px] lg:h-[540px] xl:h-[660px] 2xl:h-[950px] 3xl:h-[1300px]"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
             title="Vimeo Video"
@@ -32,14 +32,14 @@ const Project: React.FC = () => {
 
   return (
     <div className=" lg:pl-10">
-      <h1 className="text-4xl 2xl:text-6xl text-center font-jungaMedium font-bold mb-4">
+      <h1 className="text-4xl 2xl:text-6xl text-center font-mattoneBold font-bold mb-4">
         {project.title}
       </h1>
       <div className="">{renderMedia(project.media.head)}</div>
-      <p className="whitespace-pre-line text-center px-2 text-base 2xl:text-xl font-jungaBook">
+      <p className="whitespace-pre-line text-center px-2 text-sm md:text-lg 2xl:text-2xl font-jungaBook">
         <EnhancedText>{project.credits}</EnhancedText>
       </p>
-      <p className="whitespace-pre-line text-lg md:text-2xl text-center  m-10 font-jungaBook">
+      <p className="whitespace-pre-line text-sm md:text-lg xl:text-xl 2xl:text-2xl text-center  m-2 mx-5 lg:mx-5 3xl:mx-5 font-jungaBook">
         <EnhancedText>{project.description}</EnhancedText>
       </p>
       {project.usePoemImageLayout && typeof project.poems === "object" && (
@@ -49,13 +49,11 @@ const Project: React.FC = () => {
           imageAlt={project.title}
         />
       )}
-      {"poems" in project &&
-        typeof project.poems === "object" &&
-        !project.usePoemImageLayout && (
-          <p className="whitespace-pre-line text-lg 2xl:text-2xl text-center mx-auto m-10 max-w-2xl">
-            <EnhancedText>{project.poems.head}</EnhancedText>
-          </p>
-        )}
+      {"poems" in project && typeof project.poems === "object" && (
+        <p className="whitespace-pre-line text-sm md:text-lg xl:text-xl 2xl:text-2xl text-center mx-auto mb-10 max-w-2xl">
+          <EnhancedText>{project.poems.head}</EnhancedText>
+        </p>
+      )}
       {project.media.single !== "" && !project.usePoemImageLayout && (
         <div className=" w-full min-h-[500px] md:h-full flex justify-center">
           <img
@@ -66,21 +64,21 @@ const Project: React.FC = () => {
         </div>
       )}
       {project.media.dual[0] !== "" && project.media.dual[1] !== "" && (
-        <div className=" w-full flex flex-col md:flex-row justify-center">
+        <div className=" w-full flex flex-col lg:flex-row justify-center lg:space-x-4 my-10">
           <img
-            className="w-full min-h-96 md:w-1/2 object-cover"
+            className="w-full min-h-96 lg:w-1/2 object-cover mb-10 lg:mb-0"
             src={`${project.media.dual[0]}`}
             alt={`${project.title}`}
           />
           <img
-            className="w-full min-h-96 md:w-1/2 object-cover"
+            className="w-full min-h-96 lg:w-1/2 object-cover"
             src={`${project.media.dual[1]}`}
             alt={`${project.title}`}
           />
         </div>
       )}
       {"poems" in project && typeof project.poems === "object" && (
-        <div className="text-lg text-center mx-auto m-10 max-w-2xl">
+        <div className="text-sm md:text-lg xl:text-xl 2xl:text-2xl text-center mx-auto m-10 max-w-2xl">
           <EnhancedText>{project.poems.end}</EnhancedText>
         </div>
       )}

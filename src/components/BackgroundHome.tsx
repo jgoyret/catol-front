@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-//@ts-ignore
+// @ts-ignore
 import Hydra from "hydra-synth";
 
 const BackgroundHome: React.FC = () => {

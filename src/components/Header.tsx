@@ -65,7 +65,7 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
   };
 
   return isMobile ? (
-    <header className="fixed flex  text-2xl md:text-4xl justify-center items-center text-center top-0 left-0 w-full h-[50px] md:h-[100px] z-10">
+    <header className="fixed flex  text-2xl md:text-4xl justify-center items-center text-center top-0 left-0 w-full h-[50px] md:h-[80px] z-10">
       <Link
         to={"/"}
         className="w-full h-full transparent bg-slate-100 border border-b-black"
@@ -75,12 +75,12 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
           direction={"right"}
           className="h-full mx-auto font-jungaBook"
         >
-          <div className="mx-10">HOME</div>
-          <Icon className="h-5 md:h-10" />
-          <div className="mx-10">HOME</div>
-          <Icon className="h-5 md:h-10" />
-          <div className="mx-10">HOME</div>
-          <Icon className="h-5 md:h-10" />
+          <div className="mx-10 font-mattoneBold">HOME</div>
+          <Icon className="h-10 md:h-16" />
+          <div className="mx-10 font-mattoneBold">HOME</div>
+          <Icon className="h-10 md:h-16 " />
+          <div className="mx-10 font-mattoneBold">HOME</div>
+          <Icon className="h-10 md:h-16" />
         </Marquee>
       </Link>
     </header>

@@ -56,22 +56,13 @@ Coproduction: <enhanced style="blackbold">Theatre de l’Usine & Emergentia</enh
 <enhanced style="blackbold">Realized with the support of Ville de Genève and Loterie Romande</enhanced>
 `,
     description: `
-<enhanced style="cutie">Clashes licking</enhanced> drew some of its inspiration in the figure of the Faune, represented by Nijinsky, and part of the Western Dance History; not wishing to
-review or comment on it, but with a personal approach that comes from Catol’s dance formation. The piece interrogates how learned techniques can
-form a body. Understanding cultural and political inscriptions designing one’s corporeity.
-For the building of this dance work, Catol uses techniques they learned, such as circus and classical ballet, blended with partying and cultural references
-of their life. The movement language flirts with these forms as prosthesis and embodiments. In a creation of a self-fiction, Catol evoke memories of their
-trajectory where dancing was always being a simultaneous channel of social and personal understanding.
-This dance language raise in conversation with Catol’s memory of a specific Nijinskys’ portrait hanged on a wall of their ballet school in Rio de Janeiro.
-Nijinsky appears as a queer ghost from Western dance history, where the Faune represented by Nijinsky in the 20’s century dances with suspicious eyes.
-The relation with that specific context of Rio de Janeiro and these picture haunts catol’s imagination in a search of a memory, of a movement dislocation
-in relation with a western classical dance form. While instigating these memories and intimate relation to such technique, the proposal of the work is to
-research into the transmutation of forms , to cultivate a possible dream: of queer affection, of a blended border of languages.
-In a wish to challenge the frontiers of gender and cis-hetero normativity, the dance that is presented is oriented towards fragments that constitute queer
-living and trans bodies. Dancing here is gravitating towards embodiments and incorporations, on its clashes, contradictions and pleasures. 
-The piece is in a wish to challenge the frontiers of gender and cis-hetero normativity, the dance that is presented is oriented towards fragments that constitute queer
-living and trans bodies. Dancing here is gravitating towards embodiments and incorporations, on its clashes, contradictions and pleasures. The piece is
-built trusting dance as a material manifestation of memories, dreams and unknown stories that inhabit the space and the time we are in.
+<enhanced style="cutie">Clashes Licking</enhanced> draws inspiration from a pivotal figure in Western dance history: the Faun, famously represented by Nijinsky. However, rather than reviewing or commenting on this legacy, this piece offers a somewhat personal relation to this Faune, shaped by Catol's dance training. The core focus lies on  how learned techniques shape and form the body—how cultural and political influences define one's corporeity
+The movement language flirts with the form and techniques of ballet, circus and cabratory  experiences. In a creation of a self-fiction, Catol evoke memories of their trajectory, where dancing was always being a simultaneous channel of social and personal understanding.
+A dance language arose in conversation with Catol’s memory of a specific Nijinskys’ portrait hanging on a wall of their ballet school at Lapa, Rio de Janeiro in 2009. In this picture, The Faune represented by Nijinsky in the 20’s century dances with suspicious eyes, looking out of the framed image towards the open space of a large corridor. Nijinsky appears as a queer ghost from Western dance history. 
+Catol decide to revisits this memory of seeing the image, intertwined with the simultaneous discovery of their first queer love and the traumatic experience of sexual abuse. This duality of tenderness and violence deeply marks their reflection on the body and its expression in Clashes Licking.
+The relation with that specific context of Rio de Janeiro and these pictures haunt Catol’s imagination in a search of a memory, of a movement dislocation in relation with the western classical dance form. As the work evokes these memories, it focuses on transmutation—not on repeating any image or affection, but on creating friction with it, allowing the memories to reshape and evolve through the body.
+Dancing to cultivate a possible dream: of queer affection, of a blended border of languages. To challenge the frontiers of gender and cis-hetero normativity, the dance that is presented is oriented towards fragments that constitute queer living and trans bodies. 
+Dancing here is gravitating towards embodiments that are manifested sometimes as clashes, as broken stories, its contradictions and pleasures. The poetry that rises when a queer life comes and dance among us. Clashes Licking is a whisper, perhaps a secret to whom can listen to it. 
 `,
     poems: {
       head: `
@@ -86,20 +77,66 @@ How to dance with ghosts? How memories are registered in the flesh of one’s bo
 Is dance a celebration of living or a ceremony of dying?`,
 
       end: `
-<enhanced style="cutie">I hear you calling,
-as in a tale of a dream,
-and I touch you from far while floating.
-a smell of wet stone, that blended smell
-of wetness
+<enhanced style="cutie">To where does this dance belongs to?
+What am I haunting while dancing?
+What is haunting me?
+What are the ghosts of western dances?
+Which ghosts do I dance with? Which ones I scape from?
+How is queer imagination blended with the dances forms?
+How to contaminate forms?
+How to dance with ghosts? How memories are registered in the flesh of one’s body?
+Is dance a celebration of living or a ceremony of dying?
+
+
+I hear you calling, 
+ as in a tale of a dream, 
+ and I touch you from far while floating. 
+ 
+ a smell of wet stone, that blended smell 
+ of wetness
+
 A far away noise
-A dog barks, someone screams, a ventilator, a piano
-And in my thoughts all that desire clashing
-A memory left in the middle of the crossing
-deep currents, water carrying
-that dance of when flesh can melt , do you remember?
-- maliciously, they were looking at me knowing something I couldn’t yet know myself
-surrendering while
-whispering whispering</enhanced>
+ A dog barks, someone screams, a ventilator, a piano
+ And in my thoughts all that desire clashing 
+ A memory left in the middle of the crossing
+ deep currents, water carrying 
+ 
+ that dance of when flesh can melt , do you remember? 
+ 
+ - maliciously, they were looking at me knowing something I couldn’t yet know myself 
+ 
+ surrendering while
+ whispering whispering 
+
+on the corner of your ears 
+ 
+ while in a perpetual fall in the break of languages 
+ of changes of dreaming of screaming of wiling of leaving 
+
+(…)
+to secretly do the decomposition
+
+to know how to infiltrate
+
+there will be a demolition
+
+a premeditated demolition of the future promised by the past that must die
+ a demolition
+
+but it's o morro that collapses
+
+it's from this future where o morro collapses
+
+that I want to escape
+
+how do we change the place of the collapse?
+
+which future do we escape?
+
+sometimes I feel inside a noisy silence
+(…)
+
+</enhanced>
 `,
     },
     inspirations: "",
@@ -168,37 +205,40 @@ echoes with you)
   "zona-de-derrama-2": {
     title: "ARREBENTAÇÃO - last chapter",
     credits: `
-    Coproduction: Pavillon ADC - Geneva, Théâtre Vidy-Lausanne, EFFEA -Santarcangelo Festival, Points Communs - Nouvelle Scène Nationale - Cergy-Pontoise
+    Coproduction: <enhanced style="blackbold">Pavillon ADC</enhanced> - Geneva, <enhanced style="blackbold">Théâtre Vidy</enhanced> - Lausanne, <enhanced style="blackbold">EFFEA</enhanced> - Santarcangelo Festival, <enhanced style="blackbold">Points Communs</enhanced> - Nouvelle Scène Nationale - Cergy-Pontoise
 
-Choreography, concept and performance: Catol Teixeira
-Choreography and performance: Acauā Shereya, Auguste De Boursetty, Collin Cabanis, Luara Raio
-Sound creation: Chaos Clay
-Lighting design: Lui L’Abbate
-Outside view and dramaturgy: Jonas Van, Lea Genoud
-Rigging: Rive Vayrou
-Costume: Yumi Ikeda Ferretti
-Style: Yann slattery
-Body extensions: Naggi Giani
-Administration and production: Rabea Grand
-Production assistant: Dylan Huido
-Distribution: Jerome Pique
-Tour management: Jerome Pique
+Choreography, concept and performance: <enhanced style="blackbold">Catol Teixeira</enhanced>
+Choreography and performance: <enhanced style="blackbold">Acauā Shereya, Auguste De Boursetty, Collin Cabanis, Luara Raio</enhanced>
+Sound creation: <enhanced style="blackbold">Chaos Clay</enhanced>
+Lighting design: <enhanced style="blackbold">Lui L’Abbate</enhanced>
+Outside view and dramaturgy: <enhanced style="blackbold">Jonas Van, Lea Genoud</enhanced>
+Rigging: <enhanced style="blackbold">Rive Vayrou</enhanced>
+Costume: <enhanced style="blackbold">Yumi Ikeda Ferretti</enhanced>
+Style: <enhanced style="blackbold">Yann slattery</enhanced>
+Body extensions: <enhanced style="blackbold">Naggi Giani</enhanced>
+Administration and production: <enhanced style="blackbold">Rabea Grand</enhanced>
+Production assistant: <enhanced style="blackbold">Dylan Huido</enhanced>
+Distribution: <enhanced style="blackbold">Jerome Pique</enhanced>
+Tour management: <enhanced style="blackbold">Jerome Pique</enhanced>
 
-With the support of: Actoral - Marseille, BNM - Marseille
-This project is part of RESO Coproduction Found
+With the support of: <enhanced style="blackbold">Actoral</enhanced> - Marseille, <enhanced style="blackbold">BNM</enhanced> - Marseille
+This project is part of <enhanced style="blackbold">RESO Coproduction Found</enhanced>
 
 `,
     description: `
-    Arrebentação - zona de derrama last chapter is built on a multiplicity of overlapping images on stage, on encounters that sometimes contradict each other, and on the vibration and harmony they create. In its collective dimension and at the heart of its message, this choreographic composition explores notions of harmony, agreement and disagreement, and transformation. The zone is noisy and hybrid; it is where the multitude meets and forms a common ground that resonates.
+    <enhanced style="cutie">Arrebentação - zona de derrama last chapter </enhanced> is built on a multiplicity of overlapping images on stage, on encounters that sometimes contradict each other, and on the vibration and harmony they create. In its collective dimension and at the heart of its message, this choreographic composition explores notions of harmony, agreement and disagreement, and transformation. The zone is noisy and hybrid; it is where the multitude meets and forms a common ground that resonates.
 Movement, transitions, and fragments of a choreographic composition: we dance in “zones” of tenderness, risk, danger, love, disagreement, resonance, celebration, security and memory. In Arrebentação - zona de derrama last chapter, these zones are activated in a score that follows a precise chronological order. Each zone is made up of speciﬁc movement material, but each dancer inscribes a dialogue between the score and their own relationship to the choreography, to the zone. The dialogue takes place in the emotions and experiences that make up the dancers’ bodies. The piece is thus written in a dramaturgy of fragments, each fragment the individual actualisation of a shared memory. The creative process is nourished by encounters and collaborations. Each artist proposes and creates the journey we build together, and the piece creates its own language over time. For me, dancing is a gesture of belonging.
 
 `,
     poems: "",
     inspirations: "",
     media: {
-      head: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama02.jpg`,
+      head: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/arrebatacao_head.jpg`,
       single: "",
-      dual: ["", ""],
+      dual: [
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/arrebatacao_1.jpg`,
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/arrebatacao_2.jpg`,
+      ],
     },
     usePoemImageLayout: false,
   },
