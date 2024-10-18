@@ -48,8 +48,8 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
   const [hovered, setHovered] = React.useState(false);
   const isMobile = useDeviceType();
-  const activeItem = menuItems.find((item) => item.path === location.pathname);
-  console.log(activeItem);
+  // const activeItem = menuItems.find((item) => item.path === location.pathname);
+  // console.log(activeItem);
 
   const generateIconGrid = () => {
     const icons = [];
@@ -76,11 +76,11 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
           className="h-full mx-auto font-jungaBook"
         >
           <div className="mx-10">HOME</div>
-          {activeItem && <activeItem.Icon className="h-5 md:h-10" />}
+          <Icon className="h-5 md:h-10" />
           <div className="mx-10">HOME</div>
-          {activeItem && <activeItem.Icon className="h-5 md:h-10" />}
+          <Icon className="h-5 md:h-10" />
           <div className="mx-10">HOME</div>
-          {activeItem && <activeItem.Icon className="h-5 md:h-10" />}
+          <Icon className="h-5 md:h-10" />
         </Marquee>
       </Link>
     </header>

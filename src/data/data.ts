@@ -160,7 +160,7 @@ echoes with you)
     inspirations: "",
     media: {
       head: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama02.jpg`,
-      single: "",
+      single: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama01.jpg`,
       dual: ["", ""],
     },
     usePoemImageLayout: true,

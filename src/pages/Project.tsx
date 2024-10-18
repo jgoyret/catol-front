@@ -42,13 +42,21 @@ const Project: React.FC = () => {
       <p className="whitespace-pre-line text-lg md:text-2xl text-center  m-10 font-jungaBook">
         <EnhancedText>{project.description}</EnhancedText>
       </p>
-
-      {"poems" in project && typeof project.poems === "object" && (
-        <p className="whitespace-pre-line text-lg 2xl:text-2xl text-center mx-auto m-10 max-w-2xl">
-          <EnhancedText>{project.poems.head}</EnhancedText>
-        </p>
+      {project.usePoemImageLayout && typeof project.poems === "object" && (
+        <PoemImageLayout
+          poem={project.poems.head}
+          imageUrl={project.media.single}
+          imageAlt={project.title}
+        />
       )}
-      {project.media.single !== "" && (
+      {"poems" in project &&
+        typeof project.poems === "object" &&
+        !project.usePoemImageLayout && (
+          <p className="whitespace-pre-line text-lg 2xl:text-2xl text-center mx-auto m-10 max-w-2xl">
+            <EnhancedText>{project.poems.head}</EnhancedText>
+          </p>
+        )}
+      {project.media.single !== "" && !project.usePoemImageLayout && (
         <div className=" w-full min-h-[500px] md:h-full flex justify-center">
           <img
             src={`${project.media.single}`}
