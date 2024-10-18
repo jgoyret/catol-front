@@ -31,15 +31,15 @@ const Project: React.FC = () => {
   };
 
   return (
-    <div className=" lg:pl-10">
+    <div className=" lg:pl-10 text-sm md:text-lg 2xl:text-2xl">
       <h1 className="text-4xl 2xl:text-6xl text-center font-mattoneBold font-bold mb-4">
         {project.title}
       </h1>
       <div className="">{renderMedia(project.media.head)}</div>
-      <p className="whitespace-pre-line text-center px-2 text-sm md:text-lg 2xl:text-2xl font-jungaBook">
+      <p className="whitespace-pre-line text-center px-2  font-jungaBook">
         <EnhancedText>{project.credits}</EnhancedText>
       </p>
-      <p className="whitespace-pre-line text-sm md:text-lg xl:text-xl 2xl:text-2xl text-center  m-2 mx-5 lg:mx-5 3xl:mx-5 font-jungaBook">
+      <p className="whitespace-pre-line  text-center  m-2 mx-5 lg:mx-5 3xl:mx-5 font-jungaBook">
         <EnhancedText>{project.description}</EnhancedText>
       </p>
       {project.usePoemImageLayout && typeof project.poems === "object" && (
@@ -50,7 +50,7 @@ const Project: React.FC = () => {
         />
       )}
       {"poems" in project && typeof project.poems === "object" && (
-        <p className="whitespace-pre-line text-sm md:text-lg xl:text-xl 2xl:text-2xl text-center mx-auto mb-10 max-w-2xl">
+        <p className="whitespace-pre-line  text-center mx-auto mb-10 max-w-2xl">
           <EnhancedText>{project.poems.head}</EnhancedText>
         </p>
       )}
@@ -78,7 +78,7 @@ const Project: React.FC = () => {
         </div>
       )}
       {"poems" in project && typeof project.poems === "object" && (
-        <div className="text-sm md:text-lg xl:text-xl 2xl:text-2xl text-center mx-auto m-10 max-w-2xl">
+        <div className=" text-center mx-auto m-10 max-w-2xl">
           <EnhancedText>{project.poems.end}</EnhancedText>
         </div>
       )}
