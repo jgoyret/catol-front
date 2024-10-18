@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { projects } from "../data/data";
 import EnhancedText from "../components/EnhancedText";
+import PoemImageLayout from "../components/PoemImageLayout";
 
 const Project: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -44,7 +45,7 @@ const Project: React.FC = () => {
 
       {"poems" in project && typeof project.poems === "object" && (
         <p className="whitespace-pre-line text-lg 2xl:text-2xl text-center mx-auto m-10 max-w-2xl">
-          {project.poems.head}
+          <EnhancedText>{project.poems.head}</EnhancedText>
         </p>
       )}
       {project.media.single !== "" && (
@@ -70,10 +71,11 @@ const Project: React.FC = () => {
           />
         </div>
       )}
-
-      <div className="text-lg text-center mx-auto m-10 max-w-2xl">
-        <EnhancedText>{project.poems.end}</EnhancedText>
-      </div>
+      {"poems" in project && typeof project.poems === "object" && (
+        <div className="text-lg text-center mx-auto m-10 max-w-2xl">
+          <EnhancedText>{project.poems.end}</EnhancedText>
+        </div>
+      )}
     </div>
   );
 };

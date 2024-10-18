@@ -24,6 +24,15 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
                 {content}
               </span>
             );
+          case "cutieblack":
+            return (
+              <span
+                key={index}
+                className=" font-bold font-tangerineBold text-4xl 2xl:text-6xl italic text-black whitespace-pre-line"
+              >
+                {content}
+              </span>
+            );
           case "readme":
             return (
               <span

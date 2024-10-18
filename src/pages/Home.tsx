@@ -12,6 +12,7 @@ import {
   UnicornioGif,
   YinyangGif,
 } from "../components/Gifs";
+import BackgroundHome from "../components/BackgroundHome";
 
 interface MenuItem {
   id?: string;
@@ -52,7 +53,8 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-950">
+    <div className="flex justify-center items-center min-h-screen">
+      <BackgroundHome />
       <nav className="text-center">
         <ul className="space-y-6">
           {menuItems.map((item, index) => (

@@ -14,16 +14,25 @@ export interface ProjectStructure {
   title: string;
   credits: string;
   description: string;
-  poems: {
-    head: string;
-    end: string;
-  };
-  inspirations: string;
+  poems:
+    | string
+    | {
+        head: string;
+        end: string;
+      };
+  inspirations:
+    | string
+    | {
+        title: string;
+        content: string[];
+        urls: string[];
+      };
   media: {
     head: string;
     single: string;
     dual: string[];
   };
+  usePoemImageLayout?: boolean;
 }
 
 export type ProjectType = ProjectStructure;
@@ -93,7 +102,7 @@ surrendering while
 whispering whispering</enhanced>
 `,
     },
-    inspirations: ``,
+    inspirations: "",
     media: {
       head: "https://player.vimeo.com/video/811341435",
       single: `${
@@ -101,6 +110,7 @@ whispering whispering</enhanced>
       }/ClashesLicking01.jpg`,
       dual: ["", ""],
     },
+    usePoemImageLayout: false,
   },
   "zona-de-derrama-1": {
     title: "ZONA DE DERRAMA - first chapter",
@@ -108,14 +118,14 @@ whispering whispering</enhanced>
     Coproduction Pavillon ADC - Genève, VIDY - Lausanne, EFFEA -Santarcangelo Festival, Points Communs - Nouvelle Scène Nationale - Cergy- Pontoise , far°festival + SudPol (Extra Time Plus)
 RESO - Swiss Coproduction Founding
 Support: Festival Actoral Marseille FR & Bale National de Marseille FR
-Performed and co-created with Auguste de Boursetty, Laura Raio, Luisa Lemgruber
+Performed and co-created with <enhanced style="blackbold">Auguste de Boursetty, Laura Raio, Luisa Lemgruber</enhanced>
 `,
     description: `
-    Zona de Derrama - first chapter is a dance composition for three dancers, specifically for outdoor spaces. The performance takes place during twilight, a time when daylight fade and our eyes adjust to the approaching night. This initial chapter, serves as ode for liminal spaces of transitions and transmutations.
+    <enhanced style="cutie">Zona de Derrama - first chapter</enhanced> is a dance composition for three dancers, specifically for outdoor spaces. The performance takes place during twilight, a time when daylight fade and our eyes adjust to the approaching night. This initial chapter, serves as ode for liminal spaces of transitions and transmutations.
 
 Dancing and celebrating for and at the moment of when a frontier, a border, a limitation can overflow and to trans.pass itself. The performance aims to evoke certain “zones”, expressing both sorrow and joy. Searching for a dance at the exact moment when change happens.
 
-MOVEMENT, TRANSITIONS AND FRAGMENTS OF A CHOREOGRAPHIC COMPOSITION:
+<enhanced style="readme">MOVEMENT, TRANSITIONS AND FRAGMENTS OF A CHOREOGRAPHIC COMPOSITION:</enhanced>
 We dance into “zones” of tenderness, risk, danger, love, disagreements, resonance, celebration, safety, memory-remembering. These zones are activated throughout a score that is set in a specific consequential order. All zones are composed with precise movement material, but each dancer can
 visit it within own relation to it, with its own emotions and embodied experiences.
 Dealing with an idea of composing with fragments, “zona de derrama” is a wonder into movement language that englobes such fragments to form a
@@ -126,7 +136,7 @@ dance. The work is made through the collaborations, each artist offers and creat
 ZONES ZONING
 AN INVITATION TO AN EVENT WHERE WE EVOKE LIMINAL SPACES: OR TRANSITIONS, OF INTIMACY AND PROTECTION, ZONES TO ES- CAPE OR TO STAY, DEALING WITH AN IDEA OR COMPOSING WITH FRAGMENTS, “ZONA DE DERRAMA” IS A WONDER INTO A MOVEMENT LANGUAGE THAT ENGLOBES SUCH FRAGMENTS TO FORM A DANCE, THE WORK IS MADE THROUGH THE COLLABORATIONS, EACH ARTIST OFFERS AND CREATES THE JOURNEY THAT WE ARE CONSTRUCTING TOGETHER TO BUILD THIS PIECE AND ITS DANCE AND AESTHETIC LANGUAGE.
 
-CAN YOU REMEBER YOUR DREAMS?
+<enhanced style="readme"> CAN YOU REMEBER YOUR DREAMS? </enhanced>
 RESOURCES
 DANCE FIELD
 EXAUSTHION
@@ -147,12 +157,13 @@ echoes with you)
 `,
       end: ``,
     },
-    inspirations: ``,
+    inspirations: "",
     media: {
       head: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama02.jpg`,
       single: "",
       dual: ["", ""],
     },
+    usePoemImageLayout: true,
   },
   "zona-de-derrama-2": {
     title: "ARREBENTAÇÃO - last chapter",
@@ -182,31 +193,29 @@ This project is part of RESO Coproduction Found
 Movement, transitions, and fragments of a choreographic composition: we dance in “zones” of tenderness, risk, danger, love, disagreement, resonance, celebration, security and memory. In Arrebentação - zona de derrama last chapter, these zones are activated in a score that follows a precise chronological order. Each zone is made up of speciﬁc movement material, but each dancer inscribes a dialogue between the score and their own relationship to the choreography, to the zone. The dialogue takes place in the emotions and experiences that make up the dancers’ bodies. The piece is thus written in a dramaturgy of fragments, each fragment the individual actualisation of a shared memory. The creative process is nourished by encounters and collaborations. Each artist proposes and creates the journey we build together, and the piece creates its own language over time. For me, dancing is a gesture of belonging.
 
 `,
-    poems: {
-      head: "",
-      end: "",
-    },
-    inspirations: ``,
+    poems: "",
+    inspirations: "",
     media: {
       head: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama02.jpg`,
       single: "",
       dual: ["", ""],
     },
+    usePoemImageLayout: false,
   },
   "la-peaux-entre-les-doigts": {
     title: "LA PEAUX ENTRE LES DOIGTS",
     credits: `
     2021- Conclusion Work/Bachelor Contemporary Dance a La Manufacture
 2022 - Extended Version
-Concept, Choreography, Performance: Catol Teixeira
-Lights: Justine Bouillet
-Music tracks: Tunga - DEDO , Revelation - Necxya , Chaos Clay - FuckCopace’ic (extracts) Sound edition: Nico Wasmmer
+Concept, Choreography, Performance: <enhanced style"blackbold">Catol Teixeira</enhanced>
+Lights: <enhanced style="blackbold">Justine Bouillet</enhanced>
+Music tracks: Tunga - <enhanced style="blackbold">DEDO</enhanced> , Revelation - <enhanced style="blackbold">Necxya , Chaos Clay - FuckCopace’ic </enhanced>(extracts) Sound edition: <enhanced style="blackbold">Nico Wasmmer</enhanced>
 `,
     description: `Before it starts, after it is finished:
 
-la peau entre les doigts / the skin between the fingers - is a choreographic dispositive that experiment and proposes to instigate questions of positionality, the perceptions of the other, to challenge social identity marks. “La Peau Entre Les Doigts” plays while deviating, while escaping.
+<enhanced style"cutie">la peau entre les doigts / the skin between the fingers</enhanced> - is a choreographic dispositive that experiment and proposes to instigate questions of positionality, the perceptions of the other, to challenge social identity marks. “La Peau Entre Les Doigts” plays while deviating, while escaping.
 
-LETTER FROM DOING:
+<enhanced style="readme">LETTER FROM DOING:</enhanced>
 La Peau Entre Les Doigts is therefore a created context where I keep space to un-learn body inscriptions when I perform it. It is intimately related with presences - which for me speaks of absences - that can potentially take part on it.
 I question how social implications are informing-forming my own body in relation to the context that I am insert in, crossing it.
 To remain traversing time and to celebrate a perpetual transition.
@@ -217,21 +226,23 @@ I am completely passionate about the dancing... it seems to me that there is alw
 The relation of the body and movement with celebration, death, the spiritual.
 
 The performance is built on the oscillation between presence and absence, on offering and denying one’s own body, and on the looks and movements of
-the audience. la peau entre les doigts is a dance about intimacy, distance and separation. A dance dedicated to what is left behind, abandoned. The work wishes to evoke the collective archive that one’s body carry - and move with, from, against, through it.
+the audience. <enhancedm style="cutie">la peau entre les doigts</enhanced> is a dance about intimacy, distance and separation. A dance dedicated to what is left behind, abandoned. The work wishes to evoke the collective archive that one’s body carry - and move with, from, against, through it.
 La Peau Entre Les Doigts does not seek clarity or purity, it goes hand in hand with uncertainty, with the unknown, observing opposition and the surrender of the body to gravity. Catol dances, moving where there is a crack to be crossed, surrendering and resisting, in perpetual transition, without a destination.
 `,
-    poems: {
-      head: ``,
-      end: ``,
+    poems: "",
+    inspirations: {
+      title: "++ Inspirations ++",
+      content: [
+        "orientations toward a queer phenomenology",
+        "encantamento",
+        "não vão nos matar agora",
+      ],
+      urls: [
+        "https://static1.squarespace.com/static/58ad660603596eec00ce71a3/t/58bec800b8a79b7c599de24a/1488898050432/Orientations+Toward+a+Queer+Phenomenology.pdf",
+        "https://morula.com.br/wp-content/uploads/2020/05/Encantamento.pdf",
+        "https://www.cobogo.com.br/produto/nao-vao-nos-matar-agora-they-won-t-kill-us-now-665",
+      ],
     },
-    inspirations: `
-++ Inspirations ++
-orientations toward a queer phenomenology : https://static1.squarespace.com/static/58ad660603596eec00ce71a3/t/58bec800b8a79b7c599de24a/1488898050432/Orientations+Toward+a+Queer+Phenomenology.pdf
-
-encantamento : https://morula.com.br/wp-content/uploads/2020/05/Encantamento.pdf
-
-não vão nos matar agora : https://www.cobogo.com.br/produto/nao-vao-nos-matar-agora-they-won-t-kill-us-now-665
-`,
     media: {
       head: "https://player.vimeo.com/video/844613915",
       single: "",
@@ -240,6 +251,7 @@ não vão nos matar agora : https://www.cobogo.com.br/produto/nao-vao-nos-matar-
         `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/laPeau02.jpg`,
       ],
     },
+    usePoemImageLayout: false,
   },
 };
 
