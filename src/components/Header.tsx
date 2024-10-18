@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import useDeviceType from "../hooks/useDeviceType";
 import Marquee from "react-fast-marquee";
-import { menuItems } from "../data/data";
 
 interface CircleTextProps {
   text: string;
