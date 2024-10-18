@@ -46,7 +46,7 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             return (
               <span
                 key={index}
-                className="font-bold font-jugleMedium  text-black whitespace-pre-line"
+                className=" font-jungaMedium text-black whitespace-pre-line"
               >
                 {content}
               </span>

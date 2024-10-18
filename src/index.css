@@ -26,3 +26,8 @@
   font-family: "TangerineBold";
   src: url("/fonts/Tangerine_Bold.woff2") format("woff2");
 }
+
+#root {
+  font-family: "JungaBook";
+  cursor: url("/misc/cursor.png"), auto;
+}
