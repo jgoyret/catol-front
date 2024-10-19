@@ -29,5 +29,25 @@
 
 #root {
   font-family: "JungaBook";
-  cursor: url("/misc/cursor.png"), auto;
+  cursor: url("/misc/cursor1.png"), auto;
+}
+
+#root *:hover,
+#root *:active,
+#root *:focus {
+  cursor: url("/misc/cursor1.png"), auto;
+}
+
+.metallic-hover {
+  color: white; /* Blanco por defecto */
+  transition: all 1s; /* Suavizar la transición */
+  -webkit-text-fill-color: white; /* Safari y compatibilidad */
+}
+
+.metallic-hover:hover {
+  background: linear-gradient(180deg, #666666 30%, #ffffff 50%, #666666 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Mostrar gradiente */
+  transform: scale(1.1); /* Escalado opcional */
 }
