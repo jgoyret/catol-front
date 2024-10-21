@@ -14,13 +14,19 @@ const BackgroundHome: React.FC = () => {
       const { innerWidth, innerHeight } = window;
       const dpr = window.devicePixelRatio || 1;
 
+      // Ajusta el tamaño físico del canvas para alta resolución
       canvas.width = innerWidth * dpr;
       canvas.height = innerHeight * dpr;
+
+      // Ajusta el tamaño visual para ocupar toda la pantalla
       canvas.style.width = `${innerWidth}px`;
       canvas.style.height = `${innerHeight}px`;
 
       const ctx = canvas.getContext("2d");
-      if (ctx) ctx.imageSmoothingEnabled = true;
+      if (ctx) {
+        ctx.scale(dpr, dpr); // Escala el contexto para coincidir con el DPR
+        ctx.imageSmoothingEnabled = true;
+      }
     }
   }, []);
 
@@ -61,6 +67,13 @@ const BackgroundHome: React.FC = () => {
 
       // Start the animation
       animate();
+
+      const handleResize = () => {
+        resizeCanvas();
+        animate();
+      };
+
+      window.addEventListener("resize", handleResize);
     }
 
     return () => {
