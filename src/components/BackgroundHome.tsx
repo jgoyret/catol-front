@@ -46,8 +46,8 @@ const BackgroundHome: React.FC = () => {
 
       // Define the animation
       const animate = () => {
+        hydra.synth.setResolution(innerWidth, innerHeight);
         hydra.synth
-          .setResolution(innerWidth, innerHeight)
           .osc(isMobile ? 5 : 10, 0.1, 0)
           .color(0.5, 0.5, 0.5)
           .rotate(0.1, 0.1)
