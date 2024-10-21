@@ -17,7 +17,7 @@ const Project: React.FC = () => {
       return (
         <div className="aspect-w-16 aspect-h-9 mb-8">
           <iframe
-            src={`${mediaUrl}?autoplay=1&loop=1`}
+            src={`${mediaUrl}?autoplay=1&loop=1&title=0&byline=0&portrait=0`}
             className=" w-full h-[230px] md:h-[440px] lg:h-[540px] xl:h-[660px] 2xl:h-[950px] 3xl:h-[1300px]"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
