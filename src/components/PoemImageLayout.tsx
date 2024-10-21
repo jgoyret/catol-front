@@ -16,7 +16,7 @@ const PoemImageLayout: React.FC<PoemImageLayoutProps> = ({
     <div className="flex flex-col lg:flex-row gap-8 my-5 lg:my-20">
       <div className="w-full lg:w-1/2 order-1 ">
         <div className="prose max-w-none  h-full ">
-          <p className="whitespace-pre-wrap text-center h-full  text-sm md:text-lg xl:text-xl 2xl:text-2xl mx-auto mt-auto">
+          <p className="whitespace-pre-wrap text-center h-full  text-sm md:text-lg xl:text-xl 2xl:text-2xl mx-5  mt-auto">
             <EnhancedText>{poem}</EnhancedText>
           </p>
         </div>

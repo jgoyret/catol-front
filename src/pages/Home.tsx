@@ -41,8 +41,12 @@ const menuItems: MenuItem[] = [
     path: "/interviews-and-press",
     Icon: EspiralGif,
   },
-  { name: "CONTACT", path: "/contact", Icon: ContactoGif },
-  { name: "CV", path: "/cv", Icon: DelfinGif },
+  {
+    name: "CONTACT",
+    path: "mailto:catol.teixeira@protonmail.com?subject=(your%20subject%20here)&body=(your%20question%20here)",
+    Icon: ContactoGif,
+  },
+  { name: "CALENDAR", path: "/calendar", Icon: DelfinGif },
 ];
 
 const Home: React.FC = () => {

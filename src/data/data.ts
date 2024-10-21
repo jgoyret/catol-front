@@ -307,6 +307,27 @@ CATOL’S CHOREOGRAPHIC EXPERIMENTATION WITH DANCE SERVES AS A CONDUIT FOR UNCOV
 PERSONAL CONCERNS, ARTISTIC PRACTICES AND ARTISTS, ESTABLISHING WITH DANCING AND COMPOSITIONAL WORK AN INTIMATE DIALOGUE WITH KUIR (QUEER) (DIS)ORIENTATIONS TO REMEMBER A DREAM, A STUBBORN ACT TO ESCAPE THE PLOT, TO UNLEARN, TO CRY AND TO CELEBRATE.
 `;
 
+export interface Performance {
+  title: string;
+  text: string;
+  image: string;
+}
+
+export const performances: Performance[] = [
+  {
+    title: `Eu vou aparecer bem no meio do seu sonho`,
+    text: `<enhanced style="cutie">Eu vou aparecer bem no meio do seu sonho  </enhanced> August 2024 - at Halle Berghain, Berlin (GE) - in collaboration with Luara Raio  - During the exhibition of Danielle Brathwait-Shirley, “SOUL STATION” - curated by Mawena Yehouessi. The performance emerged from an ongoing artistic dialogue between Catol Teixeira and Luara Raio. Together, they searched for spells to cast in performative spaces, devising tactics to escape the binaries imposed by Western colonial-modern society. Their dance moved fluidly, always in curves and transitions. This performance was shaped as an improvised score, unfolding in silence yet in tune with the echoes and reverberations of the charged atmosphere of the vast Halle of Berghain. It was performed within the context of the SOUL STATION exhibition, where the space itself became an active participant in their movement and dance`,
+    image: `${
+      import.meta.env.VITE_SUPABASE_STORAGE_URL
+    }/eu-vou-aparecer-bem-no-meio-do-seu-sonho.jpg`,
+  },
+  {
+    title: `Rivers`,
+    text: `<enhanced style="cutie">Rivers </enhanced> in collaboration with Gorge Bataille and Eden Levi Am, during the portraits exhibition “RIVERS” by Eden Levi Am at the Halle Norde Galerie Geneve / Performance part of the Fessestival, Geneva 2023 `,
+    image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/rivers.jpg`,
+  },
+];
+
 export const menuItems = [
   {
     id: "clashes-licking",

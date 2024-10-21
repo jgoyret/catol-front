@@ -50,7 +50,7 @@ const Project: React.FC = () => {
         />
       )}
       {"poems" in project && typeof project.poems === "object" && (
-        <p className="whitespace-pre-line  text-center mx-auto mb-10 max-w-2xl">
+        <p className="whitespace-pre-line  text-center mx-5 mb-10 max-w-2xl">
           <EnhancedText>{project.poems.head}</EnhancedText>
         </p>
       )}
