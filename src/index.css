@@ -39,13 +39,13 @@
 }
 
 .metallic-hover {
-  color: white; /* Blanco por defecto */
+  /* color: black;  */
   transition: all 1s; /* Suavizar la transición */
-  -webkit-text-fill-color: white; /* Safari y compatibilidad */
+  /* -webkit-text-fill-color: black; */
 }
 
 .metallic-hover:hover {
-  background: linear-gradient(180deg, #666666 30%, #ffffff 50%, #666666 70%);
+  background: linear-gradient(180deg, #bbbbbb 30%, #ffffff 50%, #bbbbbb 70%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; /* Mostrar gradiente */

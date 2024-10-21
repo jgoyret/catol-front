@@ -1,10 +1,28 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 // @ts-ignore
 import Hydra from "hydra-synth";
+import useDeviceType from "../hooks/useDeviceType";
 
 const BackgroundHome: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const hydraRef = useRef<any>(null);
+  const isMobile = useDeviceType();
+
+  const resizeCanvas = useCallback(() => {
+    const canvas = canvasRef.current;
+    if (canvas) {
+      const { innerWidth, innerHeight } = window;
+      const dpr = window.devicePixelRatio || 1;
+
+      canvas.width = innerWidth * dpr;
+      canvas.height = innerHeight * dpr;
+      canvas.style.width = `${innerWidth}px`;
+      canvas.style.height = `${innerHeight}px`;
+
+      const ctx = canvas.getContext("2d");
+      if (ctx) ctx.imageSmoothingEnabled = true;
+    }
+  }, []);
 
   useEffect(() => {
     if (canvasRef.current) {
@@ -16,13 +34,28 @@ const BackgroundHome: React.FC = () => {
 
       hydraRef.current = hydra;
 
+      resizeCanvas();
+
+      window.addEventListener("resize", resizeCanvas);
+
       // Define the animation
       const animate = () => {
         hydra.synth
-          .osc(10, 0.1, 0)
-          .color(0.5, 0.2, 0.5)
+          .osc(isMobile ? 5 : 10, 0.1, 0)
+          .color(0.5, 0.5, 0.5)
           .rotate(0.1, 0.1)
           .modulate(hydra.synth.noise(3, 0.1))
+          .modulateRotate(hydra.synth.osc(isMobile ? 5 : 10, 0.1, 0))
+          .blend(
+            hydra.synth
+              .osc(isMobile ? 5 : 10, 0.1, 0)
+              .color(0.5, 0.5, 0.5)
+              .rotate(0.1, 0.1)
+              .modulate(hydra.synth.noise(3, 0.1))
+              .modulateRotate(hydra.synth.osc(isMobile ? 5 : 10, 0.1, 0))
+              .thresh(0.52)
+              .thresh(0.15)
+          )
           .out();
       };
 
@@ -41,6 +74,8 @@ const BackgroundHome: React.FC = () => {
         }
         hydraRef.current = null;
       }
+
+      window.removeEventListener("resize", resizeCanvas);
     };
   }, []);
 
@@ -60,3 +95,19 @@ const BackgroundHome: React.FC = () => {
 };
 
 export default BackgroundHome;
+
+// const resizeCanvas = useCallback(() => {
+//   const canvas = canvasRef.current;
+//   if (canvas) {
+//     const { innerWidth, innerHeight } = window;
+//     const dpr = window.devicePixelRatio || 1;
+
+//     canvas.width = innerWidth * dpr;
+//     canvas.height = innerHeight * dpr;
+//     canvas.style.width = `${innerWidth}px`;
+//     canvas.style.height = `${innerHeight}px`;
+
+//     const ctx = canvas.getContext("2d");
+//     if (ctx) ctx.imageSmoothingEnabled = true;
+//   }
+// }, []);
