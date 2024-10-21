@@ -27,6 +27,13 @@
   src: url("/fonts/Tangerine_Bold.woff2") format("woff2");
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 #root {
   font-family: "JungaBook";
   cursor: url("/misc/cursor1.png"), auto;
