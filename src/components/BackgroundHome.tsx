@@ -63,6 +63,7 @@ const BackgroundHome: React.FC = () => {
               .thresh(0.52)
               .thresh(0.15)
           )
+          .brightness(0)
           .out();
       };
 
@@ -110,19 +111,3 @@ const BackgroundHome: React.FC = () => {
 };
 
 export default BackgroundHome;
-
-// const resizeCanvas = useCallback(() => {
-//   const canvas = canvasRef.current;
-//   if (canvas) {
-//     const { innerWidth, innerHeight } = window;
-//     const dpr = window.devicePixelRatio || 1;
-
-//     canvas.width = innerWidth * dpr;
-//     canvas.height = innerHeight * dpr;
-//     canvas.style.width = `${innerWidth}px`;
-//     canvas.style.height = `${innerHeight}px`;
-
-//     const ctx = canvas.getContext("2d");
-//     if (ctx) ctx.imageSmoothingEnabled = true;
-//   }
-// }, []);
