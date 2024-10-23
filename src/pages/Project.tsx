@@ -36,24 +36,32 @@ const Project: React.FC = () => {
         {project.title}
       </h1>
       <div className="">{renderMedia(project.media.head)}</div>
-      <p className="whitespace-pre-line text-center px-2  font-jungaBook">
-        <EnhancedText>{project.credits}</EnhancedText>
-      </p>
       <p className="whitespace-pre-line  text-center  m-2 mx-5 lg:mx-5 3xl:mx-5 font-jungaBook">
         <EnhancedText>{project.description}</EnhancedText>
       </p>
       {project.usePoemImageLayout && typeof project.poems === "object" && (
-        <PoemImageLayout
-          poem={project.poems.head}
-          imageUrl={project.media.single}
-          imageAlt={project.title}
-        />
+        <>
+          <PoemImageLayout
+            poem={project.poems.head}
+            imageUrl={project.media.dual[0]}
+            imageAlt={project.title}
+            layout="imageRight"
+          />
+          <PoemImageLayout
+            poem={project.poems.head}
+            imageUrl={project.media.dual[1]}
+            imageAlt={project.title}
+            layout="imageLeft"
+          />
+        </>
       )}
-      {"poems" in project && typeof project.poems === "object" && (
-        <p className="whitespace-pre-line  text-center mx-5 mb-10 max-w-2xl">
-          <EnhancedText>{project.poems.head}</EnhancedText>
-        </p>
-      )}
+      {"poems" in project &&
+        typeof project.poems === "object" &&
+        !project.usePoemImageLayout && (
+          <p className="whitespace-pre-line  text-center mx-5 mb-10 max-w-2xl">
+            <EnhancedText>{project.poems.head}</EnhancedText>
+          </p>
+        )}
       {project.media.single !== "" && !project.usePoemImageLayout && (
         <div className=" w-full min-h-[500px] md:h-full flex justify-center">
           <img
@@ -63,25 +71,31 @@ const Project: React.FC = () => {
           />
         </div>
       )}
-      {project.media.dual[0] !== "" && project.media.dual[1] !== "" && (
-        <div className=" w-full flex flex-col lg:flex-row justify-center lg:space-x-4 my-10">
-          <img
-            className="w-full min-h-96 lg:w-1/2 object-cover mb-10 lg:mb-0"
-            src={`${project.media.dual[0]}`}
-            alt={`${project.title}`}
-          />
-          <img
-            className="w-full min-h-96 lg:w-1/2 object-cover"
-            src={`${project.media.dual[1]}`}
-            alt={`${project.title}`}
-          />
-        </div>
-      )}
+      {project.media.dual[0] !== "" &&
+        project.media.dual[1] !== "" &&
+        !project.usePoemImageLayout && (
+          <div className=" w-full flex flex-col lg:flex-row justify-center lg:space-x-4 my-10">
+            <img
+              className="w-full min-h-96 lg:w-1/2 object-cover mb-10 lg:mb-0"
+              src={`${project.media.dual[0]}`}
+              alt={`${project.title}`}
+            />
+            <img
+              className="w-full min-h-96 lg:w-1/2 object-cover"
+              src={`${project.media.dual[1]}`}
+              alt={`${project.title}`}
+            />
+          </div>
+        )}
       {"poems" in project && typeof project.poems === "object" && (
         <div className=" text-center mx-auto m-10 max-w-2xl">
           <EnhancedText>{project.poems.end}</EnhancedText>
         </div>
       )}
+
+      <p className="whitespace-pre-line text-center px-2  font-jungaBook">
+        <EnhancedText>{project.credits}</EnhancedText>
+      </p>
     </div>
   );
 };

@@ -77,14 +77,14 @@ const Home: React.FC = () => {
               {item.path ? (
                 <Link
                   to={item.path}
-                  className="text-white metallic-hover transition-colors"
+                  className="text-white hover:text-catolHover transition-colors"
                 >
                   {item.name}
                 </Link>
               ) : (
                 <Link
                   to={`/project/${item.id}`}
-                  className="text-white metallic-hover transition-colors"
+                  className="text-white hover:text-catolHover transition-colors"
                 >
                   {item.name}
                 </Link>

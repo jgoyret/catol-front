@@ -197,8 +197,11 @@ echoes with you)
     inspirations: "",
     media: {
       head: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama02.jpg`,
-      single: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama01.jpg`,
-      dual: ["", ""],
+      single: "",
+      dual: [
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama01.jpg`,
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama03.jpg`,
+      ],
     },
     usePoemImageLayout: true,
   },
@@ -324,6 +327,16 @@ export const performances: Performance[] = [
   {
     title: `Rivers`,
     text: `<enhanced style="cutie">Rivers </enhanced> in collaboration with Gorge Bataille and Eden Levi Am, during the portraits exhibition “RIVERS” by Eden Levi Am at the Halle Norde Galerie Geneve / Performance part of the Fessestival, Geneva 2023 `,
+    image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/rivers.jpg`,
+  },
+  {
+    title: `zona1`,
+    text: `<enhanced style="cutie">zona1 </enhanced> at one gee in fog, while their second episode of “collective imaginary studies”  
+Geneva CH (in collaboration with Luara Raio) 
+Luara and Catol propose to exercise and perform 3 different dislocations on the galerie space: 
+“ a ronda”  , “the pattern of the soil calling the head”, “ the washing over”. During these 3 different moments, the performance is built as a constant negotiation between the two performers. 
+They use repetitive and persistence as a way to evoke rituals for change: to change the violent state of things -  that are inscribed into capitalist-modern-colonial society. 
+They wash over their body and let the drops fall. `,
     image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/rivers.jpg`,
   },
 ];

@@ -52,7 +52,8 @@ body {
 }
 
 .metallic-hover:hover {
-  background: linear-gradient(180deg, #bbbbbb 30%, #ffffff 50%, #bbbbbb 70%);
+  /* background: linear-gradient(180deg, #0000ff 30%, #5555ff 50%, #0000ff 70%); */
+  background-color: #0000ff;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; /* Mostrar gradiente */
