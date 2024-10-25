@@ -28,6 +28,12 @@ const ZonaDeDerremaChapters: React.FC = () => {
         >
           ARREBENTAÇÃO - last chapter
         </Link>
+        <Link
+          to="/project/zona-de-derrama-3"
+          className="text-md md:text-2xl 2xl:text-4xl font-semibold hover:text-catolHover transition-colors drop-shadow-md shadow-black"
+        >
+          Before it starts, after it’s finished
+        </Link>
       </div>
     </>
   );

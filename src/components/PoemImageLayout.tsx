@@ -23,7 +23,7 @@ const PoemImageLayout: React.FC<PoemImageLayoutProps> = ({
         <img
           src={imageUrl}
           alt={imageAlt}
-          className="w-full h-auto object-cover"
+          className="w-full h-screen object-cover"
         />
       </div>
 

@@ -8,7 +8,7 @@ export default {
         jungaMedium: ["JungaMedium", "sans-serif"],
         mattoneBold: ["MattoneBold", "sans-serif"],
         mattoneRegular: ["MattoneRegular", "sans-serif"],
-        tangerineBold: ["TangerineBold", "sans-serif"],
+        chuchi: ["chuchi", "sans-serif"],
       },
       colors: {
         catolHover: "#0000FF",

@@ -26,7 +26,13 @@ const Project: React.FC = () => {
         </div>
       );
     } else {
-      return <img src={mediaUrl} alt={project.title} className="w-full mb-8" />;
+      return (
+        <img
+          src={mediaUrl}
+          alt={project.title}
+          className="w-full mb-8 h-screen object-cover"
+        />
+      );
     }
   };
 
@@ -58,37 +64,37 @@ const Project: React.FC = () => {
       {"poems" in project &&
         typeof project.poems === "object" &&
         !project.usePoemImageLayout && (
-          <p className="whitespace-pre-line  text-center mx-5 mb-10 max-w-2xl">
+          <p className="whitespace-pre-line mx-auto text-center my-5 mb-10 max-w-2xl">
             <EnhancedText>{project.poems.head}</EnhancedText>
           </p>
         )}
       {project.media.single !== "" && !project.usePoemImageLayout && (
-        <div className=" w-full min-h-[500px] md:h-full flex justify-center">
+        <div className=" w-full  md:h-full flex justify-center">
           <img
             src={`${project.media.single}`}
             alt={`${project.title}`}
-            className="object-cover"
+            className=" aspect-w-16 aspect-h-9 w-screen h-full object-cover"
           />
         </div>
       )}
       {project.media.dual[0] !== "" &&
         project.media.dual[1] !== "" &&
         !project.usePoemImageLayout && (
-          <div className=" w-full flex flex-col lg:flex-row justify-center lg:space-x-4 my-10">
+          <div className=" w-full flex flex-col lg:flex-row justify-center lg:space-x-4 overflow-hidden my-10">
             <img
-              className="w-full min-h-96 lg:w-1/2 object-cover mb-10 lg:mb-0"
+              className="w-screen h-full md:min-h-96 lg:w-1/2 object-cover object-center mb-10 lg:mb-0"
               src={`${project.media.dual[0]}`}
               alt={`${project.title}`}
             />
             <img
-              className="w-full min-h-96 lg:w-1/2 object-cover"
+              className="w-screen h-full md:min-h-96 lg:w-1/2 object-cover object-center"
               src={`${project.media.dual[1]}`}
               alt={`${project.title}`}
             />
           </div>
         )}
       {"poems" in project && typeof project.poems === "object" && (
-        <div className=" text-center mx-auto m-10 max-w-2xl">
+        <div className=" text-center mx-5 md:mx-auto m-10 max-w-2xl">
           <EnhancedText>{project.poems.end}</EnhancedText>
         </div>
       )}

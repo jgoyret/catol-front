@@ -26,6 +26,10 @@ import Contact from "./pages/Contact";
 import CV from "./pages/CV";
 import ZonaDeDerremaChapters from "./pages/ZonaDeDerramaChapters";
 
+export const CursorContext = React.createContext<{
+  setCurrentIcon: (icon: React.ElementType | null) => void;
+}>({ setCurrentIcon: () => {} });
+
 const Layout = ({
   children,
   icon,
@@ -124,7 +128,15 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  const [currentIcon, setCurrentIcon] =
+    React.useState<React.ElementType | null>(null);
+
+  return (
+    <CursorContext.Provider value={{ setCurrentIcon }}>
+      {/* <CustomCursor activeIcon={currentIcon} /> */}
+      <RouterProvider router={router} />
+    </CursorContext.Provider>
+  );
 }
 
 export default App;

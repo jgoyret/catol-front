@@ -54,13 +54,16 @@ thanks to <enhanced style="blackbold">Mayara Yamada, Yhuri Cruz, Ghalas Charara<
 Production - <enhanced style="blackbold">Cie UÁ</enhanced>
 Coproduction: <enhanced style="blackbold">Theatre de l’Usine & Emergentia</enhanced> - temps fort pour la création chorégraphique émergente réalisé par L’Abri, le TU et l’ADC Genève
 <enhanced style="blackbold">Realized with the support of Ville de Genève and Loterie Romande</enhanced>
+Photo credits - <enhanced style="blackbold">Mariano Silva</enhanced>
 `,
     description: `
-<enhanced style="cutie">Clashes Licking</enhanced> draws inspiration from a pivotal figure in Western dance history: the Faun, famously represented by Nijinsky. However, rather than reviewing or commenting on this legacy, this piece offers a somewhat personal relation to this Faune, shaped by Catol's dance training. The core focus lies on  how learned techniques shape and form the body—how cultural and political influences define one's corporeity
+<enhanced style="cutie">Clashes Licking</enhanced> draws inspiration from a pivotal figure in Western dance history: the Faun, famously represented by Nijinsky. However, rather than reviewing or commenting on this legacy, this piece offers a somewhat personal relation to this Faune, shaped by Catol's dance training. The core focus lies on  how learned techniques shape and form the body—how cultural and political influences define one's corporeity.
+
 The movement language flirts with the form and techniques of ballet, circus and cabratory  experiences. In a creation of a self-fiction, Catol evoke memories of their trajectory, where dancing was always being a simultaneous channel of social and personal understanding.
 A dance language arose in conversation with Catol’s memory of a specific Nijinskys’ portrait hanging on a wall of their ballet school at Lapa, Rio de Janeiro in 2009. In this picture, The Faune represented by Nijinsky in the 20’s century dances with suspicious eyes, looking out of the framed image towards the open space of a large corridor. Nijinsky appears as a queer ghost from Western dance history. 
 Catol decide to revisits this memory of seeing the image, intertwined with the simultaneous discovery of their first queer love and the traumatic experience of sexual abuse. This duality of tenderness and violence deeply marks their reflection on the body and its expression in Clashes Licking.
 The relation with that specific context of Rio de Janeiro and these pictures haunt Catol’s imagination in a search of a memory, of a movement dislocation in relation with the western classical dance form. As the work evokes these memories, it focuses on transmutation—not on repeating any image or affection, but on creating friction with it, allowing the memories to reshape and evolve through the body.
+
 Dancing to cultivate a possible dream: of queer affection, of a blended border of languages. To challenge the frontiers of gender and cis-hetero normativity, the dance that is presented is oriented towards fragments that constitute queer living and trans bodies. 
 Dancing here is gravitating towards embodiments that are manifested sometimes as clashes, as broken stories, its contradictions and pleasures. The poetry that rises when a queer life comes and dance among us. Clashes Licking is a whisper, perhaps a secret to whom can listen to it. 
 `,
@@ -142,10 +145,11 @@ sometimes I feel inside a noisy silence
     inspirations: "",
     media: {
       head: "https://player.vimeo.com/video/811341435",
-      single: `${
-        import.meta.env.VITE_SUPABASE_STORAGE_URL
-      }/ClashesLicking01.jpg`,
-      dual: ["", ""],
+      single: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Clashes01.webp`,
+      dual: [
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/clashes02.webp`,
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/clashes03.webp`,
+      ],
     },
     usePoemImageLayout: false,
   },
@@ -171,26 +175,40 @@ dance. The work is made through the collaborations, each artist offers and creat
     poems: {
       head: `
 ZONES ZONING
-AN INVITATION TO AN EVENT WHERE WE EVOKE LIMINAL SPACES: OR TRANSITIONS, OF INTIMACY AND PROTECTION, ZONES TO ES- CAPE OR TO STAY, DEALING WITH AN IDEA OR COMPOSING WITH FRAGMENTS, “ZONA DE DERRAMA” IS A WONDER INTO A MOVEMENT LANGUAGE THAT ENGLOBES SUCH FRAGMENTS TO FORM A DANCE, THE WORK IS MADE THROUGH THE COLLABORATIONS, EACH ARTIST OFFERS AND CREATES THE JOURNEY THAT WE ARE CONSTRUCTING TOGETHER TO BUILD THIS PIECE AND ITS DANCE AND AESTHETIC LANGUAGE.
+AN INVITATION TO AN EVENT WHERE WE EVOKE LIMINAL SPACES:
+OF TRANSITIONS, OF INTIMACY AND PROTECTION, ZONES TO ESCAPE OR TO STAY,
+ DEALING WITH AN IDEA OR COMPOSING FRAGMENTS
+ZONA DE DERRAMA  IS A WONDER INTO TRANSPASSING
+ AND CHANGES OF MATERIAL CONDITION
+IT QUESTIONS WHERE IT WOULD GO AFTER A FLOOD, AFTER A CEASE, DURING A CALL FOR CHANGE 
 
-<enhanced style="readme"> CAN YOU REMEBER YOUR DREAMS? </enhanced>
-RESOURCES
-DANCE FIELD
-EXAUSTHION
-TERRITORY
+WE WONDER IF CAN YOU REMEMBER YOUR DREAMS?
+WHAT RESOURCES CAN YOU GRASP?
+HOW WE DANCE IN THE DANCE FIELD?
+WHERE IT GOES ALL THE EXHAUSTION? 
+
+THE LAND EXHAUSTION - SCARCITY - 
+
+WE TRACE TERRITORIES TO ARRIVE. 
 +
-an overflow, infiltrating in between spaces devastation
-the destruction of modernity
-the poetics of transmutation transmitting - transitioning,
+ITS an overflow, infiltrating in between spaces 
+devastation
+the destruction of modernity.
+we seat to 
+sense tender eyes and the call to go - 
+tracing the poetics of transmutation transmitting - transitioning,
 watery emotions
 formless forms
-escaping captures bodies-cosmologies
+escaping captures with out bodies-cosmologies
 relational matter & relational body entanglement
-cerimonies for (...)
+WE BUILD 
+ceremonies for (...)
+
 (I stage my body transitions)
 Dancing as gesture of belonging.
 (I wish to rest, to drop my very heavy bones. I wish to listen to the
 echoes with you)
+
 `,
       end: ``,
     },
@@ -242,6 +260,27 @@ Movement, transitions, and fragments of a choreographic composition: we dance in
         `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/arrebatacao_1.jpg`,
         `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/arrebatacao_2.jpg`,
       ],
+    },
+    usePoemImageLayout: false,
+  },
+  "zona-de-derrama-3": {
+    title: "Before it starts, after it’s finished",
+    credits: `Choreography, concept and performance: <enhanced style="blackbold">Catol Teixeira</enhanced>
+Sound creation: <enhanced style="blackbold">Sandar Tun Tun</enhanced>
+`,
+    description: `
+    This piece draws on artistic materials - such as movement, poetics and imaginary - that have remained “in secret” from the Zona de Derrama project. It is born within a fascination to sketches, "study", footnotes.. It wishes to tremble and move, in dislocation across the space. It is the continuation of a perceptive experimental journey, curious to approach contemporary dance forms in relation to circus aerial language, sonic dimensions and performative gestures.
+Before it starts after its finished deals with moments before a change, before a fall, before a touch. and implies a sequence where one event concludes, and another one is about to begin. It's a dance dedicated to these moments of "falling into change". The work seeks to dive into a diverse emotional landscape connected to those moments, when we sense that something is about to happen, or even has already passed. Dealing with a perception of time that is in a constant curve, in a constant fall, never captured. As when something has already occurred, and a reminiscence lands in the body. These raw moments leave an embodied sensation -akin to a dream, a remembrance - moving through emotional density, crossing the zones and calling to transmutation.
+
+
+<enhanced style="readme">PREMIERE: NOVEMBER 2025</enhanced>
+    `,
+    poems: "",
+    inspirations: "",
+    media: {
+      head: "",
+      single: "",
+      dual: ["", ""],
     },
     usePoemImageLayout: false,
   },
@@ -299,13 +338,13 @@ La Peau Entre Les Doigts does not seek clarity or purity, it goes hand in hand w
 };
 
 export const biotext = `
-<enhanced style="cutie">Catol Teixeira performs and creates dances</enhanced>. Born in Porto Alegre (1993) Brazil, with a diverse journey across various cities, including Rio de Janeiro, Belo Horizonte, Salzburg, Berlin, and currently Geneva, Switzerland, living experiences that have
-shaped their artistic practice and way of living. They obtained a Bachelor’s degree in Contemporary Dance from La Manufacture in Lausanne in 2021. Prior to formal dance education, Catol worked as an interpreter for dance companies in Brazil such as “Cia Palacio das Artes” and “Cia Mário Nascimento” in Belo Horizonte, Brazil, during 2013 and 2014. They also worked as artistic collaborator and acrobat to the contemporary circus group “Intrepida Trupe” from to 2010 to 2012 as in 2016. They were resident artist at Ponderosa Tanzland, a place they visited and studied several times.
+<enhanced style="cutie">Catol Teixeira performs and creates dances.</enhanced> Born in Porto Alegre, Brazil, with a diverse journey across various cities, including Rio de Janeiro, Belo Horizonte, Salzburg, Berlin, and is currently based in between Geneva (Switzerland) and Rio de Janeiro (Brasil). They develop a choreographic practice as means of translations and engage into searching for a dance that embraces queer ways of living. 
 
+
+They obtained a Bachelor’s degree in Contemporary Dance from La Manufacture in Lausanne in 2021. Prior to formal dance education, Catol worked as an interpreter for dance companies in Brazil such as “Cia Palacio das Artes” and “Cia Mário Nascimento” in Belo Horizonte, Brazil, during 2013 and 2014. They also worked as artistic collaborator and acrobat to the contemporary circus group “Intrepida Trupe” from to 2010 to 2012 as in 2016. They were resident artist at Ponderosa Tanzland, a place they visited and studied several times.
 <enhanced style="readme">CATOL DANCES WHILE TRANSITIONING AND CRAFT PERFORMANCES AS INVOCATIONS</enhanced>. They are curious to deal with physical endurance, somatic practices and drawing influence from sources as diverse as circus aerial dances, classical ballet, partying and celebrations.
 
-Their first choreographic work “La Peau Entre Les Doigts” deals with questions of orientation and gaze. 
-It was shown at Grütli (CH), Belluard Bollwerk (CH), Sevelin36 (CH), La Friche Belle de Mai (FR), Santarcangelo Festival (IT), Gessneralle (CH), Les Subs (FR), TQW Studios/Rakete Festival (AU), Thèatre Vidy (CH) and keeps touring nowadays. Catol latest work “Clashes Licking”, was premiered in November 2022 at Theatre de l’Usine as part of “Emergentia - ADC, l’Abri, TU”. It was shown at SCH - Festival de Avignon (FR), Santarcangelo Festival (IT), Bienal de dança de Maputo (MZ), Infecting the City- ICA Cape Town (SA), Festival Actoral Marseille (FR), among others. Their next work will premiere in November 2024.
+
 CATOL’S CHOREOGRAPHIC EXPERIMENTATION WITH DANCE SERVES AS A CONDUIT FOR UNCOVERING NUANCES AND TACTICS OF TOGETHERNESS. THEIR INTEREST IS ORIENTED TO COLLABORATIVE PROCESSES, AMIDST
 PERSONAL CONCERNS, ARTISTIC PRACTICES AND ARTISTS, ESTABLISHING WITH DANCING AND COMPOSITIONAL WORK AN INTIMATE DIALOGUE WITH KUIR (QUEER) (DIS)ORIENTATIONS TO REMEMBER A DREAM, A STUBBORN ACT TO ESCAPE THE PLOT, TO UNLEARN, TO CRY AND TO CELEBRATE.
 `;

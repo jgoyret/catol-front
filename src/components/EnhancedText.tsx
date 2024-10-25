@@ -19,7 +19,7 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             return (
               <span
                 key={index}
-                className=" font-bold font-tangerineBold text-4xl 2xl:text-[50px] italic text-catolHover whitespace-pre-line"
+                className=" font-bold font-chuchi text-xl md:text-2xl 2xl:text-[35px] italic text-catolHoverLight whitespace-pre-line"
               >
                 {content}
               </span>
@@ -28,7 +28,7 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             return (
               <span
                 key={index}
-                className=" font-bold font-tangerineBold text-4xl 2xl:text-6xl italic text-black whitespace-pre-line"
+                className=" font-bold font-chuchi text-4xl 2xl:text-6xl italic text-black whitespace-pre-line"
               >
                 {content}
               </span>
@@ -37,7 +37,7 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             return (
               <span
                 key={index}
-                className="font-bold font-mattoneBold text-sm md:text-lg lg:text-xl 2xl:text-2xl text-catolHover whitespace-pre-line"
+                className="font-bold font-mattoneBold text-sm md:text-lg lg:text-xl 2xl:text-2xl text-catolHoverLight whitespace-pre-line"
               >
                 {content}
               </span>
