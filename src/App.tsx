@@ -38,9 +38,9 @@ const Layout = ({
   icon: React.ElementType;
 }) => (
   <div className="flex lg:space-x-48 bg-gray-100">
-    <div className="inline-block ">
-      <Header icon={icon} />
-    </div>
+    {/* <div className="inline-block"> */}
+    <Header icon={icon} />
+    {/* </div> */}
     <main className="mt-20 md:mt-36 lg:mt-10 px-0 xl:px-4 py-8 w-full h-full">
       {children}
     </main>

@@ -5,8 +5,8 @@ EnhancedText;
 
 const Performance: React.FC = () => {
   return (
-    <div className="max-w-7xl mx-auto">
-      <h1 className="text-4xl font-bold mb-4 font-mattoneBold text-center">
+    <div className="max-w-7xl mx-auto w-11/12 ml-auto">
+      <h1 className="text-2xl md:text-4xl font-bold mb-4 font-mattoneBold text-center">
         PERFORMANCE
       </h1>
       <p className="text-lg mb-4 text-center">
@@ -14,11 +14,11 @@ const Performance: React.FC = () => {
         “non-theatrical” contexts or in conversations with other artistics
         practices
       </p>
-      <div className="space-y-16">
+      <div className="space-y-16 ">
         {performances.map((performance, index) => (
           <div
             key={index}
-            className="flex flex-col my-20 lg:flex-row items-center md:items-start gap-8"
+            className="flex flex-col my-20 lg:flex-row items-center md:items-start gap-0 "
           >
             <div className="w-full lg:w-1/2">
               <img

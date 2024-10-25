@@ -6,15 +6,15 @@ interface GifProps {
 // Precarga de GIFs
 export function preloadGifs() {
   const gifUrls = [
-    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/contacto.gif`,
-    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/espada.gif`,
-    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/espiral.gif`,
-    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/estrellita.gif`,
-    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/mariposa.gif`,
-    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/tesoro.gif`,
-    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/unicornio.gif`,
-    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/yinyang.gif`,
-    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/delfin.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/contact.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/writings.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Interview.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/clashes.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/laPeau.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/bio.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/derrama.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/perfo.gif`,
+    `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/calendar.gif`,
   ];
 
   gifUrls.forEach((url) => {
@@ -26,7 +26,7 @@ export function preloadGifs() {
 function ContactoGif({ className }: GifProps) {
   return (
     <img
-      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/contacto.gif`}
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/contact.gif`}
       alt="contacto"
       className={className}
     />
@@ -35,7 +35,7 @@ function ContactoGif({ className }: GifProps) {
 function EspadaGif({ className }: GifProps) {
   return (
     <img
-      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/espada.gif`}
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/writings.gif`}
       alt="espada"
       className={className}
     />
@@ -44,7 +44,7 @@ function EspadaGif({ className }: GifProps) {
 function EspiralGif({ className }: GifProps) {
   return (
     <img
-      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/espiral.gif`}
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Interview.gif`}
       alt="espiral"
       className={className}
     />
@@ -53,7 +53,7 @@ function EspiralGif({ className }: GifProps) {
 function EstrellitaGif({ className }: GifProps) {
   return (
     <img
-      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/estrellita.gif`}
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/clashes.gif`}
       alt="estrellita"
       className={className}
     />
@@ -62,7 +62,7 @@ function EstrellitaGif({ className }: GifProps) {
 function MariposaGif({ className }: GifProps) {
   return (
     <img
-      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/mariposa.gif`}
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/laPeau.gif`}
       alt="mariposa"
       className={className}
     />
@@ -80,7 +80,7 @@ function BioGif({ className }: GifProps) {
 function UnicornioGif({ className }: GifProps) {
   return (
     <img
-      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/unicornio.gif`}
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/derrama.gif`}
       alt="unicornio"
       className={className}
     />
@@ -98,7 +98,7 @@ function YinyangGif({ className }: GifProps) {
 function DelfinGif({ className }: GifProps) {
   return (
     <img
-      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/delfin.gif`}
+      src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/calendar.gif`}
       alt="delfin"
       className={className}
     />

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import useDeviceType from "../hooks/useDeviceType";
 import Marquee from "react-fast-marquee";
 
@@ -47,16 +47,17 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
   const [hovered, setHovered] = React.useState(false);
   const isMobile = useDeviceType();
+  const location = useLocation();
   // const activeItem = menuItems.find((item) => item.path === location.pathname);
   // console.log(activeItem);
 
   const generateIconGrid = () => {
     const icons = [];
-    const gridSize = 6; // Cambia este número para modificar el tamaño de la cuadrícula
+    const gridSize = 8; // Cambia este número para modificar el tamaño de la cuadrícula
 
     for (let i = 0; i < gridSize; i++) {
       for (let j = 0; j < gridSize; j++) {
-        icons.push(<Icon key={`${i}-${j}`} className="text-black h-24 " />);
+        icons.push(<Icon key={`${i}-${j}`} className="text-black h-24" />);
       }
     }
 
@@ -84,15 +85,12 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
       </Link>
     </header>
   ) : (
-    <header className="fixed top-0 left-0 w-1/12 h-full z-10">
-      <div className=" mx-auto w-full h-full relative">
-        <Link
-          to="/"
-          className="flex justify-center items-center relative w-fit h-fit "
-        >
+    <header className="fixed top-0 left-0 w-2/12 2xl:w-1/12 h-full z-10 ">
+      <div className=" mx-auto relative p-5 ">
+        <Link to="/" className="flex justify-center items-center relative ">
           {/* Este contenedor es el área de hover */}
           <div
-            className="inline-block "
+            className=""
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
@@ -101,13 +99,15 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
             <img
               src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/bioHome.gif`}
               alt="to home"
-              className="text-black ml-14 xl:ml-16 2xl:ml-2 mt-10"
+              className={`text-black ${
+                location.pathname !== "/bio" && "bg-slate-100"
+              }`}
             />
           </div>
 
           {/* Los íconos se renderizan fuera del área de hover */}
           {hovered && (
-            <div className="absolute space-x-36 inset-0 z-[-1] grid grid-cols-6 gap-4 w-screen h-screen">
+            <div className="absolute inset-0 z-[-1]  grid grid-cols-6 gap-40 2xl:gap-72 w-screen h-screen">
               {generateIconGrid()}
             </div>
           )}
