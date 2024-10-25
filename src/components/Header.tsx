@@ -88,7 +88,7 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
       <div className=" mx-auto w-full h-full relative">
         <Link
           to="/"
-          className="flex justify-center items-center relative w-full h-48 "
+          className="flex justify-center items-center relative w-fit h-fit "
         >
           {/* Este contenedor es el área de hover */}
           <div
@@ -96,8 +96,13 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
-            <CircleText text="HOME HOME HOME HOME" />
-            <Icon className="text-black h-12 ml-14 xl:ml-16 2xl:ml-5" />
+            {/* <CircleText text="HOME HOME HOME HOME" />
+            <Icon className="text-black h-12 ml-14 xl:ml-16 2xl:ml-5" /> */}
+            <img
+              src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/bioHome.gif`}
+              alt="to home"
+              className="text-black ml-14 xl:ml-16 2xl:ml-2 mt-10"
+            />
           </div>
 
           {/* Los íconos se renderizan fuera del área de hover */}

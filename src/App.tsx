@@ -118,7 +118,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/cv",
+    path: "/calendar",
     element: (
       <Layout icon={DelfinGif}>
         <CV />
