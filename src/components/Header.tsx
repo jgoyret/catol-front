@@ -1,44 +1,44 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useDeviceType from "../hooks/useDeviceType";
 import Marquee from "react-fast-marquee";
 
-interface CircleTextProps {
-  text: string;
-}
+// interface CircleTextProps {
+//   text: string;
+// }
 
-const CircleText: React.FC<CircleTextProps> = ({ text }) => {
-  const radius = 70; // Radio del círculo
-  const characters = text.split(""); // Divide el texto en caracteres individuales
-  const angle = 360 / characters.length; // Ángulo entre cada carácter
+// const CircleText: React.FC<CircleTextProps> = ({ text }) => {
+//   const radius = 70; // Radio del círculo
+//   const characters = text.split(""); // Divide el texto en caracteres individuales
+//   const angle = 360 / characters.length; // Ángulo entre cada carácter
 
-  const location = useLocation();
+//   const location = useLocation();
 
-  return (
-    <div className=" relative flex justify-center font-jungaMedium left-10 2xl:left-3">
-      {characters.map((char, index) => {
-        const rotation = angle * index;
-        const x = radius * Math.cos((rotation * Math.PI) / 180);
-        const y = radius * Math.sin((rotation * Math.PI) / 180);
+//   return (
+//     <div className=" relative flex justify-center font-jungaMedium left-10 2xl:left-3">
+//       {characters.map((char, index) => {
+//         const rotation = angle * index;
+//         const x = radius * Math.cos((rotation * Math.PI) / 180);
+//         const y = radius * Math.sin((rotation * Math.PI) / 180);
 
-        return (
-          <span
-            key={index}
-            className={`absolute top-3 text-sm font-bold ${
-              location.pathname === "/bio" ? "text-white" : "text-black"
-            }`}
-            style={{
-              transform: `translate(${x}px, ${y}px) rotate(${rotation}deg)`,
-              transformOrigin: "center",
-            }}
-          >
-            {char}
-          </span>
-        );
-      })}
-    </div>
-  );
-};
+//         return (
+//           <span
+//             key={index}
+//             className={`absolute top-3 text-sm font-bold ${
+//               location.pathname === "/bio" ? "text-white" : "text-black"
+//             }`}
+//             style={{
+//               transform: `translate(${x}px, ${y}px) rotate(${rotation}deg)`,
+//               transformOrigin: "center",
+//             }}
+//           >
+//             {char}
+//           </span>
+//         );
+//       })}
+//     </div>
+//   );
+// };
 
 interface HeaderProps {
   icon: React.ElementType;

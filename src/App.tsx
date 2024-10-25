@@ -128,14 +128,14 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const [currentIcon, setCurrentIcon] =
-    React.useState<React.ElementType | null>(null);
+  // const [currentIcon, setCurrentIcon] =
+  //   React.useState<React.ElementType | null>(null);
 
   return (
-    <CursorContext.Provider value={{ setCurrentIcon }}>
-      {/* <CustomCursor activeIcon={currentIcon} /> */}
-      <RouterProvider router={router} />
-    </CursorContext.Provider>
+    // <CursorContext.Provider value={{ setCurrentIcon }}>
+    /* <CustomCursor activeIcon={currentIcon} /> */
+    <RouterProvider router={router} />
+    // </CursorContext.Provider>
   );
 }
 
