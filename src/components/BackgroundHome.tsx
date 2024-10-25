@@ -49,14 +49,14 @@ const BackgroundHome: React.FC = () => {
         hydra.synth.setResolution(innerWidth, innerHeight);
         hydra.synth
           .osc(isMobile ? 5 : 10, 0.1, 0)
-          .color(0.5, 0.5, 0.5)
+          .color(1, 1, 1)
           .rotate(0.1, 0.1)
           .modulate(hydra.synth.noise(3, 0.1))
           .modulateRotate(hydra.synth.osc(isMobile ? 5 : 10, 0.1, 0))
           .blend(
             hydra.synth
               .osc(isMobile ? 5 : 10, 0.1, 0)
-              .color(0.5, 0.5, 0.5)
+              .color(0.502, 0.502, 0.502)
               .rotate(0.1, 0.1)
               .modulate(hydra.synth.noise(3, 0.1))
               .modulateRotate(hydra.synth.osc(isMobile ? 5 : 10, 0.1, 0))

@@ -41,26 +41,34 @@ const Project: React.FC = () => {
       <h1 className="text-4xl 2xl:text-6xl text-center font-mattoneBold font-bold mb-4">
         {project.title}
       </h1>
-      <div className="">{renderMedia(project.media.head)}</div>
+      {project.media.head !== "" && (
+        <div className="">{renderMedia(project.media.head)}</div>
+      )}
       <p className="whitespace-pre-line  text-center  m-2 mx-5 lg:mx-5 3xl:mx-5 font-jungaBook">
         <EnhancedText>{project.description}</EnhancedText>
       </p>
-      {project.usePoemImageLayout && typeof project.poems === "object" && (
-        <>
+      {project.usePoemImageLayout &&
+        typeof project.poems === "object" &&
+        project.media.dual[0] !== "" &&
+        project.poems.head !== "" && (
           <PoemImageLayout
             poem={project.poems.head}
             imageUrl={project.media.dual[0]}
             imageAlt={project.title}
             layout="imageRight"
           />
+        )}
+      {project.usePoemImageLayout &&
+        typeof project.poems === "object" &&
+        project.media.dual[1] !== "" &&
+        project.poems.end !== "" && (
           <PoemImageLayout
-            poem={project.poems.head}
+            poem={project.poems.end}
             imageUrl={project.media.dual[1]}
             imageAlt={project.title}
             layout="imageLeft"
           />
-        </>
-      )}
+        )}
       {"poems" in project &&
         typeof project.poems === "object" &&
         !project.usePoemImageLayout && (

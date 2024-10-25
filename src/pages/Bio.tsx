@@ -7,7 +7,7 @@ const Bio: React.FC = () => {
     <>
       <div className="fixed top-0 left-0 overflow-hidden">
         <video
-          className="w-screen h-screen object-cover "
+          className="w-screen h-screen object-cover"
           autoPlay
           loop
           muted

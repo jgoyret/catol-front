@@ -269,20 +269,23 @@ Movement, transitions, and fragments of a choreographic composition: we dance in
 Sound creation: <enhanced style="blackbold">Sandar Tun Tun</enhanced>
 `,
     description: `
-    This piece draws on artistic materials - such as movement, poetics and imaginary - that have remained “in secret” from the Zona de Derrama project. It is born within a fascination to sketches, "study", footnotes.. It wishes to tremble and move, in dislocation across the space. It is the continuation of a perceptive experimental journey, curious to approach contemporary dance forms in relation to circus aerial language, sonic dimensions and performative gestures.
-Before it starts after its finished deals with moments before a change, before a fall, before a touch. and implies a sequence where one event concludes, and another one is about to begin. It's a dance dedicated to these moments of "falling into change". The work seeks to dive into a diverse emotional landscape connected to those moments, when we sense that something is about to happen, or even has already passed. Dealing with a perception of time that is in a constant curve, in a constant fall, never captured. As when something has already occurred, and a reminiscence lands in the body. These raw moments leave an embodied sensation -akin to a dream, a remembrance - moving through emotional density, crossing the zones and calling to transmutation.
-
-
 <enhanced style="readme">PREMIERE: NOVEMBER 2025</enhanced>
     `,
-    poems: "",
+    poems: {
+      head: `This piece draws on artistic materials - such as movement, poetics and imaginary - that have remained “in secret” from the Zona de Derrama project. It is born within a fascination to sketches, "study", footnotes.. It wishes to tremble and move, in dislocation across the space. It is the continuation of a perceptive experimental journey, curious to approach contemporary dance forms in relation to circus aerial language, sonic dimensions and performative gestures.
+
+      Before it starts after its finished deals with moments before a change, before a fall, before a touch. and implies a sequence where one event concludes, and another one is about to begin. It's a dance dedicated to these moments of "falling into change". The work seeks to dive into a diverse emotional landscape connected to those moments, when we sense that something is about to happen, or even has already passed.
+
+      Dealing with a perception of time that is in a constant curve, in a constant fall, never captured. As when something has already occurred, and a reminiscence lands in the body. These raw moments leave an embodied sensation -akin to a dream, a remembrance - moving through emotional density, crossing the zones and calling to transmutation.`,
+      end: ``,
+    },
     inspirations: "",
     media: {
       head: "",
       single: "",
-      dual: ["", ""],
+      dual: [`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/before01.webp`, ""],
     },
-    usePoemImageLayout: false,
+    usePoemImageLayout: true,
   },
   "la-peaux-entre-les-doigts": {
     title: "LA PEAUX ENTRE LES DOIGTS",
@@ -295,7 +298,7 @@ Music tracks: Tunga - <enhanced style="blackbold">DEDO</enhanced> , Revelation -
 `,
     description: `Before it starts, after it is finished:
 
-<enhanced style"cutie">la peau entre les doigts / the skin between the fingers</enhanced> - is a choreographic dispositive that experiment and proposes to instigate questions of positionality, the perceptions of the other, to challenge social identity marks. “La Peau Entre Les Doigts” plays while deviating, while escaping.
+<enhanced style="cutie">la peau entre les doigts / the skin between the fingers</enhanced> - is a choreographic dispositive that experiment and proposes to instigate questions of positionality, the perceptions of the other, to challenge social identity marks. “La Peau Entre Les Doigts” plays while deviating, while escaping.
 
 <enhanced style="readme">LETTER FROM DOING:</enhanced>
 La Peau Entre Les Doigts is therefore a created context where I keep space to un-learn body inscriptions when I perform it. It is intimately related with presences - which for me speaks of absences - that can potentially take part on it.

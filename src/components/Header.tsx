@@ -85,7 +85,7 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
       </Link>
     </header>
   ) : (
-    <header className="fixed top-0 left-0 w-2/12 2xl:w-1/12 h-full z-10 ">
+    <header className="fixed top-0 left-0 w-1/12 h-full z-10 ">
       <div className=" mx-auto relative p-5 ">
         <Link to="/" className="flex justify-center items-center relative ">
           {/* Este contenedor es el área de hover */}
