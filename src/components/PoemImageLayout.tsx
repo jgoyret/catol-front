@@ -20,7 +20,7 @@ const PoemImageLayout: React.FC<PoemImageLayoutProps> = ({
     <div className="flex flex-col lg:flex-row gap-8 my-5 lg:my-20">
       {/* Imagen izquierda o derecha según el layout */}
       <div className={`w-full lg:w-1/2 ${isImageLeft ? "order-1" : "order-2"}`}>
-        <img src={imageUrl} alt={imageAlt} className="h-screen mx-auto" />
+        <img src={imageUrl} alt={imageAlt} className="w-full mx-auto" />
       </div>
 
       {/* Texto en el lado opuesto */}
