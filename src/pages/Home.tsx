@@ -1,75 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  ContactoGif,
-  WritingsGif,
-  InterviewGif,
-  ClashesGif,
-  LaPeauGif,
-  BioGif,
-  DerramaGif,
-  PerfoGif,
-  CalendarGif,
-  preloadGifs,
-} from "../components/Gifs";
+import { preloadGifs } from "../components/Gifs";
+import { menuItems } from "../data/data.ts";
 import BackgroundHome from "../components/BackgroundHome";
-
-interface MenuItem {
-  id?: string;
-  name: string;
-  path?: string;
-  Icon: React.FC<
-    React.SVGProps<SVGSVGElement> & { className?: string; type?: string }
-  >;
-}
-
-const menuItems: MenuItem[] = [
-  {
-    id: "zona-de-derrama",
-    name: "ZONA DE DERRAMA",
-    Icon: (props) => <DerramaGif {...props} type="hover" />,
-  },
-  {
-    id: "clashes-licking",
-    name: "CLASHES LICKING",
-    Icon: (props) => <ClashesGif {...props} type="hover" />,
-  },
-  {
-    id: "la-peaux-entre-les-doigts",
-    name: "LA PEAUX ENTRE LES DOIGTS",
-    Icon: (props) => <LaPeauGif {...props} type="hover" />,
-  },
-  {
-    name: "WRITING DANCING AROUND",
-    path: "/writing-dancing-around",
-    Icon: (props) => <WritingsGif {...props} type="hover" />,
-  },
-  {
-    name: "PERFORMANCE",
-    path: "/performance",
-    Icon: (props) => <PerfoGif {...props} type="hover" />,
-  },
-  {
-    name: "BIO",
-    path: "/bio",
-    Icon: (props) => <BioGif {...props} type="hover" />,
-  },
-  {
-    name: "INTERVIEWS AND PRESS",
-    path: "/interviews-and-press",
-    Icon: (props) => <InterviewGif {...props} type="hover" />,
-  },
-  {
-    name: "CONTACT",
-    path: "mailto:catol.teixeira@protonmail.com?subject=(your%20subject%20here)&body=(your%20question%20here)",
-    Icon: (props) => <ContactoGif {...props} type="hover" />,
-  },
-  {
-    name: "CALENDAR",
-    path: "/calendar",
-    Icon: (props) => <CalendarGif {...props} type="hover" />,
-  },
-];
 
 const Home: React.FC = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
@@ -92,8 +25,14 @@ const Home: React.FC = () => {
             >
               {hoveredItem === item.name && (
                 <>
-                  <item.Icon className="hidden md:block absolute right-full top-1/2 transform -translate-y-1/2  h-20 2xl:h-32 max-w-40 2xl:max-w-64" />
-                  <item.Icon className="hidden md:block absolute left-full top-1/2 transform -translate-y-1/2  h-20 2xl:h-32 max-w-40 2xl:max-w-64" />
+                  <item.icon
+                    type="hover"
+                    className="hidden md:block absolute right-full top-1/2 transform -translate-y-1/2  h-20 2xl:h-32 max-w-40 2xl:max-w-64"
+                  />
+                  <item.icon
+                    type="hover"
+                    className="hidden md:block absolute left-full top-1/2 transform -translate-y-1/2  h-20 2xl:h-32 max-w-40 2xl:max-w-64"
+                  />
                 </>
               )}
               {item.path ? (

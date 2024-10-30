@@ -35,6 +35,12 @@ export interface ProjectStructure {
   usePoemImageLayout?: boolean;
 }
 
+export interface Performance {
+  title: string;
+  text: string;
+  image: string;
+}
+
 export type ProjectType = ProjectStructure;
 
 export const projects: Record<string, ProjectType> = {
@@ -352,12 +358,6 @@ CATOL’S CHOREOGRAPHIC EXPERIMENTATION WITH DANCE SERVES AS A CONDUIT FOR UNCOV
 PERSONAL CONCERNS, ARTISTIC PRACTICES AND ARTISTS, ESTABLISHING WITH DANCING AND COMPOSITIONAL WORK AN INTIMATE DIALOGUE WITH KUIR (QUEER) (DIS)ORIENTATIONS TO REMEMBER A DREAM, A STUBBORN ACT TO ESCAPE THE PLOT, TO UNLEARN, TO CRY AND TO CELEBRATE.
 `;
 
-export interface Performance {
-  title: string;
-  text: string;
-  image: string;
-}
-
 export const performances: Performance[] = [
   {
     title: `Eu vou aparecer bem no meio do seu sonho`,
@@ -383,49 +383,57 @@ They wash over their body and let the drops fall. `,
   },
 ];
 
-export const menuItems = [
-  {
-    id: "clashes-licking",
-    name: "CLASHES LICKING",
-    path: "/project/clashes-licking",
-    Icon: () => ClashesGif({ type: "page" }),
-  },
+interface MenuItem {
+  id?: string;
+  name: string;
+  path?: string;
+  icon: React.ElementType;
+}
+
+export const menuItems: MenuItem[] = [
   {
     id: "zona-de-derrama",
     name: "ZONA DE DERRAMA",
-    path: "/project/zona-de-derrama",
-    Icon: () => DerramaGif({ type: "page" }),
+    icon: DerramaGif,
+  },
+  {
+    id: "clashes-licking",
+    name: "CLASHES LICKING",
+    icon: ClashesGif,
   },
   {
     id: "la-peaux-entre-les-doigts",
     name: "LA PEAUX ENTRE LES DOIGTS",
-    path: "/project/la-peaux-entre-les-doigts",
-    Icon: () => LaPeauGif({ type: "page" }),
+    icon: LaPeauGif,
   },
   {
     name: "WRITING DANCING AROUND",
     path: "/writing-dancing-around",
-    Icon: () => WritingsGif({ type: "page" }),
+    icon: WritingsGif,
   },
   {
     name: "PERFORMANCE",
     path: "/performance",
-    Icon: () => PerfoGif({ type: "page" }),
+    icon: PerfoGif,
   },
-  { name: "BIO", path: "/bio", Icon: () => BioGif({ type: "page" }) },
+  {
+    name: "BIO",
+    path: "/bio",
+    icon: BioGif,
+  },
   {
     name: "INTERVIEWS AND PRESS",
     path: "/interviews-and-press",
-    Icon: () => InterviewGif({ type: "page" }),
+    icon: InterviewGif,
   },
   {
     name: "CONTACT",
-    path: "/contact",
-    Icon: () => ContactoGif({ type: "page" }),
+    path: "mailto:catol.teixeira@protonmail.com?subject=(your%20subject%20here)&body=(your%20question%20here)",
+    icon: ContactoGif,
   },
   {
     name: "CALENDAR",
     path: "/calendar",
-    Icon: () => CalendarGif({ type: "page" }),
+    icon: CalendarGif,
   },
 ];
