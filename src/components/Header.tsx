@@ -3,43 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import useDeviceType from "../hooks/useDeviceType";
 import Marquee from "react-fast-marquee";
 
-// interface CircleTextProps {
-//   text: string;
-// }
-
-// const CircleText: React.FC<CircleTextProps> = ({ text }) => {
-//   const radius = 70; // Radio del círculo
-//   const characters = text.split(""); // Divide el texto en caracteres individuales
-//   const angle = 360 / characters.length; // Ángulo entre cada carácter
-
-//   const location = useLocation();
-
-//   return (
-//     <div className=" relative flex justify-center font-jungaMedium left-10 2xl:left-3">
-//       {characters.map((char, index) => {
-//         const rotation = angle * index;
-//         const x = radius * Math.cos((rotation * Math.PI) / 180);
-//         const y = radius * Math.sin((rotation * Math.PI) / 180);
-
-//         return (
-//           <span
-//             key={index}
-//             className={`absolute top-3 text-sm font-bold ${
-//               location.pathname === "/bio" ? "text-white" : "text-black"
-//             }`}
-//             style={{
-//               transform: `translate(${x}px, ${y}px) rotate(${rotation}deg)`,
-//               transformOrigin: "center",
-//             }}
-//           >
-//             {char}
-//           </span>
-//         );
-//       })}
-//     </div>
-//   );
-// };
-
 interface HeaderProps {
   icon: React.ElementType;
 }
@@ -57,7 +20,9 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
 
     for (let i = 0; i < gridSize; i++) {
       for (let j = 0; j < gridSize; j++) {
-        icons.push(<Icon key={`${i}-${j}`} className="text-black h-24" />);
+        icons.push(
+          <Icon key={`${i}-${j}`} type="hover" className="text-black h-24" />
+        );
       }
     }
 
@@ -76,17 +41,21 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
           className="h-full mx-auto font-jungaBook"
         >
           <div className="mx-10 font-mattoneBold">HOME</div>
-          <Icon className="h-10 md:h-16" />
+          <Icon type="hover" className="h-10 md:h-16" />
           <div className="mx-10 font-mattoneBold">HOME</div>
-          <Icon className="h-10 md:h-16 " />
+          <Icon type="hover" className="h-10 md:h-16 " />
           <div className="mx-10 font-mattoneBold">HOME</div>
-          <Icon className="h-10 md:h-16" />
+          <Icon type="hover" className="h-10 md:h-16" />
         </Marquee>
       </Link>
     </header>
   ) : (
     <header className="fixed top-0 left-0 w-1/12 h-full z-10 ">
-      <div className=" mx-auto relative p-5 ">
+      <div
+        className={`mx-auto relative p-2 ${
+          location.pathname !== "/bio" && "bg-slate-100"
+        }`}
+      >
         <Link to="/" className="flex justify-center items-center relative ">
           {/* Este contenedor es el área de hover */}
           <div
@@ -94,18 +63,9 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
-            {/* <CircleText text="HOME HOME HOME HOME" />
-            <Icon className="text-black h-12 ml-14 xl:ml-16 2xl:ml-5" /> */}
-            <img
-              src={`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/bioHome.gif`}
-              alt="to home"
-              className={`text-black ${
-                location.pathname !== "/bio" && "bg-slate-100"
-              }`}
-            />
+            <Icon type="home" className="text-black w-full" />
           </div>
 
-          {/* Los íconos se renderizan fuera del área de hover */}
           {hovered && (
             <div className="absolute inset-0 z-[-1]  grid grid-cols-6 gap-40 2xl:gap-72 w-screen h-screen">
               {generateIconGrid()}

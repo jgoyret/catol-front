@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ContactoGif,
-  DelfinGif,
-  EspadaGif,
-  EspiralGif,
-  EstrellitaGif,
-  MariposaGif,
-  preloadGifs,
+  WritingsGif,
+  InterviewGif,
+  ClashesGif,
+  LaPeauGif,
   BioGif,
-  UnicornioGif,
-  YinyangGif,
+  DerramaGif,
+  PerfoGif,
+  CalendarGif,
+  preloadGifs,
 } from "../components/Gifs";
 import BackgroundHome from "../components/BackgroundHome";
 
@@ -18,35 +18,57 @@ interface MenuItem {
   id?: string;
   name: string;
   path?: string;
-  Icon: React.FC<React.SVGProps<SVGSVGElement> & { className?: string }>;
+  Icon: React.FC<
+    React.SVGProps<SVGSVGElement> & { className?: string; type?: string }
+  >;
 }
 
 const menuItems: MenuItem[] = [
-  { id: "zona-de-derrama", name: "ZONA DE DERRAMA", Icon: UnicornioGif },
-  { id: "clashes-licking", name: "CLASHES LICKING", Icon: EstrellitaGif },
+  {
+    id: "zona-de-derrama",
+    name: "ZONA DE DERRAMA",
+    Icon: (props) => <DerramaGif {...props} type="hover" />,
+  },
+  {
+    id: "clashes-licking",
+    name: "CLASHES LICKING",
+    Icon: (props) => <ClashesGif {...props} type="hover" />,
+  },
   {
     id: "la-peaux-entre-les-doigts",
     name: "LA PEAUX ENTRE LES DOIGTS",
-    Icon: MariposaGif,
+    Icon: (props) => <LaPeauGif {...props} type="hover" />,
   },
   {
     name: "WRITING DANCING AROUND",
     path: "/writing-dancing-around",
-    Icon: EspadaGif,
+    Icon: (props) => <WritingsGif {...props} type="hover" />,
   },
-  { name: "PERFORMANCE", path: "/performance", Icon: YinyangGif },
-  { name: "BIO", path: "/bio", Icon: BioGif },
+  {
+    name: "PERFORMANCE",
+    path: "/performance",
+    Icon: (props) => <PerfoGif {...props} type="hover" />,
+  },
+  {
+    name: "BIO",
+    path: "/bio",
+    Icon: (props) => <BioGif {...props} type="hover" />,
+  },
   {
     name: "INTERVIEWS AND PRESS",
     path: "/interviews-and-press",
-    Icon: EspiralGif,
+    Icon: (props) => <InterviewGif {...props} type="hover" />,
   },
   {
     name: "CONTACT",
     path: "mailto:catol.teixeira@protonmail.com?subject=(your%20subject%20here)&body=(your%20question%20here)",
-    Icon: ContactoGif,
+    Icon: (props) => <ContactoGif {...props} type="hover" />,
   },
-  { name: "CALENDAR", path: "/calendar", Icon: DelfinGif },
+  {
+    name: "CALENDAR",
+    path: "/calendar",
+    Icon: (props) => <CalendarGif {...props} type="hover" />,
+  },
 ];
 
 const Home: React.FC = () => {

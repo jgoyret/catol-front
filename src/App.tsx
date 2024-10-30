@@ -6,14 +6,14 @@ import {
 } from "react-router-dom";
 import {
   ContactoGif,
-  DelfinGif,
-  EspadaGif,
-  EspiralGif,
-  EstrellitaGif,
-  MariposaGif,
+  CalendarGif,
+  WritingsGif,
+  InterviewGif,
+  ClashesGif,
+  LaPeauGif,
   BioGif,
-  UnicornioGif,
-  YinyangGif,
+  DerramaGif,
+  PerfoGif,
 } from "./components/Gifs";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -32,15 +32,13 @@ export const CursorContext = React.createContext<{
 
 const Layout = ({
   children,
-  icon,
+  icon: Icon,
 }: {
   children: React.ReactNode;
   icon: React.ElementType;
 }) => (
   <div className="flex lg:space-x-48 bg-gray-100">
-    {/* <div className="inline-block"> */}
-    <Header icon={icon} />
-    {/* </div> */}
+    <Header icon={Icon} />
     <main className="mt-20 md:mt-36 lg:mt-10 px-0 xl:px-4 py-8 w-full h-full">
       {children}
     </main>
@@ -48,15 +46,16 @@ const Layout = ({
 );
 
 const projectIcons = {
-  "clashes-licking": EstrellitaGif,
-  "zona-de-derrama-1": UnicornioGif,
-  "zona-de-derrama-2": UnicornioGif,
-  "la-peaux-entre-les-doigts": MariposaGif,
+  "clashes-licking": ClashesGif,
+  "zona-de-derrama-1": DerramaGif,
+  "zona-de-derrama-2": DerramaGif,
+  "zona-de-derrama-3": DerramaGif,
+  "la-peaux-entre-les-doigts": LaPeauGif,
 };
 
 const ProjectWrapper = () => {
   const { id } = useParams<{ id: string }>();
-  const Icon = projectIcons[id as keyof typeof projectIcons] || EstrellitaGif;
+  const Icon = projectIcons[id as keyof typeof projectIcons] || ClashesGif;
   return (
     <Layout icon={Icon}>
       <Project />
@@ -80,7 +79,7 @@ const router = createBrowserRouter([
   {
     path: "/writing-dancing-around",
     element: (
-      <Layout icon={EspadaGif}>
+      <Layout icon={WritingsGif}>
         <WritingDancingAround />
       </Layout>
     ),
@@ -88,7 +87,7 @@ const router = createBrowserRouter([
   {
     path: "/performance",
     element: (
-      <Layout icon={YinyangGif}>
+      <Layout icon={PerfoGif}>
         <Performance />
       </Layout>
     ),
@@ -104,7 +103,7 @@ const router = createBrowserRouter([
   {
     path: "/interviews-and-press",
     element: (
-      <Layout icon={EspiralGif}>
+      <Layout icon={InterviewGif}>
         <InterviewsAndPress />
       </Layout>
     ),
@@ -120,7 +119,7 @@ const router = createBrowserRouter([
   {
     path: "/calendar",
     element: (
-      <Layout icon={DelfinGif}>
+      <Layout icon={CalendarGif}>
         <CV />
       </Layout>
     ),
