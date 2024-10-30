@@ -40,6 +40,25 @@ export interface Performance {
   text: string;
   image: string;
 }
+export interface MenuItem {
+  id?: string;
+  name: string;
+  path?: string;
+  icon: React.ElementType;
+}
+
+export interface PressLink {
+  title: string;
+  url: string;
+}
+
+export interface PressSection {
+  title: string;
+  subsections: {
+    title: string;
+    links: PressLink[];
+  }[];
+}
 
 export type ProjectType = ProjectStructure;
 
@@ -383,13 +402,6 @@ They wash over their body and let the drops fall. `,
   },
 ];
 
-interface MenuItem {
-  id?: string;
-  name: string;
-  path?: string;
-  icon: React.ElementType;
-}
-
 export const menuItems: MenuItem[] = [
   {
     id: "zona-de-derrama",
@@ -435,5 +447,169 @@ export const menuItems: MenuItem[] = [
     name: "CALENDAR",
     path: "/calendar",
     icon: CalendarGif,
+  },
+];
+
+export const pressContent: PressSection[] = [
+  {
+    title: "PW-Magazine by Lewon Heublein",
+    subsections: [
+      {
+        title: "",
+        links: [
+          {
+            title: "PW-Magazine",
+            url: "https://pw-magazine.com/2024/craze-15-catol-teixeira",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Sceneweb.fr by Belinda Mathieu",
+    subsections: [
+      {
+        title: "",
+        links: [
+          {
+            title: "Sceneweb.fr",
+            url: "https://sceneweb.fr/catol-teixeira-danse-en-mutation/",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Gagarin Magazine by Michele Pascarella",
+    subsections: [
+      {
+        title: "",
+        links: [
+          {
+            title: "Gagarin Magazine",
+            url: "https://www.gagarin-magazine.it/2024/08/incontro-ravvicinato/its-not-fixed-its-a-journey-a-conversation-with-catol-teixeira-at-santarcangelo-festival/",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "La Peau Entre Les Doigts",
+    subsections: [
+      {
+        title: "Interviews",
+        links: [
+          {
+            title: "Collective Radiovostok",
+            url: "https://radiovostok.ch/festival-go-go-go-2022-interview-de-catol-teixeira/",
+          },
+          {
+            title: "L'œil d'Olivier",
+            url: "https://www.youtube.com/watch?v=tP0NBpNOol4",
+          },
+        ],
+      },
+      {
+        title: "Articles",
+        links: [
+          {
+            title: "Mouvement Magazine by Zineb Soulaimani",
+            url: "https://www.mouvement.net/scenes/catol-teixeira-se-liberer-par-les-interstices",
+          },
+          {
+            title: "Sceneweb.fr by Belinda Mathieu",
+            url: "https://sceneweb.fr/la-peau-entre-les-doigts-danse-humide/",
+          },
+          {
+            title: "Cult.news by Amélie Blaustein-Niddam",
+            url: "https://cult.news/scenes/performance/les-etats-de-corps-inaccoutumes-de-la-menagerie-de-verre/",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Interviews and articles - Zona de Derrama Project",
+    subsections: [
+      {
+        title: "",
+        links: [
+          {
+            title: "Centre National de la Danse",
+            url: "https://www.cnd.fr/en/page/4355-catol-teixeira",
+          },
+          {
+            title: "Mouvement Magazine",
+            url: "https://www.mouvement.net/catol-teixeira-le-changement-c-est-maintenant",
+          },
+          {
+            title: "Le Beau Bizarre",
+            url: "https://audiosauti.com/@Le_Beau_Bizarre/episodes/le-beau-bizarre-51-avec-catol-teixeira",
+          },
+          {
+            title: "Maculture.fr",
+            url: "https://www.maculture.fr/catol-teixeira-zona-de-derrama",
+          },
+          {
+            title: "Radio Télévision Suisse",
+            url: "https://www.rts.ch/audio-podcast/2023/audio/catol-teixeira-et-sa-zona-de-derrama-au-festival-far-de-nyon-26161430.html",
+          },
+          {
+            title: "PaneAcquaCulture",
+            url: "https://www.paneacquaculture.net/2024/07/11/santarcangelo-2024-lapertura-del-festival-spiega-lapertura-del-festival/",
+          },
+          {
+            title: "Campadidanza Dance Magazine",
+            url: "https://www.campadidanza.it/catol-teixeira-inaugura-santarcangelo-festival-2024/",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Articles Clashes Licking",
+    subsections: [
+      {
+        title: "",
+        links: [
+          {
+            title: "ArtThrob",
+            url: "https://artthrob.co.za/2023/12/07/the-walking-cure-infecting-the-city-2023/",
+          },
+          {
+            title: "24 heures by Lea Gloor",
+            url: "https://www.24heures.ch/theatre-de-vidy-un-spectacle-de-danse-queer-472539871389",
+          },
+          {
+            title: "L'oeil d'Olivier",
+            url: "https://www.loeildolivier.fr/2023/07/clashes-licking-de-catol-teixeira-ninventer-que-sa-danse/",
+          },
+          {
+            title: "Les Inrocks",
+            url: "https://www.lesinrocks.com/arts-et-scenes/avignon-2023-aux-hivernales-catol-teixeira-brise-les-codes-de-la-danse-et-du-genre-582170-17-07-2023/",
+          },
+          {
+            title: "Altre Velocità",
+            url: "https://www.altrevelocita.it/santarcangelo-festival-2-lartista-in-scena-come-proiezione-di-se-stesso/",
+          },
+          {
+            title: "San Marino Fixing",
+            url: "https://sanmarinofixing.com/2023/07/07/teixeira-torna-a-santarcangelo-con-la-prima-assoluta-di-clashes-licking/",
+          },
+          {
+            title: "Sceneweb.fr",
+            url: "https://sceneweb.fr/clashes-licking-genre-en-suspens/",
+          },
+          {
+            title: "Magazine 360°",
+            url: "https://360.ch/agenda/clashes-licking-2/",
+          },
+          {
+            title: "Caos Cultura",
+            url: "https://caos-cultura.ch/index.php/danza/224-una-danza-che-e-un-inno-all-erotismo-e-alla-forza-bellezza-del-corpo",
+          },
+        ],
+      },
+    ],
   },
 ];
