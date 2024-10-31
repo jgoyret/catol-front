@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
     for (let i = 0; i < gridSize; i++) {
       for (let j = 0; j < gridSize; j++) {
         icons.push(
-          <Icon key={`${i}-${j}`} type="hover" className="text-black h-24" />
+          <Icon key={`${i}-${j}`} type="hover" className="text-black" />
         );
       }
     }
@@ -50,9 +50,9 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
       </Link>
     </header>
   ) : (
-    <header className="fixed top-0 left-0 w-1/12 h-full z-10 ">
+    <header className="fixed top-0 left-0 w-2/12 h-full z-10 ">
       <div
-        className={`mx-auto relative p-2 ${
+        className={`mx-auto relative p-5 ${
           location.pathname !== "/bio" && "bg-slate-100"
         }`}
       >
@@ -63,7 +63,7 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
-            <Icon type="home" className="text-black w-full" />
+            <Icon type="home" className="text-black" />
           </div>
 
           {hovered && (

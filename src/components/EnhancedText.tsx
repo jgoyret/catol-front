@@ -19,25 +19,26 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             return (
               <span
                 key={index}
-                className=" font-bold font-chuchi text-xl md:text-2xl 2xl:text-[35px] italic text-catolHoverLight whitespace-pre-line"
+                className="font-chuchi text-xl md:text-2xl 2xl:text-[35px] text-black whitespace-pre-line"
               >
                 {content}
               </span>
             );
-          case "cutieblack":
+          case "cutietitle":
             return (
               <span
                 key={index}
-                className=" font-bold font-chuchi text-4xl 2xl:text-6xl italic text-black whitespace-pre-line"
+                className="uppercase font-chuchi text-xl lg:text-2xl 2xl:text-5xl  text-black whitespace-pre-line"
               >
                 {content}
               </span>
             );
+
           case "readme":
             return (
               <span
                 key={index}
-                className="font-bold font-mattoneBold text-sm md:text-lg lg:text-xl 2xl:text-2xl text-catolHoverLight whitespace-pre-line"
+                className="font-bold font-jungaMedium tracking-widest text-sm md:text-lg lg:text-xl 2xl:text-2xl text-black whitespace-pre-line"
               >
                 {content}
               </span>

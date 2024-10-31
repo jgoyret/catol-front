@@ -37,9 +37,9 @@ const Layout = ({
   children: React.ReactNode;
   icon: React.ElementType;
 }) => (
-  <div className="flex lg:space-x-48 bg-gray-100">
+  <div className="flex  bg-gray-100">
     <Header icon={Icon} />
-    <main className="mt-20 md:mt-36 lg:mt-10 px-0 xl:px-4 py-8 w-full h-full">
+    <main className="lg:w-10/12  lg:ml-auto mt-20 md:mt-36 lg:mt-10 px-0 xl:px-4 py-8 h-full">
       {children}
     </main>
   </div>

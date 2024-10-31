@@ -19,7 +19,7 @@ const Home: React.FC = () => {
           {menuItems.map((item, index) => (
             <li
               key={index}
-              className="text-md md:text-xl lg:text-4xl 2xl:text-6xl font-bold relative font-mattoneBold"
+              className="text-md md:text-xl lg:text-4xl 2xl:text-6xl relative  font-chuchi font-bold hover:italic tracking-widest"
               onMouseEnter={() => setHoveredItem(item.name)}
               onMouseLeave={() => setHoveredItem(null)}
             >
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
                   />
                   <item.icon
                     type="hover"
-                    className="hidden md:block absolute left-full top-1/2 transform -translate-y-1/2  h-20 2xl:h-32 max-w-40 2xl:max-w-64"
+                    className="hidden md:block absolute left-full top-1/2 transform -translate-y-1/2  h-20 2xl:h-32 max-w-40 2xl:max-w-64 scale-x-[-1]"
                   />
                 </>
               )}
