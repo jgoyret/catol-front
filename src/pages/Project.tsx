@@ -90,22 +90,24 @@ const Project: React.FC = () => {
         !project.usePoemImageLayout && (
           <div className=" w-full flex flex-col lg:flex-row justify-center lg:space-x-4 overflow-hidden my-10">
             <img
-              className="w-full h-full md:min-h-96 lg:w-1/2 object-cover object-center mb-10 lg:mb-0"
+              className="w-full h-full md:min-h-96 lg:w-1/2 object-cover object-center mb-10 lg:mb-0 overflow-hidden"
               src={`${project.media.dual[0]}`}
               alt={`${project.title}`}
             />
             <img
-              className="w-full h-full md:min-h-96 lg:w-1/2 object-cover object-center"
+              className="w-full h-full md:min-h-96 lg:w-1/2 object-cover object-center overflow-hidden"
               src={`${project.media.dual[1]}`}
               alt={`${project.title}`}
             />
           </div>
         )}
-      {"poems" in project && typeof project.poems === "object" && (
-        <div className=" text-center mx-5 md:mx-auto m-10 max-w-2xl">
-          <EnhancedText>{project.poems.end}</EnhancedText>
-        </div>
-      )}
+      {"poems" in project &&
+        typeof project.poems === "object" &&
+        !project.usePoemImageLayout && (
+          <div className=" text-center mx-5 md:mx-auto m-10 max-w-2xl">
+            <EnhancedText>{project.poems.end}</EnhancedText>
+          </div>
+        )}
 
       <p className="whitespace-pre-line text-center px-2 text-xs md:text-sm lg:text-lg font-jungaBook leading-tight">
         <EnhancedText>{project.credits}</EnhancedText>

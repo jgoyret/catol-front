@@ -11,13 +11,23 @@ export default {
         chuchi: ["chuchi", "sans-serif"],
       },
       colors: {
-        catolHover: "#0000FF",
-        catolHoverLight: "#5555FF",
+        catolHover: "#5555FF",
       },
       screens: {
         "3xl": "2000px",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".image-pixelated": {
+          imageRendering: "pixelated",
+        },
+        ".image-crisp": {
+          imageRendering: "crisp-edges",
+        },
+      });
+    },
+  ],
 };

@@ -235,7 +235,41 @@ Dancing as gesture of belonging.
 echoes with you)
 
 `,
-      end: ``,
+      end: `
+      ZONES ZONING
+AN INVITATION TO AN EVENT WHERE WE EVOKE LIMINAL SPACES:
+OF TRANSITIONS, OF INTIMACY AND PROTECTION, ZONES TO ESCAPE OR TO STAY,
+ DEALING WITH AN IDEA OR COMPOSING FRAGMENTS
+ZONA DE DERRAMA  IS A WONDER INTO TRANSPASSING
+ AND CHANGES OF MATERIAL CONDITION
+IT QUESTIONS WHERE IT WOULD GO AFTER A FLOOD, AFTER A CEASE, DURING A CALL FOR CHANGE 
+
+WE WONDER IF CAN YOU REMEMBER YOUR DREAMS?
+WHAT RESOURCES CAN YOU GRASP?
+HOW WE DANCE IN THE DANCE FIELD?
+WHERE IT GOES ALL THE EXHAUSTION? 
+
+THE LAND EXHAUSTION - SCARCITY - 
+
+WE TRACE TERRITORIES TO ARRIVE. 
++
+ITS an overflow, infiltrating in between spaces 
+devastation
+the destruction of modernity.
+we seat to 
+sense tender eyes and the call to go - 
+tracing the poetics of transmutation transmitting - transitioning,
+watery emotions
+formless forms
+escaping captures with out bodies-cosmologies
+relational matter & relational body entanglement
+WE BUILD 
+ceremonies for (...)
+
+(I stage my body transitions)
+Dancing as gesture of belonging.
+(I wish to rest, to drop my very heavy bones. I wish to listen to the
+echoes with you)`,
     },
     inspirations: "",
     media: {
@@ -392,13 +426,18 @@ export const performances: Performance[] = [
   },
   {
     title: `zona1`,
-    text: `<enhanced style="cutie">zona1 </enhanced> at one gee in fog, while their second episode of “collective imaginary studies”  
-Geneva CH (in collaboration with Luara Raio) 
+    text: `<enhanced style="cutie">zona1 </enhanced> at one gee in fog, while their second episode of “collective imaginary studies”  Geneva CH (in collaboration with Luara Raio) 
 Luara and Catol propose to exercise and perform 3 different dislocations on the galerie space: 
 “ a ronda”  , “the pattern of the soil calling the head”, “ the washing over”. During these 3 different moments, the performance is built as a constant negotiation between the two performers. 
 They use repetitive and persistence as a way to evoke rituals for change: to change the violent state of things -  that are inscribed into capitalist-modern-colonial society. 
 They wash over their body and let the drops fall. `,
-    image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/rivers.jpg`,
+    image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/zona1_perfo.webp`,
+  },
+  {
+    title: "notes on licking",
+    text: `<enhanced style="cutie"> Notes on licking </enhanced> Halle Nord Geneva CH, Fessestival Geneva CH, Kunsthaus Pasquart /Exhibition “Un.certain Ground” Bien CH, Istituto Svizzero & MACRO Roma IT (in collaboration with Sandar Tun Tun), Krone Couronne Bienne CH
+`,
+    image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/notesOnLicking.webp`,
   },
 ];
 
@@ -452,41 +491,21 @@ export const menuItems: MenuItem[] = [
 
 export const pressContent: PressSection[] = [
   {
-    title: "PW-Magazine by Lewon Heublein",
+    title: " ",
     subsections: [
       {
         title: "",
         links: [
           {
-            title: "PW-Magazine",
+            title: "PW-Magazine by Lewon Heublein",
             url: "https://pw-magazine.com/2024/craze-15-catol-teixeira",
           },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Sceneweb.fr by Belinda Mathieu",
-    subsections: [
-      {
-        title: "",
-        links: [
           {
-            title: "Sceneweb.fr",
+            title: "Sceneweb.fr by Belinda Mathieu",
             url: "https://sceneweb.fr/catol-teixeira-danse-en-mutation/",
           },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Gagarin Magazine by Michele Pascarella",
-    subsections: [
-      {
-        title: "",
-        links: [
           {
-            title: "Gagarin Magazine",
+            title: "Gagarin Magazine by Michele Pascarella",
             url: "https://www.gagarin-magazine.it/2024/08/incontro-ravvicinato/its-not-fixed-its-a-journey-a-conversation-with-catol-teixeira-at-santarcangelo-festival/",
           },
         ],
@@ -497,31 +516,31 @@ export const pressContent: PressSection[] = [
     title: "La Peau Entre Les Doigts",
     subsections: [
       {
-        title: "Interviews",
+        title: "",
         links: [
           {
-            title: "Collective Radiovostok",
+            title: "Interview Collective Radiovostok",
             url: "https://radiovostok.ch/festival-go-go-go-2022-interview-de-catol-teixeira/",
           },
           {
-            title: "L'œil d'Olivier",
+            title: "Interview L'œil d'Olivier",
             url: "https://www.youtube.com/watch?v=tP0NBpNOol4",
           },
         ],
       },
       {
-        title: "Articles",
+        title: "",
         links: [
           {
-            title: "Mouvement Magazine by Zineb Soulaimani",
+            title: "Article Mouvement Magazine by Zineb Soulaimani",
             url: "https://www.mouvement.net/scenes/catol-teixeira-se-liberer-par-les-interstices",
           },
           {
-            title: "Sceneweb.fr by Belinda Mathieu",
+            title: "Article Sceneweb.fr by Belinda Mathieu",
             url: "https://sceneweb.fr/la-peau-entre-les-doigts-danse-humide/",
           },
           {
-            title: "Cult.news by Amélie Blaustein-Niddam",
+            title: "Article Cult.news by Amélie Blaustein-Niddam",
             url: "https://cult.news/scenes/performance/les-etats-de-corps-inaccoutumes-de-la-menagerie-de-verre/",
           },
         ],

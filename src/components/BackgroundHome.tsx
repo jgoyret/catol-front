@@ -64,6 +64,7 @@ const BackgroundHome: React.FC = () => {
               .thresh(0.15)
           )
           .brightness(0)
+          .colorama(1)
           .out();
       };
 

@@ -21,7 +21,11 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
     for (let i = 0; i < gridSize; i++) {
       for (let j = 0; j < gridSize; j++) {
         icons.push(
-          <Icon key={`${i}-${j}`} type="hover" className="text-black" />
+          <Icon
+            key={`${i}-${j}`}
+            type="hover"
+            className="text-black h-full w-full image-crisp"
+          />
         );
       }
     }
