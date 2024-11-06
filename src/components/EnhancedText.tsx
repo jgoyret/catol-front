@@ -1,10 +1,13 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 interface EnhancedTextProps {
   children: string;
 }
 
 const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
+  const location = useLocation();
+
   const renderText = (text: string) => {
     return text.split(/(<enhanced[\s\S]*?<\/enhanced>)/).map((part, index) => {
       if (part.startsWith("<enhanced")) {
@@ -19,7 +22,9 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             return (
               <span
                 key={index}
-                className="font-chuchi text-xl md:text-2xl 2xl:text-[35px] text-black whitespace-pre-line"
+                className={`font-chuchi text-xl md:text-2xl 2xl:text-[35px] ${
+                  location.pathname === "/bio" ? "text-white" : "text-black"
+                } whitespace-pre-line`}
               >
                 {content}
               </span>
@@ -38,7 +43,9 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             return (
               <span
                 key={index}
-                className="font-bold font-jungaMedium tracking-widest text-sm md:text-lg lg:text-xl 2xl:text-2xl text-black whitespace-pre-line"
+                className={`font-bold font-jungaMedium tracking-widest text-sm md:text-lg lg:text-xl 2xl:text-2xl ${
+                  location.pathname === "/bio" ? "text-white" : "text-black"
+                } whitespace-pre-line`}
               >
                 {content}
               </span>

@@ -25,6 +25,7 @@ import InterviewsAndPress from "./pages/InterviewsAndPress";
 import Contact from "./pages/Contact";
 import CV from "./pages/CV";
 import ZonaDeDerremaChapters from "./pages/ZonaDeDerramaChapters";
+import PageTransition from "./components/PageTransition";
 
 export const CursorContext = React.createContext<{
   setCurrentIcon: (icon: React.ElementType | null) => void;
@@ -66,62 +67,86 @@ const ProjectWrapper = () => {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <PageTransition>
+        <Home />
+      </PageTransition>
+    ),
   },
   {
     path: "/project/:id",
-    element: <ProjectWrapper />,
+    element: (
+      <PageTransition>
+        <ProjectWrapper />
+      </PageTransition>
+    ),
   },
   {
     path: "/project/zona-de-derrama",
-    element: <ZonaDeDerremaChapters />,
+    element: (
+      <PageTransition>
+        <ZonaDeDerremaChapters />
+      </PageTransition>
+    ),
   },
   {
     path: "/writing-dancing-around",
     element: (
-      <Layout icon={WritingsGif}>
-        <WritingDancingAround />
-      </Layout>
+      <PageTransition>
+        <Layout icon={WritingsGif}>
+          <WritingDancingAround />
+        </Layout>
+      </PageTransition>
     ),
   },
   {
     path: "/performance",
     element: (
-      <Layout icon={PerfoGif}>
-        <Performance />
-      </Layout>
+      <PageTransition>
+        <Layout icon={PerfoGif}>
+          <Performance />
+        </Layout>
+      </PageTransition>
     ),
   },
   {
     path: "/bio",
     element: (
-      <Layout icon={BioGif}>
-        <Bio />
-      </Layout>
+      <PageTransition>
+        <Layout icon={BioGif}>
+          <Bio />
+        </Layout>
+      </PageTransition>
     ),
   },
   {
     path: "/interviews-and-press",
     element: (
-      <Layout icon={InterviewGif}>
-        <InterviewsAndPress />
-      </Layout>
+      <PageTransition>
+        <Layout icon={InterviewGif}>
+          <InterviewsAndPress />
+        </Layout>
+      </PageTransition>
     ),
   },
   {
     path: "/contact",
     element: (
-      <Layout icon={ContactoGif}>
-        <Contact />
-      </Layout>
+      <PageTransition>
+        <Layout icon={ContactoGif}>
+          <Contact />
+        </Layout>
+      </PageTransition>
     ),
   },
   {
     path: "/calendar",
     element: (
-      <Layout icon={CalendarGif}>
-        <CV />
-      </Layout>
+      <PageTransition>
+        <Layout icon={CalendarGif}>
+          <CV />
+        </Layout>
+      </PageTransition>
     ),
   },
 ]);

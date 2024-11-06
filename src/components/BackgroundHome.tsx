@@ -2,11 +2,13 @@ import React, { useEffect, useRef, useCallback } from "react";
 // @ts-ignore
 import Hydra from "hydra-synth";
 import useDeviceType from "../hooks/useDeviceType";
+// import { useLocation } from "react-router-dom";
 
 const BackgroundHome: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const hydraRef = useRef<any>(null);
   const isMobile = useDeviceType();
+  // const location = useLocation();
 
   const resizeCanvas = useCallback(() => {
     const canvas = canvasRef.current;
@@ -36,6 +38,9 @@ const BackgroundHome: React.FC = () => {
         canvas: canvasRef.current,
         detectAudio: false,
         makeGlobal: false,
+        numSources: 1,
+        numOutputs: 1,
+        precision: "mediump",
       });
 
       hydraRef.current = hydra;
@@ -86,7 +91,10 @@ const BackgroundHome: React.FC = () => {
           hydraRef.current.synth &&
           typeof hydraRef.current.synth.destroy === "function"
         ) {
+          hydraRef.current.synth.regl.destroy();
+          hydraRef.current.synth.pb.destroy();
           hydraRef.current.synth.destroy();
+          hydraRef.current.synth = null;
         }
         hydraRef.current = null;
       }
