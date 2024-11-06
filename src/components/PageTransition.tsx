@@ -26,6 +26,16 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
 
   const getCurrentIcon = () => {
     const currentPath = location.pathname;
+
+    // Show CATOL for home route
+    if (currentPath === "/") {
+      return (
+        <h1 className="text-8xl font-mattoneBold font-bold tracking-widest text-black">
+          CATOL
+        </h1>
+      );
+    }
+
     const menuItem = menuItems.find((item) => {
       if (item.path) {
         return item.path === currentPath;
