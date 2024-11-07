@@ -30,7 +30,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
     // Show CATOL for home route
     if (currentPath === "/") {
       return (
-        <h1 className="text-8xl font-mattoneBold font-bold tracking-widest text-black">
+        <h1 className="text-4xl md:text-8xl font-mattoneBold font-bold tracking-widest text-black">
           CATOL
         </h1>
       );
@@ -53,7 +53,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
     if (!menuItem?.icon) return null;
 
     const IconComponent = menuItem.icon;
-    return <IconComponent className="w-1/2 h-1/2" />;
+    return <IconComponent className="w-1/2" />;
   };
 
   return (
