@@ -22,7 +22,19 @@ const ComingSoon: React.FC = () => {
   const fallbackImage =
     "https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia/laPeau02.jpg"; // Imagen de fallback o frame del video
 
-  React.useEffect(() => {}, []);
+  React.useEffect(() => {
+    console.log("isVideoPlaying", isVideoPlaying);
+    const check_video = setTimeout(() => {
+      if (isVideoPlaying === false) {
+        videoRef.current?.classList.add("hidden");
+        console.log("video hidden");
+      }
+    }, 1000);
+
+    return () => {
+      clearTimeout(check_video);
+    };
+  }, [isVideoPlaying]);
   return (
     <>
       <div className="fixed top-0 left-0 overflow-hidden">
@@ -31,9 +43,7 @@ const ComingSoon: React.FC = () => {
         {/* Video solo cuando se reproduce */}
         <video
           ref={videoRef}
-          className={`w-screen h-screen object-cover ${
-            isVideoPlaying ? "" : "hidden"
-          }`}
+          className={`w-screen h-screen object-cover `}
           autoPlay
           loop
           muted
@@ -44,14 +54,14 @@ const ComingSoon: React.FC = () => {
           <source src={videoSrc} type="video/mp4" />
         </video>
 
-        {!isVideoPlaying && (
-          <img
-            ref={imgRef}
-            src={fallbackImage}
-            alt="Fallback Frame"
-            className="w-screen h-screen object-cover"
-          />
-        )}
+        {/* {!isVideoPlaying && ( */}
+        <img
+          ref={imgRef}
+          src={fallbackImage}
+          alt="Fallback Frame"
+          className="w-screen h-screen object-cover"
+        />
+        {/* )} */}
       </div>
       <div className="absolute w-screen h-full flex items-center justify-center text-xl md:text-4xl xl:text-6xl font-chuchi text-center text-white overflow-x-hidden">
         EM CONSTRUÇÃO / COMING SOON {isVideoPlaying.toString()}
