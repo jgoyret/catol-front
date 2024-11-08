@@ -5,7 +5,7 @@ const ComingSoon: React.FC = () => {
   return (
     <>
       <div className="fixed top-0 left-0 overflow-hidden">
-        <video
+        {/* <video
           className="w-screen h-screen object-cover "
           autoPlay
           loop
@@ -16,7 +16,24 @@ const ComingSoon: React.FC = () => {
             src="https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia/biovideo.mp4?t=2024-10-11T17%3A07%3A38.511Z"
             type="video/mp4"
           />
-        </video>
+        </video> */}
+        <div
+          dangerouslySetInnerHTML={{
+            __html: (function () {
+              let videoContainer = document.createElement("video");
+              let source = document.createElement("source");
+              videoContainer.setAttribute("autoplay", "");
+              videoContainer.setAttribute("muted", "");
+              videoContainer.setAttribute("loop", "");
+
+              videoContainer.className = "w-screen h-screen object-cover";
+              source.src =
+                "https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia/biovideo.mp4?t=2024-10-11T17%3A07%3A38.511Z";
+              videoContainer.appendChild(source);
+              return videoContainer.outerHTML;
+            })(),
+          }}
+        />
       </div>
       <div className="absolute w-screen h-full flex items-center justify-center text-xl md:text-4xl xl:text-6xl font-chuchi text-center text-white overflow-x-hidden">
         EM CONSTRUÇÃO / COMING SOON
