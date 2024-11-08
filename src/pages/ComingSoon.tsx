@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { DerramaGif } from "../components/Gifs";
 
 const ComingSoon: React.FC = () => {
-  const [isVideoPlaying, setIsVideoPlaying] = useState<boolean>(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState<boolean>(true);
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
   // Maneja cuando el video comienza a reproducirse
@@ -29,19 +29,20 @@ const ComingSoon: React.FC = () => {
   return (
     <>
       <div className="fixed top-0 left-0 overflow-hidden">
-        <video
-          ref={videoRef}
-          className="w-screen h-screen object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-          onPlay={handlePlay}
-          onError={handleError}
-        >
-          <source src={videoSrc} type="video/mp4" />
-        </video>
-        {!isVideoPlaying && (
+        {isVideoPlaying ? (
+          <video
+            ref={videoRef}
+            className="w-screen h-screen object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+            onPlay={handlePlay}
+            onError={handleError}
+          >
+            <source src={videoSrc} type="video/mp4" />
+          </video>
+        ) : (
           <img
             src={fallbackImage}
             alt="Fallback Frame"
