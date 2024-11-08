@@ -37,7 +37,7 @@ const InterviewsAndPress: React.FC = () => {
                         className="flex items-center justify-center p-2"
                         aria-label={`Read ${link.title} (opens in new tab)`}
                       >
-                        <span className="text-xl font-bold hover:text-catolHover text-black transition-all">
+                        <span className="text-xl font-bold hover:text-catolHover hover:underline text-black transition-all">
                           {link.title}
                         </span>
                       </a>

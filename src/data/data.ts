@@ -273,7 +273,7 @@ echoes with you)`,
     },
     inspirations: "",
     media: {
-      head: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama02.jpg`,
+      head: `https://player.vimeo.com/video/1023513197`,
       single: "",
       dual: [
         `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama01.jpg`,
@@ -388,7 +388,7 @@ La Peau Entre Les Doigts does not seek clarity or purity, it goes hand in hand w
       ],
     },
     media: {
-      head: "https://player.vimeo.com/video/844613915",
+      head: "https://player.vimeo.com/video/1023516278",
       single: "",
       dual: [
         `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/laPeau01.jpg`,
@@ -513,41 +513,6 @@ export const pressContent: PressSection[] = [
     ],
   },
   {
-    title: "La Peau Entre Les Doigts",
-    subsections: [
-      {
-        title: "",
-        links: [
-          {
-            title: "Interview Collective Radiovostok",
-            url: "https://radiovostok.ch/festival-go-go-go-2022-interview-de-catol-teixeira/",
-          },
-          {
-            title: "Interview L'œil d'Olivier",
-            url: "https://www.youtube.com/watch?v=tP0NBpNOol4",
-          },
-        ],
-      },
-      {
-        title: "",
-        links: [
-          {
-            title: "Article Mouvement Magazine by Zineb Soulaimani",
-            url: "https://www.mouvement.net/scenes/catol-teixeira-se-liberer-par-les-interstices",
-          },
-          {
-            title: "Article Sceneweb.fr by Belinda Mathieu",
-            url: "https://sceneweb.fr/la-peau-entre-les-doigts-danse-humide/",
-          },
-          {
-            title: "Article Cult.news by Amélie Blaustein-Niddam",
-            url: "https://cult.news/scenes/performance/les-etats-de-corps-inaccoutumes-de-la-menagerie-de-verre/",
-          },
-        ],
-      },
-    ],
-  },
-  {
     title: "Interviews and articles - Zona de Derrama Project",
     subsections: [
       {
@@ -626,6 +591,41 @@ export const pressContent: PressSection[] = [
           {
             title: "Caos Cultura",
             url: "https://caos-cultura.ch/index.php/danza/224-una-danza-che-e-un-inno-all-erotismo-e-alla-forza-bellezza-del-corpo",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "La Peau Entre Les Doigts",
+    subsections: [
+      {
+        title: "",
+        links: [
+          {
+            title: "Interview Collective Radiovostok",
+            url: "https://radiovostok.ch/festival-go-go-go-2022-interview-de-catol-teixeira/",
+          },
+          {
+            title: "Interview L'œil d'Olivier",
+            url: "https://www.youtube.com/watch?v=tP0NBpNOol4",
+          },
+        ],
+      },
+      {
+        title: "",
+        links: [
+          {
+            title: "Article Mouvement Magazine by Zineb Soulaimani",
+            url: "https://www.mouvement.net/scenes/catol-teixeira-se-liberer-par-les-interstices",
+          },
+          {
+            title: "Article Sceneweb.fr by Belinda Mathieu",
+            url: "https://sceneweb.fr/la-peau-entre-les-doigts-danse-humide/",
+          },
+          {
+            title: "Article Cult.news by Amélie Blaustein-Niddam",
+            url: "https://cult.news/scenes/performance/les-etats-de-corps-inaccoutumes-de-la-menagerie-de-verre/",
           },
         ],
       },

@@ -11,7 +11,7 @@ export default {
         chuchi: ["chuchi", "sans-serif"],
       },
       colors: {
-        catolHover: "#5555FF",
+        catolHover: "#0000ff",
       },
       screens: {
         "3xl": "2000px",
