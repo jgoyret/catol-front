@@ -6,7 +6,7 @@ const ComingSoon: React.FC = () => {
     <>
       <div className="fixed top-0 left-0">
         <video
-          className="w-screen h-screen object-cover"
+          className="w-screen h-screen object-cover overflow-hidden"
           autoPlay
           loop
           muted
