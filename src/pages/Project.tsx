@@ -109,7 +109,7 @@ const Project: React.FC = () => {
           </div>
         )}
 
-      <p className="whitespace-pre-line text-center px-2 text-xs md:text-sm lg:text-lg font-jungaBook leading-tight">
+      <p className="whitespace-pre-line text-center px-2 text-xs md:text-sm font-jungaBook leading-tight">
         <EnhancedText>{project.credits}</EnhancedText>
       </p>
     </div>

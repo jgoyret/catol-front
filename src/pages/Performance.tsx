@@ -6,7 +6,7 @@ EnhancedText;
 const Performance: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto w-11/12">
-      <h1 className="text-2xl md:text-4xl font-bold mb-4 font-chuchi text-center">
+      <h1 className="text-6xl lg:text-8xl 2xl:text-9xl font-bold mb-4 font-chuchi text-center">
         PERFORMANCE
       </h1>
       <p className="text-lg mb-4 text-center">
