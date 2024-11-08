@@ -31,7 +31,7 @@ const ComingSoon: React.FC = () => {
         videoRef.current?.classList.add("hidden");
         console.log("video hidden");
       }
-    }, 1000);
+    }, 2000);
 
     return () => {
       clearTimeout(check_video);
@@ -67,7 +67,8 @@ const ComingSoon: React.FC = () => {
         {/* )} */}
       </div>
       <div className="absolute w-screen h-full flex items-center justify-center text-xl md:text-4xl xl:text-6xl font-chuchi text-center text-white overflow-x-hidden">
-        EM CONSTRUÇÃO / COMING SOON {isMobile.toString()}
+        EM CONSTRUÇÃO / COMING SOON {isMobile.toString()}{" "}
+        {isVideoPlaying.toString()}
         <DerramaGif className="hidden lg:block absolute z-10 animate-moveAcross transform translate-x-[-200%] w-1/2 mt-[190%] md:mt-[105%] lg:mt-[33%] 2xl:mt-[21%]" />
       </div>
     </>
