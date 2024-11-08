@@ -50,7 +50,7 @@ const ComingSoon: React.FC = () => {
         {/* Video solo cuando se reproduce */}
         <video
           ref={videoRef}
-          className="w-screen h-screen object-cover hidden lg:block"
+          className="w-screen h-screen object-cover hidden md:block"
           autoPlay
           loop
           muted
@@ -66,13 +66,13 @@ const ComingSoon: React.FC = () => {
           ref={imgRef}
           src={fallbackImage}
           alt="Fallback Frame"
-          className="w-screen h-screen object-cover block lg:hidden"
+          className="w-screen h-screen object-cover block md:hidden"
         />
         {/* )} */}
       </div>
       <div className="absolute w-screen h-full flex items-center justify-center text-xl md:text-4xl xl:text-6xl font-chuchi text-center text-white overflow-x-hidden">
         EM CONSTRUÇÃO / COMING SOON
-        <DerramaGif className="hidden lg:block absolute z-10 animate-moveAcross transform translate-x-[-200%] w-1/2 mt-[190%] md:mt-[105%] lg:mt-[33%] 2xl:mt-[21%]" />
+        <DerramaGif className="hidden md:block absolute z-10 animate-moveAcross transform translate-x-[-200%] w-1/2 mt-[190%] md:mt-[105%] lg:mt-[33%] 2xl:mt-[21%]" />
       </div>
     </>
   );
