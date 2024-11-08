@@ -19,7 +19,7 @@ const Home: React.FC = () => {
           {menuItems.map((item, index) => (
             <li
               key={index}
-              className="text-md md:text-xl lg:text-4xl 2xl:text-6xl relative  font-chuchi font-bold hover:italic tracking-widest"
+              className="text-xl md:text-2xl lg:text-4xl 2xl:text-6xl relative  font-chuchi font-bold hover:italic tracking-widest"
               onMouseEnter={() => setHoveredItem(item.name)}
               onMouseLeave={() => setHoveredItem(null)}
             >
