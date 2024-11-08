@@ -24,7 +24,7 @@ export default {
         },
       },
       animation: {
-        moveAcross: "moveAcross 6s infinite", // Cambia 3s por la duración que prefieras
+        moveAcross: "moveAcross 6s infinite 3s", // Cambia 3s por la duración que prefieras
       },
     },
   },
