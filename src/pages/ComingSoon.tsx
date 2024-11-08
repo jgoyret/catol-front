@@ -30,7 +30,7 @@ const ComingSoon: React.FC = () => {
 
     setText("EM CONSTRUÇÃO / COMING SOON");
     const check_video = setTimeout(() => {
-      if (isVideoPlaying && isMobile) {
+      if (!isVideoPlaying && isMobile) {
         videoRef.current?.classList.add("hidden");
         console.log("video hidden");
         setText("parece joda");
