@@ -7,14 +7,11 @@ const ComingSoon: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
   const isMobile = useDeviceType();
-  const [text, setText] = useState<string>("");
 
-  // Maneja cuando el video comienza a reproducirse
   const handlePlay = () => {
     setIsVideoPlaying(true);
   };
 
-  // Maneja cuando hay un error en la carga del video
   const handleError = () => {
     setIsVideoPlaying(false);
   };
@@ -25,29 +22,21 @@ const ComingSoon: React.FC = () => {
   const fallbackImage =
     "https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia/catol-mobile-bio.webp"; // Imagen de fallback o frame del video
 
-  // React.useEffect(() => {
-  //   console.log("isVideoPlaying", isVideoPlaying);
+  React.useEffect(() => {
+    const check_video = setTimeout(() => {
+      if (isVideoPlaying === false && isMobile) {
+        videoRef.current?.classList.add("hidden");
+      }
+    }, 1000);
 
-  //   setText("EM CONSTRUÇÃO / COMING SOON");
-  //   const check_video = setTimeout(() => {
-  //     if (isVideoPlaying === false && isMobile) {
-  //       videoRef.current?.classList.add("hidden");
-  //       console.log("video hidden");
-  //       setText("parece joda");
-  //     }
-  //   }, 5000);
-
-  //   return () => {
-  //     clearTimeout(check_video);
-  //   };
-  // }, [isVideoPlaying]);
+    return () => {
+      clearTimeout(check_video);
+    };
+  }, [isVideoPlaying]);
 
   return (
     <>
       <div className="fixed top-0 left-0 overflow-hidden">
-        {/* Imagen solo cuando el video no se está reproduciendo */}
-
-        {/* Video solo cuando se reproduce */}
         <video
           ref={videoRef}
           className="w-screen h-screen object-cover hidden md:block"
@@ -61,14 +50,12 @@ const ComingSoon: React.FC = () => {
           <source src={videoSrc} type="video/mp4" />
         </video>
 
-        {/* {!isVideoPlaying && ( */}
         <img
           ref={imgRef}
           src={fallbackImage}
           alt="Fallback Frame"
           className="w-screen h-screen object-cover block md:hidden"
         />
-        {/* )} */}
       </div>
       <div className="absolute w-screen h-full flex items-center justify-center text-xl md:text-4xl xl:text-6xl font-chuchi text-center text-white overflow-x-hidden">
         EM CONSTRUÇÃO / COMING SOON
