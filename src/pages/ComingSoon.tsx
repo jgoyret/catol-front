@@ -17,10 +17,8 @@ const ComingSoon: React.FC = () => {
 
   React.useEffect(() => {
     // Reproducir el video si no se ha reproducido
-    if (videoRef.current && !isVideoPlaying) {
-      videoRef.current.play();
-    }
-  }, [videoRef, isVideoPlaying]);
+    console.log("isVideoPlaying", isVideoPlaying);
+  });
 
   // Reemplazar por una imagen si el video no se reproduce
   const videoSrc =
