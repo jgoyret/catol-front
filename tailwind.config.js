@@ -18,13 +18,13 @@ export default {
       },
       keyframes: {
         moveAcross: {
-          "0%": { transform: "translateX(-100%)" },
-          // "50%": { transform: "translateX(100%)" },
+          "0%": { transform: "translateX(-200%)" },
+          "70%": { transform: "translateX(200%)" },
           "100%": { transform: "translateX(200%)" },
         },
       },
       animation: {
-        moveAcross: "moveAcross 3s  infinite", // Cambia 3s por la duración que prefieras
+        moveAcross: "moveAcross 6s infinite", // Cambia 3s por la duración que prefieras
       },
     },
   },
