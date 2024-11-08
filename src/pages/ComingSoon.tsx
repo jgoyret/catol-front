@@ -15,6 +15,13 @@ const ComingSoon: React.FC = () => {
     setIsVideoPlaying(false);
   };
 
+  React.useEffect(() => {
+    // Reproducir el video si no se ha reproducido
+    if (videoRef.current && !isVideoPlaying) {
+      videoRef.current.play();
+    }
+  }, [videoRef, isVideoPlaying]);
+
   // Reemplazar por una imagen si el video no se reproduce
   const videoSrc =
     "https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia/biovideo.mp4?t=2024-10-11T17%3A07%3A38.511Z";
