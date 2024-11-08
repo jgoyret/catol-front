@@ -4,9 +4,9 @@ import { DerramaGif } from "../components/Gifs";
 const ComingSoon: React.FC = () => {
   return (
     <>
-      <div className="fixed top-0 left-0">
+      <div className="fixed top-0 left-0 overflow-hidden">
         <video
-          className="w-screen h-screen object-cover overflow-hidden"
+          className="w-screen h-screen object-cover "
           autoPlay
           loop
           muted
