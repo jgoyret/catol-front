@@ -26,6 +26,7 @@ import Contact from "./pages/Contact";
 import CV from "./pages/CV";
 import ZonaDeDerremaChapters from "./pages/ZonaDeDerramaChapters";
 import PageTransition from "./components/PageTransition";
+import ComingSoon from "./pages/ComingSoon";
 
 export const CursorContext = React.createContext<{
   setCurrentIcon: (icon: React.ElementType | null) => void;
@@ -152,15 +153,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  // const [currentIcon, setCurrentIcon] =
-  //   React.useState<React.ElementType | null>(null);
+  const [isReady, setIsReady] = React.useState(false);
 
-  return (
-    // <CursorContext.Provider value={{ setCurrentIcon }}>
-    /* <CustomCursor activeIcon={currentIcon} /> */
-    <RouterProvider router={router} />
-    // </CursorContext.Provider>
-  );
+  React.useEffect(() => {
+    setIsReady(false);
+  }, []);
+
+  return <>{isReady ? <RouterProvider router={router} /> : <ComingSoon />}</>;
 }
 
 export default App;
