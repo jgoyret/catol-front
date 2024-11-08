@@ -25,22 +25,22 @@ const ComingSoon: React.FC = () => {
   const fallbackImage =
     "https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia/catol-mobile-bio.webp"; // Imagen de fallback o frame del video
 
-  React.useEffect(() => {
-    console.log("isVideoPlaying", isVideoPlaying);
+  // React.useEffect(() => {
+  //   console.log("isVideoPlaying", isVideoPlaying);
 
-    setText("EM CONSTRUÇÃO / COMING SOON");
-    const check_video = setTimeout(() => {
-      if (isVideoPlaying === false && isMobile) {
-        videoRef.current?.classList.add("hidden");
-        console.log("video hidden");
-        setText("parece joda");
-      }
-    }, 5000);
+  //   setText("EM CONSTRUÇÃO / COMING SOON");
+  //   const check_video = setTimeout(() => {
+  //     if (isVideoPlaying === false && isMobile) {
+  //       videoRef.current?.classList.add("hidden");
+  //       console.log("video hidden");
+  //       setText("parece joda");
+  //     }
+  //   }, 5000);
 
-    return () => {
-      clearTimeout(check_video);
-    };
-  }, [isVideoPlaying]);
+  //   return () => {
+  //     clearTimeout(check_video);
+  //   };
+  // }, [isVideoPlaying]);
 
   return (
     <>
@@ -50,7 +50,7 @@ const ComingSoon: React.FC = () => {
         {/* Video solo cuando se reproduce */}
         <video
           ref={videoRef}
-          className={`w-screen h-screen object-cover `}
+          className="w-screen h-screen object-cover hidden lg:block"
           autoPlay
           loop
           muted
@@ -66,12 +66,12 @@ const ComingSoon: React.FC = () => {
           ref={imgRef}
           src={fallbackImage}
           alt="Fallback Frame"
-          className="w-screen h-screen object-cover"
+          className="w-screen h-screen object-cover block lg:hidden"
         />
         {/* )} */}
       </div>
       <div className="absolute w-screen h-full flex items-center justify-center text-xl md:text-4xl xl:text-6xl font-chuchi text-center text-white overflow-x-hidden">
-        {text} {isMobile.toString()} {isVideoPlaying.toString()}
+        EM CONSTRUÇÃO / COMING SOON
         <DerramaGif className="hidden lg:block absolute z-10 animate-moveAcross transform translate-x-[-200%] w-1/2 mt-[190%] md:mt-[105%] lg:mt-[33%] 2xl:mt-[21%]" />
       </div>
     </>
