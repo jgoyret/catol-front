@@ -4,6 +4,7 @@ import { DerramaGif } from "../components/Gifs";
 const ComingSoon: React.FC = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState<boolean>(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const imgRef = useRef<HTMLImageElement | null>(null);
 
   // Maneja cuando el video comienza a reproducirse
   const handlePlay = () => {
@@ -15,7 +16,10 @@ const ComingSoon: React.FC = () => {
     setIsVideoPlaying(false);
   };
 
-  React.useEffect(() => {});
+  // Verifica si el video puede empezar a reproducirse
+  const handleCanPlay = () => {
+    setIsVideoPlaying(true);
+  };
 
   // Reemplazar por una imagen si el video no se reproduce
   const videoSrc =
@@ -26,13 +30,17 @@ const ComingSoon: React.FC = () => {
   return (
     <>
       <div className="fixed top-0 left-0 overflow-hidden">
+        {/* Imagen solo cuando el video no se está reproduciendo */}
         {!isVideoPlaying && (
           <img
+            ref={imgRef}
             src={fallbackImage}
             alt="Fallback Frame"
             className="w-screen h-screen object-cover"
           />
         )}
+
+        {/* Video solo cuando se reproduce */}
         <video
           ref={videoRef}
           className="w-screen h-screen object-cover"
@@ -42,6 +50,7 @@ const ComingSoon: React.FC = () => {
           playsInline
           onPlay={handlePlay}
           onError={handleError}
+          onCanPlay={handleCanPlay} // Asegura que el video puede empezar
         >
           <source src={videoSrc} type="video/mp4" />
         </video>
