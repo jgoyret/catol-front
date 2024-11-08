@@ -35,7 +35,7 @@ const ComingSoon: React.FC = () => {
         )}
         <video
           ref={videoRef}
-          className=" w-screen h-screen object-cover"
+          className="w-screen h-screen object-cover"
           autoPlay
           loop
           muted
