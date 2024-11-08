@@ -7,6 +7,7 @@ const ComingSoon: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
   const isMobile = useDeviceType();
+  const [text, setText] = useState<string>("");
 
   // Maneja cuando el video comienza a reproducirse
   const handlePlay = () => {
@@ -26,10 +27,13 @@ const ComingSoon: React.FC = () => {
 
   React.useEffect(() => {
     console.log("isVideoPlaying", isVideoPlaying);
+
+    setText("EM CONSTRUÇÃO / COMING SOON");
     const check_video = setTimeout(() => {
-      if (isVideoPlaying === false && isMobile) {
+      if (isVideoPlaying && isMobile) {
         videoRef.current?.classList.add("hidden");
         console.log("video hidden");
+        setText("parece joda");
       }
     }, 2000);
 
@@ -67,8 +71,7 @@ const ComingSoon: React.FC = () => {
         {/* )} */}
       </div>
       <div className="absolute w-screen h-full flex items-center justify-center text-xl md:text-4xl xl:text-6xl font-chuchi text-center text-white overflow-x-hidden">
-        EM CONSTRUÇÃO / COMING SOON {isMobile.toString()}{" "}
-        {isVideoPlaying.toString()}
+        {text} {isMobile.toString()} {isVideoPlaying.toString()}
         <DerramaGif className="hidden lg:block absolute z-10 animate-moveAcross transform translate-x-[-200%] w-1/2 mt-[190%] md:mt-[105%] lg:mt-[33%] 2xl:mt-[21%]" />
       </div>
     </>
