@@ -156,7 +156,7 @@ function App() {
   const [isReady, setIsReady] = React.useState(false);
 
   React.useEffect(() => {
-    setIsReady(false);
+    setIsReady(true);
   }, []);
 
   return <>{isReady ? <RouterProvider router={router} /> : <ComingSoon />}</>;
