@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { DerramaGif } from "../components/Gifs";
 
 const ComingSoon: React.FC = () => {
-  const [isVideoPlaying, setIsVideoPlaying] = useState<boolean>(true);
+  const [isVideoPlaying, setIsVideoPlaying] = useState<boolean>(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
   // Maneja cuando el video comienza a reproducirse
@@ -15,10 +15,7 @@ const ComingSoon: React.FC = () => {
     setIsVideoPlaying(false);
   };
 
-  React.useEffect(() => {
-    // Reproducir el video si no se ha reproducido
-    console.log("isVideoPlaying", isVideoPlaying);
-  });
+  React.useEffect(() => {});
 
   // Reemplazar por una imagen si el video no se reproduce
   const videoSrc =
@@ -29,26 +26,25 @@ const ComingSoon: React.FC = () => {
   return (
     <>
       <div className="fixed top-0 left-0 overflow-hidden">
-        {isVideoPlaying ? (
-          <video
-            ref={videoRef}
-            className="w-screen h-screen object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-            onPlay={handlePlay}
-            onError={handleError}
-          >
-            <source src={videoSrc} type="video/mp4" />
-          </video>
-        ) : (
+        {!isVideoPlaying && (
           <img
             src={fallbackImage}
             alt="Fallback Frame"
             className="w-screen h-screen object-cover"
           />
         )}
+        <video
+          ref={videoRef}
+          className=" w-screen h-screen object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          onPlay={handlePlay}
+          onError={handleError}
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
       </div>
       <div className="absolute w-screen h-full flex items-center justify-center text-xl md:text-4xl xl:text-6xl font-chuchi text-center text-white overflow-x-hidden">
         EM CONSTRUÇÃO / COMING SOON {isVideoPlaying.toString()}
