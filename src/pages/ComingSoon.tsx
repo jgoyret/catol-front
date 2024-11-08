@@ -54,6 +54,15 @@ const ComingSoon: React.FC = () => {
         >
           <source src={videoSrc} type="video/mp4" />
         </video>
+
+        {!isVideoPlaying && (
+          <img
+            ref={imgRef}
+            src={fallbackImage}
+            alt="Fallback Frame"
+            className="w-screen h-screen object-cover"
+          />
+        )}
       </div>
       <div className="absolute w-screen h-full flex items-center justify-center text-xl md:text-4xl xl:text-6xl font-chuchi text-center text-white overflow-x-hidden">
         EM CONSTRUÇÃO / COMING SOON {isVideoPlaying.toString()}
