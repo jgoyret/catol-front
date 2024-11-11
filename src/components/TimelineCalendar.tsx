@@ -39,9 +39,7 @@ const TimelineCalendar: React.FC<TimelineCalendarProps> = ({
               <div className=" mb-1">
                 {event.date} {!isMobile && " → " + event.description}
               </div>
-              {isMobile && (
-                <div className="text-gray-600">{event.description}</div>
-              )}
+              {isMobile && <div className="">{event.description}</div>}
             </div>
           ))}
         </div>
