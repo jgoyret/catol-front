@@ -23,10 +23,10 @@ import Performance from "./pages/Performance";
 import Bio from "./pages/Bio";
 import InterviewsAndPress from "./pages/InterviewsAndPress";
 import Contact from "./pages/Contact";
-import CV from "./pages/CV";
 import ZonaDeDerremaChapters from "./pages/ZonaDeDerramaChapters";
 import PageTransition from "./components/PageTransition";
 import ComingSoon from "./pages/ComingSoon";
+import Calendar from "./pages/Calendar";
 
 export const CursorContext = React.createContext<{
   setCurrentIcon: (icon: React.ElementType | null) => void;
@@ -39,9 +39,9 @@ const Layout = ({
   children: React.ReactNode;
   icon: React.ElementType;
 }) => (
-  <div className="flex  bg-gray-100">
+  <div className="bg-gray-100">
     <Header icon={Icon} />
-    <main className="lg:w-10/12  lg:ml-auto mt-20 md:mt-36 lg:mt-10 px-0 xl:px-4 py-8 h-full">
+    <main className="lg:w-10/12 lg:ml-auto mt-20 md:mt-36 lg:mt-10 px-0 xl:px-4 py-8 h-full">
       {children}
     </main>
   </div>
@@ -145,7 +145,7 @@ const router = createBrowserRouter([
     element: (
       <PageTransition>
         <Layout icon={CalendarGif}>
-          <CV />
+          <Calendar />
         </Layout>
       </PageTransition>
     ),
