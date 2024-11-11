@@ -12,8 +12,8 @@ const Calendar: React.FC = () => {
   return (
     <div className="mx-auto ">
       <div className="flex flex-col items-center mb-12 font-chuchi ">
-        <h1 className="text-6xl lg:text-8xl 2xl:text-9xl  mb-4">CALENDAR</h1>
-        <h2 className="text-4xl lg:text-6xl 2xl:text-7xl">
+        <h1 className="text-6xl lg:text-8xl 2xl:text-9xl mb-4">CALENDAR</h1>
+        <h2 className="text-xl md:text-4xl lg:text-6xl 2xl:text-7xl text-center ">
           _ UPCOMING AND PAST DATES _
         </h2>
       </div>
