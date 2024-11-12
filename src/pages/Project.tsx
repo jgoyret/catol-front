@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { projects } from "../data/data";
 import EnhancedText from "../components/EnhancedText";
 import PoemImageLayout from "../components/PoemImageLayout";
@@ -106,6 +106,26 @@ const Project: React.FC = () => {
         !project.usePoemImageLayout && (
           <div className=" text-center mx-5 md:mx-auto m-10 max-w-2xl">
             <EnhancedText>{project.poems.end}</EnhancedText>
+          </div>
+        )}
+
+      {project.navigationBanner &&
+        typeof project.navigationBanner === "object" && (
+          <div>
+            <div className="flex justify-center space-x-32 my-16">
+              <Link
+                to={`/project/${project.navigationBanner.prev}`}
+                className="text-lg lg:text-2xl 2xl:text-4xl font-chuchi hover:text-catolHover"
+              >
+                ← Previous
+              </Link>
+              <Link
+                to={`/project/${project.navigationBanner.next}`}
+                className="text-lg lg:text-2xl 2xl:text-4xl font-chuchi hover:text-catolHover"
+              >
+                Next →
+              </Link>
+            </div>
           </div>
         )}
 

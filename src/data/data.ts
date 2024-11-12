@@ -33,6 +33,7 @@ export interface ProjectStructure {
     dual: string[];
   };
   usePoemImageLayout?: boolean;
+  navigationBanner?: { state?: boolean; prev?: string; next?: string } | false;
 }
 
 export interface Performance {
@@ -177,6 +178,7 @@ sometimes I feel inside a noisy silence
       ],
     },
     usePoemImageLayout: false,
+    navigationBanner: false,
   },
   "zona-de-derrama-1": {
     title: "ZONA DE DERRAMA - first chapter",
@@ -281,6 +283,11 @@ echoes with you)`,
       ],
     },
     usePoemImageLayout: true,
+    navigationBanner: {
+      state: true,
+      prev: "zona-de-derrama-3",
+      next: "zona-de-derrama-2",
+    },
   },
   "zona-de-derrama-2": {
     title: "ARREBENTAÇÃO - last chapter",
@@ -321,6 +328,11 @@ Movement, transitions, and fragments of a choreographic composition: we dance in
       ],
     },
     usePoemImageLayout: false,
+    navigationBanner: {
+      state: true,
+      prev: "zona-de-derrama-1",
+      next: "zona-de-derrama-3",
+    },
   },
   "zona-de-derrama-3": {
     title: "Before it starts, after it’s finished",
@@ -329,22 +341,66 @@ Sound creation: <enhanced style="blackbold">Sandar Tun Tun</enhanced>
 `,
     description: `
 <enhanced style="readme">PREMIERE: NOVEMBER 2025</enhanced>
+
+Before it starts after its finished deals with moments before a change, before a fall, before a touch and implies a sequence where one event concludes, and another one is about to begin. It's a dance dedicated to these moments of "falling into change". The work seeks to dive into a diverse emotional landscape connected to those moments, when we sense that something is about to happen, or even has already passed. Dealing with a perception of time that is in a constant curve, in a constant fall, never captured. As when something has already occurred and a reminiscence lands in the body. These raw moments leave an embodied sensation -akin to a dream, a remembrance - moving through emotional density, crossing the zones and calling to transmutation.
     `,
     poems: {
-      head: `This piece draws on artistic materials - such as movement, poetics and imaginary - that have remained “in secret” from the Zona de Derrama project. It is born within a fascination to sketches, "study", footnotes.. It wishes to tremble and move, in dislocation across the space. It is the continuation of a perceptive experimental journey, curious to approach contemporary dance forms in relation to circus aerial language, sonic dimensions and performative gestures.
-
-      Before it starts after its finished deals with moments before a change, before a fall, before a touch. and implies a sequence where one event concludes, and another one is about to begin. It's a dance dedicated to these moments of "falling into change". The work seeks to dive into a diverse emotional landscape connected to those moments, when we sense that something is about to happen, or even has already passed.
-
-      Dealing with a perception of time that is in a constant curve, in a constant fall, never captured. As when something has already occurred, and a reminiscence lands in the body. These raw moments leave an embodied sensation -akin to a dream, a remembrance - moving through emotional density, crossing the zones and calling to transmutation.`,
-      end: ``,
+      head: `antes do toque antes do sonho antes da chuva antes do grito antes de lembrar antes do cheiro depois de esquecer depois de encostar antes de rir depois de chorar antes de cair depois de cair 
+quase na curva da mata 
+vento com cheiro que toca nas costas 
+lembra do receio de encontrar de baixo da cachoeira 
+olhar pro poço e achar que é o céu por causa do reflexo que ta longe 
+provocaçoes insensatas 
+pra suar pelos olhos gritar sem som 
+rir na cara do perigo daquilo que ta prestes a acontecer
+antes de pular flertar com o risco da queda 
+pular no meio das estrelas segurar a respiração voltar pra borda soltar o ar inteiro lembrando que ta vive
+no encontro da pele com a água doce fria da noite 
+corpo fantasia absurda gargalhando do pulo 
+o que ta prestes a acontecer 
+flerte do tempo:
+quase que eu não venho quase que eu vou embora quase que eu fico 
+antes do choro estômago antes do gozo o olho 
+antes do grito a nuca antes do suor o compasso 
+as promessas de antes quebradas depois 
+depois quase que antes
+`,
+      end: `antes do toque antes do sonho antes da chuva antes do grito antes de lembrar antes do cheiro depois de esquecer depois de encostar antes de rir depois de chorar antes de cair depois de cair 
+quase na curva da mata 
+vento com cheiro que toca nas costas 
+lembra do receio de encontrar de baixo da cachoeira 
+olhar pro poço e achar que é o céu por causa do reflexo que ta longe 
+provocaçoes insensatas 
+pra suar pelos olhos gritar sem som 
+rir na cara do perigo daquilo que ta prestes a acontecer
+antes de pular flertar com o risco da queda 
+pular no meio das estrelas segurar a respiração voltar pra borda soltar o ar inteiro lembrando que ta vive
+no encontro da pele com a água doce fria da noite 
+corpo fantasia absurda gargalhando do pulo 
+o que ta prestes a acontecer 
+flerte do tempo:
+quase que eu não venho quase que eu vou embora quase que eu fico 
+antes do choro estômago antes do gozo o olho 
+antes do grito a nuca antes do suor o compasso 
+as promessas de antes quebradas depois 
+depois quase que antes
+`,
     },
     inspirations: "",
     media: {
       head: "",
       single: "",
-      dual: [`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/before01.webp`, ""],
+      dual: [
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/before01.webp`,
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/before02.webp`,
+      ],
     },
     usePoemImageLayout: true,
+    navigationBanner: {
+      state: true,
+      prev: "zona-de-derrama-2",
+      next: "zona-de-derrama-1",
+    },
   },
   "la-peaux-entre-les-doigts": {
     title: "LA PEAUX ENTRE LES DOIGTS",
@@ -396,6 +452,7 @@ La Peau Entre Les Doigts does not seek clarity or purity, it goes hand in hand w
       ],
     },
     usePoemImageLayout: false,
+    navigationBanner: false,
   },
 };
 
