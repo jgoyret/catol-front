@@ -64,6 +64,86 @@ um arrebatamento de amor
 sempre um arrebatamento da vida, me arrebata por favor? 
 to te esperando no arrebatamento tombado do tempo que passa `,
       `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/writings05.webp`,
+      `the attempt to
+I say sorry to my plants
+for how i believe in something
+
+shaking moving performance
+to articulate the thing
+it’s not about me
+
+listening turning turning
+gaze
+lazy&horny
+I miss others - the gatherings
+
+I feel surrounded
+pleasure
+
+tiredness(resources)(conditions)
+exposures
+I don’t care about aesthetics
+(the concern of the market!)
+
+incorporation
+
+labor
+
+Im not creating anything 
+edges 
+resistances&surrendering 
+
+moving host 
+dancing the dance that is there 
+
+common
+
+fantasies
+
+poetics
+
+i often feel like a visitor 
+not knowing how to proceed 
+
+formless 
+
+call in
+
+Touch distance
+
+I dont want my practice to become a threat 
+to create *shows*
+
+validations 
+
+rereading my body
+
+i have to find another dance 
+
+resurfaced 
+
+healing
+
+it’s important to know how to gather
+
+this dance was never about me. the trap the trap the trap. this is not about me, im just there. leave me alone. 
+
+there is a hybrid of body and image 
+
+look look look 
+
+im not there - i dont care about identifying/ and its not in movement, because im tired. im not in movement. Im tired.
+
+sleeping sleeping sleeping 
+
+my body as an offer. dont make it about me. my body as an offer. how hard it is to sustain 
+to sustain
+`,
+      `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/writings06.webp`,
+      `falls falls falls swimming swimming swimming tender tender tender pray pray pray see see see go stay go stay look take take give touch touched touch far far far for for for cry cry cry scream scream scream hear hear hear eyes eyes eyes try try try forget forget forget remember try attempt attempt there there here here curve curve curve plan curve a plan curve a line line cut cut cut cu cu cu cure cure cure drops drops drops tree tree tree shadow sun light lights lights memory memory senses dream dream dream sleep in in in out out out anger anger anger hope anger friends friends friends love hug hug eyes eyes touch plants smeel of wet earth in the room room room room move move move find a sea sea sea side run after with forget cancel see it try tired tired try try talk explain explain impaciente corrida da lingua beijo kiss noites mal dormidas ir ir ir nao ir ir nao ir rir rir na cara do perigo list list list wishes drops it rage body dor nas costas dor nas costas queria te ligar nao liguei espero que esteja tudo bem 
+for what to share this whole thing
+`,
+      `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/writings07.webp`,
     ],
     columnRight: [
       `the thing is: that plant in the small pot died and im gonna flow without pause as the cycle so absurdly exposes getting to an end the letters the debts the whole control fuck off but yes i hear the oraculo there is the love oh ual but so many ways and beds and a way of living and all many all mess up feelings I couldn’t say and stories i couldn’t tell 

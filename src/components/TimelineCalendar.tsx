@@ -34,10 +34,11 @@ const TimelineCalendar: React.FC<TimelineCalendarProps> = ({
           {yearData.events.map((event, index) => (
             <div
               key={index}
-              className="font-jungaMedium text-lg xl:text-2xl text-center mx-auto"
+              className=" text-lg xl:text-2xl text-center mx-auto"
             >
               <div className=" mb-1">
-                {event.date} {!isMobile && " → " + event.description}
+                {event.date} {!isMobile && <strong>→</strong>}{" "}
+                {!isMobile && event.description}
               </div>
               {isMobile && <div className="">{event.description}</div>}
             </div>
