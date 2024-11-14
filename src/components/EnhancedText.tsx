@@ -43,7 +43,7 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             return (
               <span
                 key={index}
-                className={`font-bold font-jungaMedium tracking-widest text-sm md:text-lg lg:text-xl 2xl:text-2xl ${
+                className={`uppercase font-bold font-jungaMedium tracking-widest text-sm md:text-lg lg:text-xl 2xl:text-2xl ${
                   location.pathname === "/bio" ? "text-white" : "text-black"
                 } whitespace-pre-line`}
               >
@@ -61,7 +61,7 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             );
           default:
             return (
-              <span key={index} className="whitespace-pre-line">
+              <span key={index} className="whitespace-pre-line ">
                 {content}
               </span>
             );

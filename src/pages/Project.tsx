@@ -112,18 +112,18 @@ const Project: React.FC = () => {
       {project.navigationBanner &&
         typeof project.navigationBanner === "object" && (
           <div>
-            <div className="flex justify-center space-x-32 my-16">
+            <div className="flex justify-between my-16">
               <Link
                 to={`/project/${project.navigationBanner.prev}`}
                 className="text-lg lg:text-2xl 2xl:text-4xl font-chuchi hover:text-catolHover"
               >
-                ← Previous
+                ← {project.navigationBanner.namePrev}
               </Link>
               <Link
                 to={`/project/${project.navigationBanner.next}`}
                 className="text-lg lg:text-2xl 2xl:text-4xl font-chuchi hover:text-catolHover"
               >
-                Next →
+                {project.navigationBanner.nameNext} →
               </Link>
             </div>
           </div>

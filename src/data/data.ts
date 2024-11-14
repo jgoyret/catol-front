@@ -33,7 +33,15 @@ export interface ProjectStructure {
     dual: string[];
   };
   usePoemImageLayout?: boolean;
-  navigationBanner?: { state?: boolean; prev?: string; next?: string } | false;
+  navigationBanner?:
+    | {
+        state?: boolean;
+        prev?: string;
+        next?: string;
+        namePrev?: string;
+        nameNext?: string;
+      }
+    | false;
 }
 
 export interface Performance {
@@ -189,19 +197,39 @@ Support: Festival Actoral Marseille FR & Bale National de Marseille FR
 Performed and co-created with <enhanced style="blackbold">Auguste de Boursetty, Laura Raio, Luisa Lemgruber</enhanced>
 `,
     description: `
-    <enhanced style="cutie">Zona de Derrama - first chapter</enhanced> is a dance composition for three dancers, specifically for outdoor spaces. The performance takes place during twilight, a time when daylight fade and our eyes adjust to the approaching night. This initial chapter, serves as ode for liminal spaces of transitions and transmutations.
+   <enhanced style="cutietitle"> Zona de Derrama – First Chapter</enhanced> unfolds as an evolving choreography, a work "in process." This piece marks the beginning of a research journey initiated by Catol in the direction of “zones” that become dances, where harmony and dissonance might shape a shared space of movement language. This opening chapter is composed for three dancers and designed for outdoor and daylight situations, while in twilight—those moments when light fades, and our eyes begin to adjust to the night approaching. 
+Here, the performance serves as an ode to liminal spaces, embracing the thresholds of transition and transformation.
+Zona de Derrama - First Chapter reach out for a dancing and celebration for the precise moment when the next movement is not yet known but  felt. When a frontier overflows and transforms itself into passage. 
+This outdoor dance performance seeks to inhabit and evoke zones of transition, where some forms dissolve, and the pulse of change becomes palpable. Here, dance emerges as both a gesture of resistance and release, sorrow and joy intertwined, embodying delicacy and tensions that arise at the threshold.
 
-Dancing and celebrating for and at the moment of when a frontier, a border, a limitation can overflow and to trans.pass itself. The performance aims to evoke certain “zones”, expressing both sorrow and joy. Searching for a dance at the exact moment when change happens.
+During zona de derrama we evoke this notion of “overflowings” (derrama in brazilian portuguese). We comprehend this zone as a place where these overflows are announced, about to happen. In this way, we deal with watery qualities, and evoking its complex so called “contemporary” interactions: the overflow as a poetic pleasure, but simultaneously dangerous floods, destruction of the modern/colonial societal failure. 
 
-<enhanced style="readme">MOVEMENT, TRANSITIONS AND FRAGMENTS OF A CHOREOGRAPHIC COMPOSITION:</enhanced>
-We dance into “zones” of tenderness, risk, danger, love, disagreements, resonance, celebration, safety, memory-remembering. These zones are activated throughout a score that is set in a specific consequential order. All zones are composed with precise movement material, but each dancer can
-visit it within own relation to it, with its own emotions and embodied experiences.
-Dealing with an idea of composing with fragments, “zona de derrama” is a wonder into movement language that englobes such fragments to form a
-dance. The work is made through the collaborations, each artist offers and create the journey that we are constructing together to built this piece and its dance and aesthetic language. Dancing is for me a radical stubbornness to remember a dream.
 `,
     poems: {
       head: `
-ZONES ZONING
+<enhanced style="readme">the storm was washing the sky outside 
+and we were moving into zones of liminal spaces. where we transition, touch, cry and laugh. </enhanced>
+where we dance into territories of encountering; finding the synchronizations on curves, falling falling falling into - carrying and failing, learning and looking. 
+turn turn turn. again. fall. 
+
+no, its not always easy to keep dancing. but we need it. to sweat, to listen, to say. to remain. 
+we remain. 
+we have always been here, and we gonna keep loving. 
+making love. kissing. 
+to wet the floor and traverse
+we recognize each other 
+and get lost, 
+then we dance again 
+to find and loose it
+we are here and here we will be. 
+thank you for so much that vibrates and teach me. beside you. 
+those dances are always a scape and a arrival. 
+and its always a love letter
+
+
+`,
+      end: `
+     <enhanced style="cutie">ZONES ZONING
 AN INVITATION TO AN EVENT WHERE WE EVOKE LIMINAL SPACES:
 OF TRANSITIONS, OF INTIMACY AND PROTECTION, ZONES TO ESCAPE OR TO STAY,
  DEALING WITH AN IDEA OR COMPOSING FRAGMENTS
@@ -230,48 +258,15 @@ escaping captures with out bodies-cosmologies
 relational matter & relational body entanglement
 WE BUILD 
 ceremonies for (...)
+
+
 
 (I stage my body transitions)
 Dancing as gesture of belonging.
 (I wish to rest, to drop my very heavy bones. I wish to listen to the
 echoes with you)
-
+_</enhanced>
 `,
-      end: `
-      ZONES ZONING
-AN INVITATION TO AN EVENT WHERE WE EVOKE LIMINAL SPACES:
-OF TRANSITIONS, OF INTIMACY AND PROTECTION, ZONES TO ESCAPE OR TO STAY,
- DEALING WITH AN IDEA OR COMPOSING FRAGMENTS
-ZONA DE DERRAMA  IS A WONDER INTO TRANSPASSING
- AND CHANGES OF MATERIAL CONDITION
-IT QUESTIONS WHERE IT WOULD GO AFTER A FLOOD, AFTER A CEASE, DURING A CALL FOR CHANGE 
-
-WE WONDER IF CAN YOU REMEMBER YOUR DREAMS?
-WHAT RESOURCES CAN YOU GRASP?
-HOW WE DANCE IN THE DANCE FIELD?
-WHERE IT GOES ALL THE EXHAUSTION? 
-
-THE LAND EXHAUSTION - SCARCITY - 
-
-WE TRACE TERRITORIES TO ARRIVE. 
-+
-ITS an overflow, infiltrating in between spaces 
-devastation
-the destruction of modernity.
-we seat to 
-sense tender eyes and the call to go - 
-tracing the poetics of transmutation transmitting - transitioning,
-watery emotions
-formless forms
-escaping captures with out bodies-cosmologies
-relational matter & relational body entanglement
-WE BUILD 
-ceremonies for (...)
-
-(I stage my body transitions)
-Dancing as gesture of belonging.
-(I wish to rest, to drop my very heavy bones. I wish to listen to the
-echoes with you)`,
     },
     inspirations: "",
     media: {
@@ -287,6 +282,8 @@ echoes with you)`,
       state: true,
       prev: "zona-de-derrama-3",
       next: "zona-de-derrama-2",
+      namePrev: "Before it starts, after it’s finished",
+      nameNext: "ARREBENTAÇÃO - last chapter",
     },
   },
   "zona-de-derrama-2": {
@@ -332,6 +329,8 @@ Movement, transitions, and fragments of a choreographic composition: we dance in
       state: true,
       prev: "zona-de-derrama-1",
       next: "zona-de-derrama-3",
+      namePrev: "ZONA DE DERRAMA - first chapter",
+      nameNext: "Before it starts, after it’s finished",
     },
   },
   "zona-de-derrama-3": {
@@ -340,32 +339,19 @@ Movement, transitions, and fragments of a choreographic composition: we dance in
 Sound creation: <enhanced style="blackbold">Sandar Tun Tun</enhanced>
 `,
     description: `
-<enhanced style="readme">PREMIERE: NOVEMBER 2025</enhanced>
+<enhanced style="readme">PREMIERE: MAY 2025</enhanced>
 
-Before it starts after its finished deals with moments before a change, before a fall, before a touch and implies a sequence where one event concludes, and another one is about to begin. It's a dance dedicated to these moments of "falling into change". The work seeks to dive into a diverse emotional landscape connected to those moments, when we sense that something is about to happen, or even has already passed. Dealing with a perception of time that is in a constant curve, in a constant fall, never captured. As when something has already occurred and a reminiscence lands in the body. These raw moments leave an embodied sensation -akin to a dream, a remembrance - moving through emotional density, crossing the zones and calling to transmutation.
     `,
     poems: {
-      head: `antes do toque antes do sonho antes da chuva antes do grito antes de lembrar antes do cheiro depois de esquecer depois de encostar antes de rir depois de chorar antes de cair depois de cair 
-quase na curva da mata 
-vento com cheiro que toca nas costas 
-lembra do receio de encontrar de baixo da cachoeira 
-olhar pro poço e achar que é o céu por causa do reflexo que ta longe 
-provocaçoes insensatas 
-pra suar pelos olhos gritar sem som 
-rir na cara do perigo daquilo que ta prestes a acontecer
-antes de pular flertar com o risco da queda 
-pular no meio das estrelas segurar a respiração voltar pra borda soltar o ar inteiro lembrando que ta vive
-no encontro da pele com a água doce fria da noite 
-corpo fantasia absurda gargalhando do pulo 
-o que ta prestes a acontecer 
-flerte do tempo:
-quase que eu não venho quase que eu vou embora quase que eu fico 
-antes do choro estômago antes do gozo o olho 
-antes do grito a nuca antes do suor o compasso 
-as promessas de antes quebradas depois 
-depois quase que antes
+      head: `Before it starts after its finished deals with moments before a change, before a fall, before a touch and implies a sequence where one event concludes, and another one is about to begin. 
+      
+      It's a dance dedicated to these moments of "falling into change". 
+      The work seeks to dive into a diverse emotional landscape connected to those moments, when we sense that something is about to happen, or even has already passed. 
+      Dealing with a perception of time that is in a constant curve, in a constant fall, never captured. 
+      As when something has already occurred and a reminiscence lands in the body. 
+      These raw moments leave an embodied sensation -akin to a dream, a remembrance - moving through emotional density, crossing the zones and calling to transmutation.
 `,
-      end: `antes do toque antes do sonho antes da chuva antes do grito antes de lembrar antes do cheiro depois de esquecer depois de encostar antes de rir depois de chorar antes de cair depois de cair 
+      end: `<enhanced style="cutie">Antes do toque antes do sonho antes da chuva antes do grito antes de lembrar antes do cheiro depois de esquecer depois de encostar antes de rir depois de chorar antes de cair depois de cair 
 quase na curva da mata 
 vento com cheiro que toca nas costas 
 lembra do receio de encontrar de baixo da cachoeira 
@@ -383,7 +369,7 @@ quase que eu não venho quase que eu vou embora quase que eu fico
 antes do choro estômago antes do gozo o olho 
 antes do grito a nuca antes do suor o compasso 
 as promessas de antes quebradas depois 
-depois quase que antes
+depois quase que antes</enhanced>,
 `,
     },
     inspirations: "",
@@ -400,6 +386,8 @@ depois quase que antes
       state: true,
       prev: "zona-de-derrama-2",
       next: "zona-de-derrama-1",
+      namePrev: "ARREBENTAÇÃO - last chapter",
+      nameNext: "ZONA DE DERRAMA - first chapter",
     },
   },
   "la-peaux-entre-les-doigts": {
@@ -471,19 +459,19 @@ PERSONAL CONCERNS, ARTISTIC PRACTICES AND ARTISTS, ESTABLISHING WITH DANCING AND
 export const performances: Performance[] = [
   {
     title: `Eu vou aparecer bem no meio do seu sonho`,
-    text: `<enhanced style="cutie">Eu vou aparecer bem no meio do seu sonho  </enhanced> August 2024 - at Halle Berghain, Berlin (GE) - in collaboration with Luara Raio  - During the exhibition of Danielle Brathwait-Shirley, “SOUL STATION” - curated by Mawena Yehouessi. The performance emerged from an ongoing artistic dialogue between Catol Teixeira and Luara Raio. Together, they searched for spells to cast in performative spaces, devising tactics to escape the binaries imposed by Western colonial-modern society. Their dance moved fluidly, always in curves and transitions. This performance was shaped as an improvised score, unfolding in silence yet in tune with the echoes and reverberations of the charged atmosphere of the vast Halle of Berghain. It was performed within the context of the SOUL STATION exhibition, where the space itself became an active participant in their movement and dance`,
+    text: `<enhanced style="cutietitle">Eu vou aparecer bem no meio do seu sonho  </enhanced> August 2024 - at Halle Berghain, Berlin (GE) - in collaboration with Luara Raio  - During the exhibition of Danielle Brathwait-Shirley, “SOUL STATION” - curated by Mawena Yehouessi. The performance emerged from an ongoing artistic dialogue between Catol Teixeira and Luara Raio. Together, they searched for spells to cast in performative spaces, devising tactics to escape the binaries imposed by Western colonial-modern society. Their dance moved fluidly, always in curves and transitions. This performance was shaped as an improvised score, unfolding in silence yet in tune with the echoes and reverberations of the charged atmosphere of the vast Halle of Berghain. It was performed within the context of the SOUL STATION exhibition, where the space itself became an active participant in their movement and dance`,
     image: `${
       import.meta.env.VITE_SUPABASE_STORAGE_URL
     }/eu-vou-aparecer-bem-no-meio-do-seu-sonho.jpg`,
   },
   {
     title: `Rivers`,
-    text: `<enhanced style="cutie">Rivers </enhanced> in collaboration with Gorge Bataille and Eden Levi Am, during the portraits exhibition “RIVERS” by Eden Levi Am at the Halle Norde Galerie Geneve / Performance part of the Fessestival, Geneva 2023 `,
+    text: `<enhanced style="cutietitle">Rivers </enhanced> in collaboration with Gorge Bataille and Eden Levi Am, during the portraits exhibition “RIVERS” by Eden Levi Am at the Halle Norde Galerie Geneve / Performance part of the Fessestival, Geneva 2023 `,
     image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/rivers.jpg`,
   },
   {
     title: `zona1`,
-    text: `<enhanced style="cutie">zona1 </enhanced> at one gee in fog, while their second episode of “collective imaginary studies”  Geneva CH (in collaboration with Luara Raio) 
+    text: `<enhanced style="cutietitle">zona1 </enhanced> at one gee in fog, while their second episode of “collective imaginary studies”  Geneva CH (in collaboration with Luara Raio) 
 Luara and Catol propose to exercise and perform 3 different dislocations on the galerie space: 
 “ a ronda”  , “the pattern of the soil calling the head”, “ the washing over”. During these 3 different moments, the performance is built as a constant negotiation between the two performers. 
 They use repetitive and persistence as a way to evoke rituals for change: to change the violent state of things -  that are inscribed into capitalist-modern-colonial society. 
@@ -492,7 +480,7 @@ They wash over their body and let the drops fall. `,
   },
   {
     title: "notes on licking",
-    text: `<enhanced style="cutie"> Notes on licking </enhanced> Halle Nord Geneva CH, Fessestival Geneva CH, Kunsthaus Pasquart /Exhibition “Un.certain Ground” Bien CH, Istituto Svizzero & MACRO Roma IT (in collaboration with Sandar Tun Tun), Krone Couronne Bienne CH
+    text: `<enhanced style="cutietitle"> Notes on licking </enhanced> Halle Nord Geneva CH, Fessestival Geneva CH, Kunsthaus Pasquart /Exhibition “Un.certain Ground” Bien CH, Istituto Svizzero & MACRO Roma IT (in collaboration with Sandar Tun Tun), Krone Couronne Bienne CH
 `,
     image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/notesOnLicking.webp`,
   },
