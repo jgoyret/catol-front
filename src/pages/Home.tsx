@@ -14,6 +14,8 @@ const Home: React.FC = () => {
   return (
     <div className="flex justify-center items-center min-h-screen">
       <BackgroundHome />
+      <h1 className="absolute text-transparent"> Catol Teixeira </h1>
+      <h2 className="absolute text-transparent">Catol Teixeira porfolio</h2>
       <nav className="text-center">
         <ul className="space-y-6 md:space-y-10">
           {menuItems.map((item, index) => (
