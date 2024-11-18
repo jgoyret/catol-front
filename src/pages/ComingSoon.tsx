@@ -36,6 +36,8 @@ const ComingSoon: React.FC = () => {
 
   return (
     <>
+      <h1 className="absolute hidden">Catol Teixeira</h1>
+      <h2 className="absolute hidden">Catol Teixeira website portfolio</h2>
       <div className="fixed top-0 left-0 overflow-hidden">
         <video
           ref={videoRef}
