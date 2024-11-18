@@ -1,0 +1,10 @@
+# Bloqueo del acceso a carpetas privadas
+User-agent: *
+Disallow: /project/
+
+# Permite todo lo demás
+User-agent: *
+Allow: /
+
+# URL del sitemap para ayudar con la indexación
+Sitemap: https://catolteixeira.com/
