@@ -1,7 +1,3 @@
-# Bloqueo del acceso a carpetas privadas
-User-agent: *
-Disallow: /project/
-
 # Permite todo lo demás
 User-agent: *
 Allow: /
