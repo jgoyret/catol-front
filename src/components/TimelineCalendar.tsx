@@ -1,6 +1,7 @@
 import React from "react";
 import type { YearData } from "../data/timelineCalendar";
 import useDeviceType from "../hooks/useDeviceType";
+import EnhancedText from "./EnhancedText";
 
 interface TimelineCalendarProps {
   yearData: YearData;
@@ -20,7 +21,11 @@ const TimelineCalendar: React.FC<TimelineCalendarProps> = ({
         onClick={onToggle}
         className="w-full py-6 flex items-center justify-center text-center focus:outline-none group"
       >
-        <span className="hover:border-b border-b-0 border-black w-full text-4xl xl:text-6xl font-chuchi transition-all group-hover:text-catolHover">
+        <span
+          className={`${
+            isExpanded ? "border-b" : "border-b-0"
+          } border-black w-full text-4xl xl:text-6xl font-chuchi transition-all group-hover:text-catolHover`}
+        >
           {yearData.year}
         </span>
       </button>
@@ -36,8 +41,8 @@ const TimelineCalendar: React.FC<TimelineCalendarProps> = ({
               key={index}
               className=" text-lg xl:text-2xl text-center mx-auto"
             >
-              <div className=" mb-1">
-                {event.date} {!isMobile && <strong>→</strong>}{" "}
+              <div className=" mb-2">
+                <strong>{event.date}</strong> {!isMobile && <strong>→</strong>}{" "}
                 {!isMobile && event.description}
               </div>
               {isMobile && <div className="">{event.description}</div>}

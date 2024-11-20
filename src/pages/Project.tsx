@@ -115,13 +115,13 @@ const Project: React.FC = () => {
             <div className="flex justify-between my-16">
               <Link
                 to={`/project/${project.navigationBanner.prev}`}
-                className="text-lg lg:text-2xl 2xl:text-4xl font-chuchi hover:text-catolHover"
+                className="text-lg lg:text-2xl 2xl:text-4xl font-chuchi hover:text-catolHover hover:underline"
               >
                 ← {project.navigationBanner.namePrev}
               </Link>
               <Link
                 to={`/project/${project.navigationBanner.next}`}
-                className="text-lg lg:text-2xl 2xl:text-4xl font-chuchi hover:text-catolHover"
+                className="text-lg lg:text-2xl 2xl:text-4xl font-chuchi hover:text-catolHover hover:underline"
               >
                 {project.navigationBanner.nameNext} →
               </Link>

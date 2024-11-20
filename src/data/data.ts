@@ -452,29 +452,54 @@ PERSONAL CONCERNS, ARTISTIC PRACTICES AND ARTISTS, ESTABLISHING WITH DANCING AND
 export const performances: Performance[] = [
   {
     title: `Eu vou aparecer bem no meio do seu sonho`,
-    text: `<enhanced style="cutietitle">Eu vou aparecer bem no meio do seu sonho  </enhanced> August 2024 - at Halle Berghain, Berlin (GE) - in collaboration with Luara Raio  - During the exhibition of Danielle Brathwait-Shirley, “SOUL STATION” - curated by Mawena Yehouessi. The performance emerged from an ongoing artistic dialogue between Catol Teixeira and Luara Raio. Together, they searched for spells to cast in performative spaces, devising tactics to escape the binaries imposed by Western colonial-modern society. Their dance moved fluidly, always in curves and transitions. This performance was shaped as an improvised score, unfolding in silence yet in tune with the echoes and reverberations of the charged atmosphere of the vast Halle of Berghain. It was performed within the context of the SOUL STATION exhibition, where the space itself became an active participant in their movement and dance`,
+    text: `<enhanced style="cutietitle">Eu vou aparecer bem no meio do seu sonho  </enhanced> August 2024 - at Halle Berghain, Berlin (GE) - in collaboration with Luara Raio  - During the exhibition of Danielle Brathwait-Shirley, “SOUL STATION” - curated by Mawena Yehouessi. The performance emerged from an ongoing artistic dialogue between Catol Teixeira and Luara Raio. Together, they searched for spells to cast in performative spaces, devising tactics to escape the binaries imposed by Western colonial-modern society. Their dance moved fluidly, always in curves and transitions. This performance was shaped as an improvised score, unfolding in silence yet in tune with the echoes and reverberations of the charged atmosphere of the vast Halle of Berghain. It was performed within the context of the SOUL STATION exhibition, where the space itself became an active participant in their movement and dance. `,
     image: `${
       import.meta.env.VITE_SUPABASE_STORAGE_URL
     }/eu-vou-aparecer-bem-no-meio-do-seu-sonho.jpg`,
   },
   {
     title: `Rivers`,
-    text: `<enhanced style="cutietitle">Rivers </enhanced> in collaboration with Gorge Bataille and Eden Levi Am, during the portraits exhibition “RIVERS” by Eden Levi Am at the Halle Norde Galerie Geneve / Performance part of the Fessestival, Geneva 2023 `,
+    text: `<enhanced style="cutietitle">Rivers </enhanced> in collaboration with Gorge Bataille and Eden Levi Am, during the portraits exhibition “RIVERS” by Eden Levi Am at the Halle Norde Galerie Geneve / Performance part of the Fessestival, Geneva 2023 
+
+“We are not mere witnesses of what is happening. We are the bodies through which mutation arrives and settles. The question is not who we are, but what we want to become. "1 (Preciado Paul B., Hypothèse révolution, Dysphoria mundi, Grasset, 2022, page 65).
+It is said of the Naiads that they could live for thousands of years, while always remaining young and beautiful. That they had healing talents. That the sick came to drink the water from their spring. It is also said that the mere sight of a Naiad was risky because it could lead to temporary madness. eden levi am invokes the Naiads, and proposes a new mythology. Of the one who gives in to intimacy, lets it commune with the surrounding nature - of clay and water. 
+(text by Gorge) `,
     image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/rivers.jpg`,
   },
   {
     title: `zona1`,
-    text: `<enhanced style="cutietitle">zona1 </enhanced> at one gee in fog, while their second episode of “collective imaginary studies”  Geneva CH (in collaboration with Luara Raio) 
+    text: `<enhanced style="cutietitle">zona1 </enhanced> at one gee in fog, while their second episode of “collective imaginary studies”  
+Geneva CH (in collaboration with Luara Raio) 
 Luara and Catol propose to exercise and perform 3 different dislocations on the galerie space: 
 “ a ronda”  , “the pattern of the soil calling the head”, “ the washing over”. During these 3 different moments, the performance is built as a constant negotiation between the two performers. 
 They use repetitive and persistence as a way to evoke rituals for change: to change the violent state of things -  that are inscribed into capitalist-modern-colonial society. 
-They wash over their body and let the drops fall. `,
+They wash over their body and let the drops fall.  `,
     image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/zona1_perfo.webp`,
   },
   {
     title: "notes on licking",
-    text: `<enhanced style="cutietitle"> Notes on licking </enhanced> Halle Nord Geneva CH, Fessestival Geneva CH, Kunsthaus Pasquart /Exhibition “Un.certain Ground” Bien CH, Istituto Svizzero & MACRO Roma IT (in collaboration with Sandar Tun Tun), Krone Couronne Bienne CH
+    text: `<enhanced style="cutietitle"> Notes on licking </enhanced> was initially developed during a research residency at the Halle Norde Gallerie in Geneva. Over the course of a week, Catol immersed themselves in the gallery space, focusing on material related to the creation of Clashes Licking. The residency allowed for an exploration of movement, objects, and themes central to their choreographic practice.
+One key element that emerged was the use of a wig, which became both a prop and a “situation” within the performance. The wig took on various roles, evolving with each context and invitation where the performance was presented. It served as a tactile, transformative object that informed the dance’s fluidity, offering both restraint and freedom in movement.
+In this work, both the wig and the improvised dance score engaged with themes of eroticism, as well as the shifting dynamics of distance and proximity between bodies. These themes were explored through subtle and charged gestures, creating a layered dialogue between intimacy, object, and space, while constantly adapting to different performative environments.
+
 `,
+    image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/notesOnLicking.webp`,
+  },
+  {
+    title: "de la pra ca daqui pra la",
+    text: `<enhanced style="cutietitle"> de la pra ca daqui pra la </enhanced> site specific performance created for the exhibition “Between the Lines” curated by Danniel Tostes
+Antoine Simeão Schalk
+
+This performance was proposed as a gesture of “carrying and “draging” one material across the exhibition space. Catol proposed to the space of the gallery a dislocation of materials: a shell, sand and a heavy stone. All these materials were shaping the physicality and possible dislocations of their body, till the opposite location of the galerie. Things remained on the way, other ones arrived on the other side. The final gesture of this performative gesture were to leave the materials (“things”) exposed on the floor, as a metaphysic manner to tell the story of its “dislocation” 
+`,
+    image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/notesOnLicking.webp`,
+  },
+  {
+    title: "antes de voltar (h)ouve uma onda",
+    text: `<enhanced style="cutietitle"> antes de voltar (h)ouve uma onda  </enhanced> Contextual performance in Rio de Janeiro (2019)
+an improvisation in between Luisa Lemgruber and Catol Teixeira at Espaço Montagem, RJ
+A performance imagined as a moment of farewell. It happened simultaneous as other artistic performances, shows and party activities - a self managed independent scene in the city Rio de Janeiro, 2018 
+(no register) `,
     image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/notesOnLicking.webp`,
   },
 ];

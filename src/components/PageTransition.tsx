@@ -19,7 +19,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
     // Simulate content loading
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [location.pathname]);
@@ -30,7 +30,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
     // Show CATOL for home route
     if (currentPath === "/") {
       return (
-        <h1 className="text-4xl md:text-8xl font-mattoneBold font-bold tracking-widest text-black">
+        <h1 className="text-4xl md:text-8xl font-chuchi tracking-widest text-black">
           CATOL
         </h1>
       );
@@ -64,6 +64,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          transition={{ duration: 0.0 }}
           onAnimationComplete={() => {
             if (!isLoading) {
               setShowIcon(false);
@@ -79,7 +80,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.0 }}
         >
           {children}
         </motion.div>

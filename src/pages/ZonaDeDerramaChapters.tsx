@@ -18,19 +18,19 @@ const ZonaDeDerremaChapters: React.FC = () => {
       <div className="absolute w-full text-white font-chuchi font-bold space-y-10 flex flex-col items-center justify-center min-h-screen">
         <Link
           to="/project/zona-de-derrama-1"
-          className="text-md  md:text-2xl 2xl:text-4xl hover:text-catolHover hover:italic transition-colors drop-shadow-md shadow-black"
+          className="text-xl md:text-2xl lg:text-4xl 2xl:text-6xl hover:text-catolHover hover:italic transition-colors drop-shadow-md shadow-black"
         >
           ZONA DE DERRAMA - first chapter
         </Link>
         <Link
           to="/project/zona-de-derrama-2"
-          className="text-md md:text-2xl 2xl:text-4xl hover:text-catolHover hover:italic transition-colors drop-shadow-md shadow-black"
+          className="text-xl md:text-2xl lg:text-4xl 2xl:text-6xl hover:text-catolHover hover:italic transition-colors drop-shadow-md shadow-black"
         >
           ARREBENTAÇÃO - last chapter
         </Link>
         <Link
           to="/project/zona-de-derrama-3"
-          className="text-md md:text-2xl 2xl:text-4xl hover:text-catolHover hover:italic transition-colors drop-shadow-md shadow-black"
+          className="text-xl md:text-2xl lg:text-4xl 2xl:text-6xl hover:text-catolHover hover:italic transition-colors drop-shadow-md shadow-black"
         >
           Before it starts, after it’s finished
         </Link>
