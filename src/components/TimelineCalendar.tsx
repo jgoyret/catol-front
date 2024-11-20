@@ -1,7 +1,6 @@
 import React from "react";
 import type { YearData } from "../data/timelineCalendar";
 import useDeviceType from "../hooks/useDeviceType";
-import EnhancedText from "./EnhancedText";
 
 interface TimelineCalendarProps {
   yearData: YearData;
