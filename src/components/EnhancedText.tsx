@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 interface EnhancedTextProps {
   children: string;
@@ -12,6 +12,7 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
     return text.split(/(<enhanced[\s\S]*?<\/enhanced>)/).map((part, index) => {
       if (part.startsWith("<enhanced")) {
         const style = part.match(/style="(.*?)"/)?.[1];
+        const linkName = part.match(/link="(.*?)"/)?.[1] || "";
         const content = part.replace(
           /<enhanced.*?>([\s\S]*?)<\/enhanced>/,
           "$1"
@@ -29,11 +30,26 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
                 {content}
               </span>
             );
+          case "cutielink":
+            return (
+              <Link to={linkName} target="_blank" rel="noopener noreferrer">
+                <span
+                  key={index}
+                  className={`font-chuchi text-xl md:text-2xl 2xl:text-[35px] ${
+                    location.pathname === "/bio" ? "text-white" : "text-black"
+                  } whitespace-pre-line hover:text-catolHover hover:underline`}
+                >
+                  {content}
+                </span>
+              </Link>
+            );
           case "cutietitle":
             return (
               <span
                 key={index}
-                className="uppercase font-chuchi text-xl lg:text-2xl 2xl:text-5xl  text-black whitespace-pre-line"
+                className={`uppercase font-chuchi text-xl lg:text-2xl 2xl:text-5xl  ${
+                  location.pathname === "/bio" ? "text-white" : "text-black"
+                } whitespace-pre-line`}
               >
                 {content}
               </span>
