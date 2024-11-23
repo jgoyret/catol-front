@@ -3,6 +3,9 @@ import { biotext } from "../data/data";
 import EnhancedText from "../components/EnhancedText";
 
 const Bio: React.FC = () => {
+  React.useEffect(() => {
+    return () => console.log("Document Ready State", document.readyState);
+  }, []);
   return (
     <>
       <div className="fixed top-0 left-0 overflow-hidden">

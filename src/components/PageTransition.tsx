@@ -21,7 +21,9 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
       setIsLoading(false);
     }, 2000);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+    };
   }, [location.pathname]);
 
   const getCurrentIcon = () => {

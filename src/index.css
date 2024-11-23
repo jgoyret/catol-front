@@ -13,16 +13,6 @@
 }
 
 @font-face {
-  font-family: "MattoneBold";
-  src: url("/fonts/Mattone-Bold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "MattoneRegular";
-  src: url("/fonts/Mattone-Regular.woff2") format("woff2");
-}
-
-@font-face {
   font-family: "chuchi";
   src: url("/fonts/mincho.woff2") format("woff2");
 }

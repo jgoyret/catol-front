@@ -44,11 +44,11 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
           direction={"right"}
           className="h-full mx-auto font-jungaBook"
         >
-          <div className="mx-10 font-mattoneBold">HOME</div>
+          <div className="mx-10 font-jungaMedium">HOME</div>
           <Icon type="hover" className="h-10 md:h-16" />
-          <div className="mx-10 font-mattoneBold">HOME</div>
+          <div className="mx-10 font-jungaMedium">HOME</div>
           <Icon type="hover" className="h-10 md:h-16 " />
-          <div className="mx-10 font-mattoneBold">HOME</div>
+          <div className="mx-10 font-jungaMedium">HOME</div>
           <Icon type="hover" className="h-10 md:h-16" />
         </Marquee>
       </Link>

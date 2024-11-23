@@ -91,7 +91,11 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
     });
   };
 
-  return <div className="whitespace-pre-line">{renderText(children)}</div>;
+  return (
+    <div key={React.useId()} className="whitespace-pre-line">
+      {renderText(children)}
+    </div>
+  );
 };
 
 export default EnhancedText;

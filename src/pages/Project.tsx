@@ -3,11 +3,14 @@ import { Link, useParams } from "react-router-dom";
 import { projects } from "../data/data";
 import EnhancedText from "../components/EnhancedText";
 import PoemImageLayout from "../components/PoemImageLayout";
+import { usePageLoad } from "../context/PageLoadContext";
 
 const Project: React.FC = () => {
   const { id } = useParams<{ id: string }>();
 
   const project = projects[id as keyof typeof projects];
+
+  const { isPageLoaded } = usePageLoad();
 
   if (!project) {
     return <div>Project not found</div>;
@@ -35,6 +38,11 @@ const Project: React.FC = () => {
       );
     }
   };
+
+  React.useEffect(() => {
+    // Este console.log se ejecutará cada vez que el valor del contexto cambie
+    console.log("Context value - isPageLoaded:", isPageLoaded);
+  }, [isPageLoaded]);
 
   return (
     <div className=" lg:pl-10 text-sm md:text-lg 2xl:text-2xl">
