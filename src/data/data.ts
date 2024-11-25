@@ -309,10 +309,29 @@ With support from : <enhanced style="blackbold">Pro Helvetia, Loterie Romande, F
 Thanks to: <enhanced style="blackbold">Maria Cristina Teixeira, Lea Genoud, Madeleine Amsler, Barbara Giongo, Chloe Demetriades, Simone Frey, Marcela Santander, Alessandra Domingues</enhanced>
 `,
     description: `
-  <enhanced style="cutietitle">Arrebentação - zona de derrama last chapter</enhanced> is inscribed in the path of Catol Teixeira as their first artistic direction for a group dance piece . The work has been divided in two chapters as a way to at first “overflow” softly (-with the outdoor piece  “zona de derrama first chapter ») to after, arrive at its last chapter: « arrebentação ». 
-	Arrebentação is this zone where either you wait before, or you learn how to cross. There is a sound to it, you hear the waves breaking against a stone, you can hear the force of it when it comes till the coast. It's magnetic. It's constant. It's the earth's trembling condition. It carries its secrets, as it should. It's very exposed, as it should. 
- its vulnerable but not fragile: arrebentação might be an evocation for what it should fall and shift. For what should change and drop. It might be a « vignette for the end of this world ». *1 -Hypatia Varloumis and Sandra Ruiz book « formless formation » In « arrebentação » 5 dancers create a choreography that is rooted in *cuir* disorientations and trembling imaginaries.
-	They touch and love around the zone of fall, they agree and disagree while in contact. They had not a common idiom in between them but they knew what was there. They meet on the break of tongues. They listen for listen, they trust the magic. They scream and cry, after or before - they had an exuberant laugh. They search to build a conspiracy without a plot (*2 valentina desideri and Stephano Harney) 
+  tumultuous touches polyphonic feelings / 
+arrebentação is arriving with extravagant tears , furious laughs and genuine failures . 
+
+
+<enhanced style="cutietitle">Arrebentação - Zona de Derrama last chapter</enhanced> represents a milestone moment in Catol Teixeira's artistic journey, serving as his inaugural direction for a group dance piece. This work unfolds in two chapters, beginning with a gentle overflow in the outdoor performance titled Zona de Derrama: First Chapter, and culminating in its final chapter, Arrebentação.
+
+The term Arrebentação refers to the area of the sea where waves crash. It is a space where one can observe the wind interacting with the water's surface, negotiating the forces at play just before the moment of descent and break. Arrebentação is the zone where one either waits in anticipation or learns how to pierce it.
+
+There is a distinct sound associated with this experience; the crashing waves against the rocks resonate as you feel the power of the water reaching the shore. 
+
+It is magnetic. It is constant. It embodies the trembling essence of the earth.
+
+In this space, they connect and embrace the dynamics of falling. They find harmony and discord in their interactions. Though they lack a shared language, they intuitively understand the presence of something greater. They meet at the intersection of their voices, listening intently, trusting in the magic between them. They express themselves through screams and tears, or perhaps through exuberant laughter.
+
+They strive to forge a conspiracy without a predetermined narrative, inspired by the ideas of Valentina Desideri and Stefano Harney*1.
+
+(It carries its secrets, as it should.
+It is laid bare, as it should.
+It is vulnerable but not fragile.)
+
+Arrebentação may evoke the potential for what is destined to shift and fall. It serves as a vignette for the end of this world*2.
+
+In Arrebentação 5 dancers create a choreography that is rooted in kuir disorientations and trembling imaginaries.
 
 `,
     poems: "",
@@ -492,7 +511,7 @@ Antoine Simeão Schalk
 
 This performance was proposed as a gesture of “carrying and “draging” one material across the exhibition space. Catol proposed to the space of the gallery a dislocation of materials: a shell, sand and a heavy stone. All these materials were shaping the physicality and possible dislocations of their body, till the opposite location of the galerie. Things remained on the way, other ones arrived on the other side. The final gesture of this performative gesture were to leave the materials (“things”) exposed on the floor, as a metaphysic manner to tell the story of its “dislocation” 
 `,
-    image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/notesOnLicking.webp`,
+    image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/deAcaPraLa_perfo.webp`,
   },
   {
     title: "antes de voltar (h)ouve uma onda",
@@ -500,7 +519,9 @@ This performance was proposed as a gesture of “carrying and “draging” one 
 an improvisation in between Luisa Lemgruber and Catol Teixeira at Espaço Montagem, RJ
 A performance imagined as a moment of farewell. It happened simultaneous as other artistic performances, shows and party activities - a self managed independent scene in the city Rio de Janeiro, 2018 
 (no register) `,
-    image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/notesOnLicking.webp`,
+    image: `${
+      import.meta.env.VITE_SUPABASE_STORAGE_URL
+    }/antesDeVoltar_perfo.webp`,
   },
 ];
 

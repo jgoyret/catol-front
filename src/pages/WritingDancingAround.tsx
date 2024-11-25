@@ -342,7 +342,7 @@ I dance because you can forget me and I don’t mind, anymore
   return (
     <div className=" mx-auto">
       <h1 className="text-6xl lg:text-8xl 2xl:text-9xl mb-4 2xl:mb-10 font-chuchi text-center">
-        WRITING AND DANCING AROUND
+        WRITING DANCING AROUND
       </h1>
       <TwoColumnsFree data={data} />
     </div>
