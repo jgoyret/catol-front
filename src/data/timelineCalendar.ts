@@ -132,6 +132,11 @@ export const timelineData: YearData[] = [
         description: "Zona de Derrama - First Chapter @ SudPol / Luzern CH",
       },
       {
+        date: "23. September",
+        description:
+          "RIVERS @ Halle Norde Galerie - Festival Fessestival, Geneva CH (2023) ",
+      },
+      {
         date: "3. & 4. October",
         description: "Clashes Licking @ Actoral Festival, Marseille FR",
       },
@@ -163,6 +168,29 @@ export const timelineData: YearData[] = [
     year: "2022",
     events: [
       {
+        date: "14,15, January ",
+        description:
+          "La Peau Entre Les Doigts @ Festival GoGoGo at Grutli Maison des Arts, Geneva, CH",
+      },
+      {
+        date: "19. March",
+        description: "De La Pra Ca @ La Rada, Locarno CH",
+      },
+      {
+        date: "9 June",
+        description:
+          "La Peau Entre Les Doigts @ Festival Reencontre d’Echelle - La Friche Belle de Mai/ Marseille, FR",
+      },
+      {
+        date: "06. - 08. July",
+        description:
+          "La Peau Entre Les Doigts @Santarcangelo Festival, Santarcangelo, IT",
+      },
+      {
+        date: "15. August",
+        description: "Notes on Licking @ Halle Norde Galerie, Geneva, CH",
+      },
+      {
         date: "1. September",
         description:
           "Notes on Licking @ Pasquart - Un.Certain Ground Exhibition, Bienne CH",
@@ -175,6 +203,11 @@ export const timelineData: YearData[] = [
         date: "3. - 6. November",
         description:
           "Clashes Licking @ 'Emergentia l'Abri, TU, AOC' Theatre de l'Usine, Geneva CH",
+      },
+      {
+        date: "15 November",
+        description:
+          "La Peau Entre Les Doigts @ Backslash Festival, Gessnerallee, Zurich CH ",
       },
       {
         date: "16. December",
@@ -190,6 +223,16 @@ export const timelineData: YearData[] = [
         date: "22. - 24. February",
         description:
           "La Peau Entre Les Doigts @ Bachelor Presentation at La Manufacture Haute Ecole des Arts de La Scene, Lausanne CH",
+      },
+      {
+        date: "15. July",
+        description:
+          " La Peau Entre Les Doigts- Festival Belluard Bollwerk , Fribourg, CH ",
+      },
+      {
+        date: "21. -23. November",
+        description:
+          "La Peau Entre Les Doigts @Les Quart d'Heure • Theatre Sevelin36 , Lausanne, CH ",
       },
     ],
   },
