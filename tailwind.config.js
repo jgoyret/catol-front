@@ -6,8 +6,6 @@ export default {
       fontFamily: {
         jungaBook: ["JungaBook", "sans-serif"],
         jungaMedium: ["JungaMedium", "sans-serif"],
-        mattoneBold: ["MattoneBold", "sans-serif"],
-        mattoneRegular: ["MattoneRegular", "sans-serif"],
         chuchi: ["chuchi", "sans-serif"],
       },
       colors: {

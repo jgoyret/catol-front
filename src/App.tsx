@@ -28,6 +28,7 @@ import PageTransition from "./components/PageTransition";
 import ComingSoon from "./pages/ComingSoon";
 import Calendar from "./pages/Calendar";
 
+
 export const CursorContext = React.createContext<{
   setCurrentIcon: (icon: React.ElementType | null) => void;
 }>({ setCurrentIcon: () => {} });
