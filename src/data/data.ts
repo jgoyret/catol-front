@@ -265,7 +265,7 @@ _</enhanced>
       head: `https://player.vimeo.com/video/1023513197`,
       single: "",
       dual: [
-        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama01.jpg`,
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama01.webp`,
         `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama03.jpg`,
       ],
     },
