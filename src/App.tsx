@@ -28,7 +28,6 @@ import PageTransition from "./components/PageTransition";
 import ComingSoon from "./pages/ComingSoon";
 import Calendar from "./pages/Calendar";
 
-
 export const CursorContext = React.createContext<{
   setCurrentIcon: (icon: React.ElementType | null) => void;
 }>({ setCurrentIcon: () => {} });
@@ -157,7 +156,7 @@ function App() {
   const [isReady, setIsReady] = React.useState(false);
 
   React.useEffect(() => {
-    setIsReady(false);
+    setIsReady(true);
   }, []);
 
   return <>{isReady ? <RouterProvider router={router} /> : <ComingSoon />}</>;
