@@ -143,7 +143,9 @@ to sustain
       `falls falls falls swimming swimming swimming tender tender tender pray pray pray see see see go stay go stay look take take give touch touched touch far far far for for for cry cry cry scream scream scream hear hear hear eyes eyes eyes try try try forget forget forget remember try attempt attempt there there here here curve curve curve plan curve a plan curve a line line cut cut cut cu cu cu cure cure cure drops drops drops tree tree tree shadow sun light lights lights memory memory senses dream dream dream sleep in in in out out out anger anger anger hope anger friends friends friends love hug hug eyes eyes touch plants smeel of wet earth in the room room room room move move move find a sea sea sea side run after with forget cancel see it try tired tired try try talk explain explain impaciente corrida da lingua beijo kiss noites mal dormidas ir ir ir nao ir ir nao ir rir rir na cara do perigo list list list wishes drops it rage body dor nas costas dor nas costas queria te ligar nao liguei espero que esteja tudo bem 
 for what to share this whole thing
 `,
-      `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/writings07.webp`,
+      `${
+        import.meta.env.VITE_SUPABASE_STORAGE_URL
+      }/writing03.webp?t=2024-11-06T18%3A24%3A03.203Z`,
     ],
     columnRight: [
       `the thing is: that plant in the small pot died and im gonna flow without pause as the cycle so absurdly exposes getting to an end the letters the debts the whole control fuck off but yes i hear the oraculo there is the love oh ual but so many ways and beds and a way of living and all many all mess up feelings I couldn’t say and stories i couldn’t tell 
@@ -152,9 +154,7 @@ to find the stone silence inside every cilia dancing into healing
 the alliances the trust the smiles oh how many eyes i see in my thoughts right now 
 how many melting chests and pleasant feelings and so many turns how many turns and learning and aging and respect your tears your sweat the salt waters on those last months and i also realized my first wrinkles craving my face feels good on me the after 30 arriving my vertebras my flehs my face all changing while the mg of gel are part of my blood bleeding i was bleeding that night and i could lick you for hours high memories of touches and suddenly carnaval happened as in a dream sometimes all this that is happening right now feels like a dream because the spiral of time just drives me i surrender i surrender please take me i know you like it i can give it to you and and then the early morning jet leg things circulating in my blood circulation pleasure delightful in my back circulations to help me to cope with this whole situation please please please dont ask me what i need also dont ask me how is it going let me tell about the horoscopes and tell me your love life and your fears and pleasures how are you dancing with it right now you know that i know that you know that the dreams well whatever time passes the flow of words just get me as urgent as your scream as urgent as the end of this whole shit and all these that we remain escaping but then why why why there is no way to get it anyway and i get anxious with the days and i get pleasures out of actually needing to move with your smell in my fingers
 `,
-      `${
-        import.meta.env.VITE_SUPABASE_STORAGE_URL
-      }/writing03.webp?t=2024-11-06T18%3A24%3A03.203Z`,
+      `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/writings07.webp`,
       `the dances 
 the dance of doubts 
 the space dance
@@ -342,7 +342,7 @@ I dance because you can forget me and I don’t mind, anymore
   return (
     <div className=" mx-auto">
       <h1 className="text-6xl lg:text-8xl 2xl:text-9xl mb-4 2xl:mb-10 font-chuchi text-center">
-        WRITING DANCING AROUND
+        WRITINGS DANCING AROUND
       </h1>
       <TwoColumnsFree data={data} />
     </div>

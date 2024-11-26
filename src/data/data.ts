@@ -41,6 +41,12 @@ export interface Performance {
   title: string;
   text: string;
   image: string;
+  credits:
+    | string
+    | {
+        activity: string;
+        names: string;
+      };
 }
 export interface MenuItem {
   id?: string;
@@ -89,7 +95,7 @@ Coproduction: <enhanced style="blackbold">Theatre de l’Usine & Emergentia</enh
 Photo credits - <enhanced style="blackbold">Mariano Silva</enhanced>
 `,
     description: `
-<enhanced style="cutie">Clashes Licking</enhanced> draws inspiration from a pivotal figure in Western dance history: the Faun, famously represented by Nijinsky. However, rather than reviewing or commenting on this legacy, this piece offers a somewhat personal relation to this Faune, shaped by Catol's dance training. The core focus lies on  how learned techniques shape and form the body—how cultural and political influences define one's corporeity*1.
+<enhanced style="cutietitle">Clashes Licking</enhanced> draws inspiration from a pivotal figure in Western dance history: the Faun, famously represented by Nijinsky. However, rather than reviewing or commenting on this legacy, this piece offers a somewhat personal relation to this Faune, shaped by Catol's dance training. The core focus lies on  how learned techniques shape and form the body—how cultural and political influences define one's corporeity*1.
 
 The movement language flirts with the form and techniques of ballet, circus and celebratory experiences. In a creation of a self-fiction, Catol evoke memories of their trajectory, where dancing was always being a simultaneous channel of social and personal understanding.
 A dance language arose in conversation with Catol’s memory of a specific Nijinskys’ portrait hanging on a wall of their ballet school at Lapa, Rio de Janeiro in 2009. In this picture, The Faune represented by Nijinsky in the 20’s century dances with suspicious eyes, looking out of the framed image towards the open space of a large corridor. Nijinsky appears as a queer ghost from Western dance history. 
@@ -190,6 +196,7 @@ Performed by and co-creation: <enhanced style="blackbold">Auguste de Boursetty, 
 Sound Creation:<enhanced style="blackbold"> Luisa Lemgruber </enhanced>
 Production and Administration: <enhanced style="blackbold">Rabea Grand </enhanced>
 Tour management: <enhanced style="blackbold">Jerome Pique </enhanced>
+Photo Credits: <enhanced style="blackbold">Pietro Bertora, Binta Kopp</enhanced>
 `,
     description: `
 <enhanced style="cutietitle">Zona de Derrama – First Chapter</enhanced> unfolds as an evolving choreography, a work "in process." This piece marks the beginning of a research journey initiated by Catol in the direction of “zones” that become dances, where harmony and dissonance might shape a shared space of movement language. This opening chapter is composed for three dancers and designed for outdoor and daylight situations, while in twilight—those moments when light fades, and our eyes begin to adjust to the night approaching. 
@@ -300,29 +307,23 @@ Production assistant: <enhanced style="blackbold">Dylan Huido</enhanced>
 Administration & Production: <enhanced style="blackbold">Rabea Grand</enhanced>
 Tour management: <enhanced style="blackbold">Jerome Pique</enhanced> 
  
-Co-Production : Création dans le cadre du programme <enhanced style="blackbold">(AC)COMPAGNONS du Pavillon ADC</enhanced>, soutenu par la <enhanced style="blackbold">Fondation Leenaards, Théâtre Vidy-Lausanne, EFFEA</enhanced> -Santarcangelo Festival, <enhanced style="blackbold">Points Communs</enhanced> - Nouvelle Scène Nationale - Cergy-Pontoise. This project is part of <enhanced style="blackbold">RESO – Dance Network Switzerland Coproduction Found.
- 
+Co-Production : Création dans le cadre du programme <enhanced style="blackbold">(AC)COMPAGNONS du Pavillon ADC</enhanced>, soutenu par la <enhanced style="blackbold">Fondation Leenaards, Théâtre Vidy-Lausanne, EFFEA</enhanced> -Santarcangelo Festival, <enhanced style="blackbold">Points Communs</enhanced> - Nouvelle Scène Nationale - Cergy-Pontoise. This project is part of <enhanced style="blackbold">RESO </enhanced>– Dance Network Switzerland Coproduction Found.
 Residency support: <enhanced style="blackbold">Point Éphémère</enhanced> (DRAC France), <enhanced style="blackbold">Festival actoral, CCN Ballet national de Marseille.</enhanced>
- 
 With support from : <enhanced style="blackbold">Pro Helvetia, Loterie Romande, Fondation Hans Wilsdorf, Ernst Göhner Stiftung</enhanced>
- 
 Thanks to: <enhanced style="blackbold">Maria Cristina Teixeira, Lea Genoud, Madeleine Amsler, Barbara Giongo, Chloe Demetriades, Simone Frey, Marcela Santander, Alessandra Domingues</enhanced>
+Photo Credits: <enhanced style="blackbold">Gregory Bataradon</enhanced>
 `,
     description: `
   tumultuous touches polyphonic feelings / 
-arrebentação is arriving with extravagant tears , furious laughs and genuine failures . 
+arrebentação is arriving with extravagant tears , furious laughs and genuine failures. 
 
 
 <enhanced style="cutietitle">Arrebentação - Zona de Derrama last chapter</enhanced> represents a milestone moment in Catol Teixeira's artistic journey, serving as his inaugural direction for a group dance piece. This work unfolds in two chapters, beginning with a gentle overflow in the outdoor performance titled Zona de Derrama: First Chapter, and culminating in its final chapter, Arrebentação.
-
 The term Arrebentação refers to the area of the sea where waves crash. It is a space where one can observe the wind interacting with the water's surface, negotiating the forces at play just before the moment of descent and break. Arrebentação is the zone where one either waits in anticipation or learns how to pierce it.
-
 There is a distinct sound associated with this experience; the crashing waves against the rocks resonate as you feel the power of the water reaching the shore. 
-
 It is magnetic. It is constant. It embodies the trembling essence of the earth.
 
 In this space, they connect and embrace the dynamics of falling. They find harmony and discord in their interactions. Though they lack a shared language, they intuitively understand the presence of something greater. They meet at the intersection of their voices, listening intently, trusting in the magic between them. They express themselves through screams and tears, or perhaps through exuberant laughter.
-
 They strive to forge a conspiracy without a predetermined narrative, inspired by the ideas of Valentina Desideri and Stefano Harney*1.
 
 (It carries its secrets, as it should.
@@ -330,7 +331,6 @@ It is laid bare, as it should.
 It is vulnerable but not fragile.)
 
 Arrebentação may evoke the potential for what is destined to shift and fall. It serves as a vignette for the end of this world*2.
-
 In Arrebentação 5 dancers create a choreography that is rooted in kuir disorientations and trembling imaginaries.
 
 `,
@@ -353,9 +353,10 @@ In Arrebentação 5 dancers create a choreography that is rooted in kuir disorie
     },
   },
   "zona-de-derrama-3": {
-    title: "Before it starts, after it’s finished",
+    title: "Before it starts, after it's finished",
     credits: `Choreography, concept and performance: <enhanced style="blackbold">Catol Teixeira</enhanced>
 Sound creation: <enhanced style="blackbold">Sandar Tun Tun</enhanced>
+Photo Credits: <enhanced style="blackbold">Catol Teixeira, Jerome Pique</enhanced>
 `,
     description: `
 <enhanced style="readme">PREMIERE: MAY 2025</enhanced>
@@ -475,6 +476,7 @@ export const performances: Performance[] = [
     image: `${
       import.meta.env.VITE_SUPABASE_STORAGE_URL
     }/eu-vou-aparecer-bem-no-meio-do-seu-sonho.jpg`,
+    credits: { activity: "Photo Credit", names: "Milena Wegner" },
   },
   {
     title: `Rivers`,
@@ -484,6 +486,7 @@ export const performances: Performance[] = [
 It is said of the Naiads that they could live for thousands of years, while always remaining young and beautiful. That they had healing talents. That the sick came to drink the water from their spring. It is also said that the mere sight of a Naiad was risky because it could lead to temporary madness. eden levi am invokes the Naiads, and proposes a new mythology. Of the one who gives in to intimacy, lets it commune with the surrounding nature - of clay and water. 
 (text by Gorge) `,
     image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/rivers.jpg`,
+    credits: { activity: "Photo Credit", names: "Zohra Sans" },
   },
   {
     title: `zona1`,
@@ -494,6 +497,7 @@ Luara and Catol propose to exercise and perform 3 different dislocations on the 
 They use repetitive and persistence as a way to evoke rituals for change: to change the violent state of things -  that are inscribed into capitalist-modern-colonial society. 
 They wash over their body and let the drops fall.  `,
     image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/zona1_perfo.webp`,
+    credits: { activity: "Photo Credit", names: "Errel Le Pape" },
   },
   {
     title: "notes on licking",
@@ -503,6 +507,7 @@ In this work, both the wig and the improvised dance score engaged with themes of
 
 `,
     image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/notesOnLicking.webp`,
+    credits: "",
   },
   {
     title: "de la pra ca daqui pra la",
@@ -512,6 +517,7 @@ Antoine Simeão Schalk
 This performance was proposed as a gesture of “carrying and “draging” one material across the exhibition space. Catol proposed to the space of the gallery a dislocation of materials: a shell, sand and a heavy stone. All these materials were shaping the physicality and possible dislocations of their body, till the opposite location of the galerie. Things remained on the way, other ones arrived on the other side. The final gesture of this performative gesture were to leave the materials (“things”) exposed on the floor, as a metaphysic manner to tell the story of its “dislocation” 
 `,
     image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/deAcaPraLa_perfo.webp`,
+    credits: "",
   },
   {
     title: "antes de voltar (h)ouve uma onda",
@@ -522,6 +528,7 @@ A performance imagined as a moment of farewell. It happened simultaneous as othe
     image: `${
       import.meta.env.VITE_SUPABASE_STORAGE_URL
     }/antesDeVoltar_perfo.webp`,
+    credits: "",
   },
 ];
 
@@ -542,7 +549,7 @@ export const menuItems: MenuItem[] = [
     icon: LaPeauGif,
   },
   {
-    name: "WRITING DANCING AROUND",
+    name: "WRITINGS DANCING AROUND",
     path: "/writing-dancing-around",
     icon: WritingsGif,
   },

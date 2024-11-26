@@ -32,6 +32,10 @@ const Performance: React.FC = () => {
               <p className="text-sm md:text-lg 2xl:text-2xl mx-5 md:mx-5">
                 <EnhancedText>{performance.text}</EnhancedText>
               </p>
+              <p className="text-sm md:text-lg 2xl:text-2xl mx-5 md:mx-5 mt-5">
+                {typeof performance.credits === "object" &&
+                  `${performance.credits.activity}: ${performance.credits.names}`}
+              </p>
             </div>
           </div>
         ))}

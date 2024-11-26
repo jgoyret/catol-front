@@ -6,7 +6,7 @@ const ZonaDeDerremaChapters: React.FC = () => {
     <>
       <div className="fixed top-0 left-0 overflow-hidden">
         <video
-          className="w-screen h-screen object-cover "
+          className="w-screen h-screen object-cover transform filter blur-md invert"
           autoPlay
           loop
           muted
@@ -32,7 +32,7 @@ const ZonaDeDerremaChapters: React.FC = () => {
           to="/project/zona-de-derrama-3"
           className="text-xl md:text-2xl lg:text-4xl 2xl:text-6xl hover:text-catolHover hover:italic transition-colors drop-shadow-md shadow-black"
         >
-          Before it starts, after it’s finished
+          Before it starts, after it's finished
         </Link>
       </div>
     </>
