@@ -20,25 +20,33 @@ export interface ProjectStructure {
         head: string;
         end: string;
       };
-  inspirations:
-    | string
-    | {
-        title: string;
-        content: string[];
-        urls: string[];
-      };
   media: {
     head: string;
     single: string;
     dual: string[];
   };
   usePoemImageLayout?: boolean;
+  navigationBanner?:
+    | {
+        state?: boolean;
+        prev?: string;
+        next?: string;
+        namePrev?: string;
+        nameNext?: string;
+      }
+    | false;
 }
 
 export interface Performance {
   title: string;
   text: string;
   image: string;
+  credits:
+    | string
+    | {
+        activity: string;
+        names: string;
+      };
 }
 export interface MenuItem {
   id?: string;
@@ -66,6 +74,11 @@ export const projects: Record<string, ProjectType> = {
   "clashes-licking": {
     title: "CLASHES LICKING",
     credits: `
+    ♥ Footnotes ♥
+*1 → The Challenge of Corporeity: Fictionalising the Emotional Body by <enhanced style=”blackbold”>Ioana Balgreadan</enhanced>
+♥‿♥
+
+
       Choreography, Performance, Concept - <enhanced style="blackbold">Catol Teixeira</enhanced>
 Sound Creation - <enhanced style="blackbold">Sandar Tun Tun</enhanced>
 Costume Creation - <enhanced style="blackbold">Auguste de Boursetty</enhanced>
@@ -82,27 +95,19 @@ Coproduction: <enhanced style="blackbold">Theatre de l’Usine & Emergentia</enh
 Photo credits - <enhanced style="blackbold">Mariano Silva</enhanced>
 `,
     description: `
-<enhanced style="cutietitle">Clashes Licking</enhanced> draws inspiration from a pivotal figure in Western dance history: the Faun, famously represented by Nijinsky. However, rather than reviewing or commenting on this legacy, this piece offers a somewhat personal relation to this Faune, shaped by Catol's dance training. The core focus lies on  how learned techniques shape and form the body—how cultural and political influences define one's corporeity.
+<enhanced style="cutietitle">Clashes Licking</enhanced> draws inspiration from a pivotal figure in Western dance history: the Faun, famously represented by Nijinsky. However, rather than reviewing or commenting on this legacy, this piece offers a somewhat personal relation to this Faune, shaped by Catol's dance training. The core focus lies on  how learned techniques shape and form the body—how cultural and political influences define one's corporeity*1.
 
-The movement language flirts with the form and techniques of ballet, circus and cabratory  experiences. In a creation of a self-fiction, Catol evoke memories of their trajectory, where dancing was always being a simultaneous channel of social and personal understanding.
+The movement language flirts with the form and techniques of ballet, circus and celebratory experiences. In a creation of a self-fiction, Catol evoke memories of their trajectory, where dancing was always being a simultaneous channel of social and personal understanding.
 A dance language arose in conversation with Catol’s memory of a specific Nijinskys’ portrait hanging on a wall of their ballet school at Lapa, Rio de Janeiro in 2009. In this picture, The Faune represented by Nijinsky in the 20’s century dances with suspicious eyes, looking out of the framed image towards the open space of a large corridor. Nijinsky appears as a queer ghost from Western dance history. 
 Catol decide to revisits this memory of seeing the image, intertwined with the simultaneous discovery of their first queer love and the traumatic experience of sexual abuse. This duality of tenderness and violence deeply marks their reflection on the body and its expression in Clashes Licking.
 The relation with that specific context of Rio de Janeiro and these pictures haunt Catol’s imagination in a search of a memory, of a movement dislocation in relation with the western classical dance form. As the work evokes these memories, it focuses on transmutation—not on repeating any image or affection, but on creating friction with it, allowing the memories to reshape and evolve through the body.
 
 Dancing to cultivate a possible dream: of queer affection, of a blended border of languages. To challenge the frontiers of gender and cis-hetero normativity, the dance that is presented is oriented towards fragments that constitute queer living and trans bodies. 
 Dancing here is gravitating towards embodiments that are manifested sometimes as clashes, as broken stories, its contradictions and pleasures. The poetry that rises when a queer life comes and dance among us. Clashes Licking is a whisper, perhaps a secret to whom can listen to it. 
+
 `,
     poems: {
-      head: `
-To where does this dance belongs to?
-What am I haunting while dancing?
-What is haunting me?
-What are the ghosts of western dances?
-Which ghosts do I dance with? Which ones I scape from?
-How is queer imagination blended with the dances forms?
-How to contaminate forms?
-How to dance with ghosts? How memories are registered in the flesh of one’s body?
-Is dance a celebration of living or a ceremony of dying?`,
+      head: "",
 
       end: `
 <enhanced style="cutie">To where does this dance belongs to?
@@ -140,7 +145,12 @@ on the corner of your ears
  
  while in a perpetual fall in the break of languages 
  of changes of dreaming of screaming of wiling of leaving 
+</enhanced>
 
+
+
+<enhanced style="readme">Text present in the performance: </enhanced>
+<enhanced style="cutielink" link="https://clasheslicking.hotglue.me/">
 (…)
 to secretly do the decomposition
 
@@ -167,7 +177,6 @@ sometimes I feel inside a noisy silence
 </enhanced>
 `,
     },
-    inspirations: "",
     media: {
       head: "https://player.vimeo.com/video/811341435",
       single: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Clashes01.webp`,
@@ -177,29 +186,52 @@ sometimes I feel inside a noisy silence
       ],
     },
     usePoemImageLayout: false,
+    navigationBanner: false,
   },
   "zona-de-derrama-1": {
     title: "ZONA DE DERRAMA - first chapter",
     credits: `
-    Coproduction Pavillon ADC - Genève, VIDY - Lausanne, EFFEA -Santarcangelo Festival, Points Communs - Nouvelle Scène Nationale - Cergy- Pontoise , far°festival + SudPol (Extra Time Plus)
-RESO - Swiss Coproduction Founding
-Support: Festival Actoral Marseille FR & Bale National de Marseille FR
-Performed and co-created with <enhanced style="blackbold">Auguste de Boursetty, Laura Raio, Luisa Lemgruber</enhanced>
+ Concept, Choreography and Performance: <enhanced style="blackbold"> Catol Teixeira </enhanced>
+Performed by and co-creation: <enhanced style="blackbold">Auguste de Boursetty, Laura Raio </enhanced>
+Sound Creation:<enhanced style="blackbold"> Luisa Lemgruber </enhanced>
+Production and Administration: <enhanced style="blackbold">Rabea Grand </enhanced>
+Tour management: <enhanced style="blackbold">Jerome Pique </enhanced>
+Photo Credits: <enhanced style="blackbold">Pietro Bertora, Binta Kopp</enhanced>
 `,
     description: `
-    <enhanced style="cutie">Zona de Derrama - first chapter</enhanced> is a dance composition for three dancers, specifically for outdoor spaces. The performance takes place during twilight, a time when daylight fade and our eyes adjust to the approaching night. This initial chapter, serves as ode for liminal spaces of transitions and transmutations.
+<enhanced style="cutietitle">Zona de Derrama – First Chapter</enhanced> unfolds as an evolving choreography, a work "in process." This piece marks the beginning of a research journey initiated by Catol in the direction of “zones” that become dances, where harmony and dissonance might shape a shared space of movement language. This opening chapter is composed for three dancers and designed for outdoor and daylight situations, while in twilight—those moments when light fades, and our eyes begin to adjust to the night approaching. 
+Here, the performance serves as an ode to liminal spaces, embracing the thresholds of transition and transformation.
+Zona de Derrama first chapter reach out for a dancing and celebration for the precise moment when the next movement is not yet known but  felt. When a frontier overflows and transforms itself into passage. 
+This outdoor dance performance seeks to inhabit and evoke zones of transition, where some forms dissolve, and the pulse of change becomes palpable. Here, dance emerges as both a gesture of resistance and release, sorrow and joy intertwined, embodying delicacy and tensions that arise at the threshold.
 
-Dancing and celebrating for and at the moment of when a frontier, a border, a limitation can overflow and to trans.pass itself. The performance aims to evoke certain “zones”, expressing both sorrow and joy. Searching for a dance at the exact moment when change happens.
+During “zona de derrama” we evoke this notion of “overflowings” (derrama in brazilian portuguese). We comprehend this zone as a place where these overflows are announced, about to happen. In this way, we deal with watery qualities, and evoking its complex so called “contemporary” interactions: the overflow as a poetic pleasure, but simultaneously dangerous floods: a destruction by the modern/colonial societal failure. 
+ 
 
-<enhanced style="readme">MOVEMENT, TRANSITIONS AND FRAGMENTS OF A CHOREOGRAPHIC COMPOSITION:</enhanced>
-We dance into “zones” of tenderness, risk, danger, love, disagreements, resonance, celebration, safety, memory-remembering. These zones are activated throughout a score that is set in a specific consequential order. All zones are composed with precise movement material, but each dancer can
-visit it within own relation to it, with its own emotions and embodied experiences.
-Dealing with an idea of composing with fragments, “zona de derrama” is a wonder into movement language that englobes such fragments to form a
-dance. The work is made through the collaborations, each artist offers and create the journey that we are constructing together to built this piece and its dance and aesthetic language. Dancing is for me a radical stubbornness to remember a dream.
 `,
     poems: {
       head: `
-ZONES ZONING
+<enhanced style="readme">the storm was washing the sky outside 
+and we were moving into zones of liminal spaces. where we transition, touch, cry and laugh. </enhanced>
+where we dance into territories of encountering; finding the synchronizations on curves, falling falling falling into - carrying and failing, learning and looking. 
+turn turn turn. again. fall. 
+
+no, its not always easy to keep dancing. but we need it. to sweat, to listen, to say. to remain. 
+we remain. 
+we have always been here, and we gonna keep loving. 
+making love. kissing. 
+to wet the floor and traverse
+we recognize each other 
+and get lost, 
+then we dance again 
+to find and loose it
+we are here and here we will be. 
+thank you for so much that vibrates and teach me. beside you. 
+those dances are always a scape and a arrival. 
+and its always a love letter
+
+`,
+      end: `
+     <enhanced style="cutie">ZONES ZONING
 AN INVITATION TO AN EVENT WHERE WE EVOKE LIMINAL SPACES:
 OF TRANSITIONS, OF INTIMACY AND PROTECTION, ZONES TO ESCAPE OR TO STAY,
  DEALING WITH AN IDEA OR COMPOSING FRAGMENTS
@@ -233,85 +265,76 @@ ceremonies for (...)
 Dancing as gesture of belonging.
 (I wish to rest, to drop my very heavy bones. I wish to listen to the
 echoes with you)
-
+_</enhanced>
 `,
-      end: `
-      ZONES ZONING
-AN INVITATION TO AN EVENT WHERE WE EVOKE LIMINAL SPACES:
-OF TRANSITIONS, OF INTIMACY AND PROTECTION, ZONES TO ESCAPE OR TO STAY,
- DEALING WITH AN IDEA OR COMPOSING FRAGMENTS
-ZONA DE DERRAMA  IS A WONDER INTO TRANSPASSING
- AND CHANGES OF MATERIAL CONDITION
-IT QUESTIONS WHERE IT WOULD GO AFTER A FLOOD, AFTER A CEASE, DURING A CALL FOR CHANGE 
-
-WE WONDER IF CAN YOU REMEMBER YOUR DREAMS?
-WHAT RESOURCES CAN YOU GRASP?
-HOW WE DANCE IN THE DANCE FIELD?
-WHERE IT GOES ALL THE EXHAUSTION? 
-
-THE LAND EXHAUSTION - SCARCITY - 
-
-WE TRACE TERRITORIES TO ARRIVE. 
-+
-ITS an overflow, infiltrating in between spaces 
-devastation
-the destruction of modernity.
-we seat to 
-sense tender eyes and the call to go - 
-tracing the poetics of transmutation transmitting - transitioning,
-watery emotions
-formless forms
-escaping captures with out bodies-cosmologies
-relational matter & relational body entanglement
-WE BUILD 
-ceremonies for (...)
-
-(I stage my body transitions)
-Dancing as gesture of belonging.
-(I wish to rest, to drop my very heavy bones. I wish to listen to the
-echoes with you)`,
     },
-    inspirations: "",
     media: {
       head: `https://player.vimeo.com/video/1023513197`,
       single: "",
       dual: [
-        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama01.jpg`,
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama01.webp`,
         `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/Derrama03.jpg`,
       ],
     },
     usePoemImageLayout: true,
+    navigationBanner: {
+      state: true,
+      prev: "zona-de-derrama-3",
+      next: "zona-de-derrama-2",
+      namePrev: "Before it starts, after it’s finished",
+      nameNext: "ARREBENTAÇÃO - last chapter",
+    },
   },
   "zona-de-derrama-2": {
     title: "ARREBENTAÇÃO - last chapter",
     credits: `
-    Coproduction: <enhanced style="blackbold">Pavillon ADC</enhanced> - Geneva, <enhanced style="blackbold">Théâtre Vidy</enhanced> - Lausanne, <enhanced style="blackbold">EFFEA</enhanced> - Santarcangelo Festival, <enhanced style="blackbold">Points Communs</enhanced> - Nouvelle Scène Nationale - Cergy-Pontoise
+  ♥ Footnotes ♥
+*1 → Formless Formation by <enhanced style="blackbold">Hypatia Varloumis</enhanced> and <enhanced style="blackbold">Sandra Ruiz</enhanced>
+*2 → Conspiracy Without a Plot by <enhanced style="blackbold">Valentina Desideri</enhanced> and <enhanced style="blackbold">Stefano Harney</enhanced>
+♥‿♥
 
-Choreography, concept and performance: <enhanced style="blackbold">Catol Teixeira</enhanced>
-Choreography and performance: <enhanced style="blackbold">Acauā Shereya, Auguste De Boursetty, Collin Cabanis, Luara Raio</enhanced>
-Sound creation: <enhanced style="blackbold">Chaos Clay</enhanced>
-Lighting design: <enhanced style="blackbold">Lui L’Abbate</enhanced>
-Outside view and dramaturgy: <enhanced style="blackbold">Jonas Van, Lea Genoud</enhanced>
-Rigging: <enhanced style="blackbold">Rive Vayrou</enhanced>
+
+Concept, Choreography & Performance: <enhanced style="blackbold"> Catol Teixeira</enhanced>
+Created with & performed by: <enhanced style="blackbold">Auguste de Boursetty, Collin Cabanis, Acauā Shereya, Laura Raio </enhanced>
+Sound creation: <enhanced style="blackbold">Chaos Clay </enhanced>
+Light creation: <enhanced style="blackbold">Lui L’Abbate </enhanced>
+Rigging: <enhanced style="blackbold">Rive Vayrou </enhanced>
+Scenography by: <enhanced style="blackbold">Catol Teixeira, Rive Vayrou, Lui L’abbate</enhanced>
 Costume: <enhanced style="blackbold">Yumi Ikeda Ferretti</enhanced>
-Style: <enhanced style="blackbold">Yann slattery</enhanced>
-Body extensions: <enhanced style="blackbold">Naggi Giani</enhanced>
-Administration and production: <enhanced style="blackbold">Rabea Grand</enhanced>
+Styling: <enhanced style="blackbold">Yann Slattery</enhanced> 
+External eye: <enhanced style="blackbold">Jonas Van</enhanced>
 Production assistant: <enhanced style="blackbold">Dylan Huido</enhanced>
-Distribution: <enhanced style="blackbold">Jerome Pique</enhanced>
-Tour management: <enhanced style="blackbold">Jerome Pique</enhanced>
-
-With the support of: <enhanced style="blackbold">Actoral</enhanced> - Marseille, <enhanced style="blackbold">BNM</enhanced> - Marseille
-This project is part of <enhanced style="blackbold">RESO Coproduction Found</enhanced>
-
+Administration & Production: <enhanced style="blackbold">Rabea Grand</enhanced>
+Tour management: <enhanced style="blackbold">Jerome Pique</enhanced> 
+ 
+Co-Production : Création dans le cadre du programme <enhanced style="blackbold">(AC)COMPAGNONS du Pavillon ADC</enhanced>, soutenu par la <enhanced style="blackbold">Fondation Leenaards, Théâtre Vidy-Lausanne, EFFEA</enhanced> -Santarcangelo Festival, <enhanced style="blackbold">Points Communs</enhanced> - Nouvelle Scène Nationale - Cergy-Pontoise. This project is part of <enhanced style="blackbold">RESO </enhanced>– Dance Network Switzerland Coproduction Found.
+Residency support: <enhanced style="blackbold">Point Éphémère</enhanced> (DRAC France), <enhanced style="blackbold">Festival actoral, CCN Ballet national de Marseille.</enhanced>
+With support from : <enhanced style="blackbold">Pro Helvetia, Loterie Romande, Fondation Hans Wilsdorf, Ernst Göhner Stiftung</enhanced>
+Thanks to: <enhanced style="blackbold">Maria Cristina Teixeira, Lea Genoud, Madeleine Amsler, Barbara Giongo, Chloe Demetriades, Simone Frey, Marcela Santander, Alessandra Domingues</enhanced>
+Photo Credits: <enhanced style="blackbold">Gregory Bataradon</enhanced>
 `,
     description: `
-    <enhanced style="cutie">Arrebentação - zona de derrama last chapter </enhanced> is built on a multiplicity of overlapping images on stage, on encounters that sometimes contradict each other, and on the vibration and harmony they create. In its collective dimension and at the heart of its message, this choreographic composition explores notions of harmony, agreement and disagreement, and transformation. The zone is noisy and hybrid; it is where the multitude meets and forms a common ground that resonates.
-Movement, transitions, and fragments of a choreographic composition: we dance in “zones” of tenderness, risk, danger, love, disagreement, resonance, celebration, security and memory. In Arrebentação - zona de derrama last chapter, these zones are activated in a score that follows a precise chronological order. Each zone is made up of speciﬁc movement material, but each dancer inscribes a dialogue between the score and their own relationship to the choreography, to the zone. The dialogue takes place in the emotions and experiences that make up the dancers’ bodies. The piece is thus written in a dramaturgy of fragments, each fragment the individual actualisation of a shared memory. The creative process is nourished by encounters and collaborations. Each artist proposes and creates the journey we build together, and the piece creates its own language over time. For me, dancing is a gesture of belonging.
+  tumultuous touches polyphonic feelings / 
+arrebentação is arriving with extravagant tears , furious laughs and genuine failures. 
+
+
+<enhanced style="cutietitle">Arrebentação - Zona de Derrama last chapter</enhanced> represents a milestone moment in Catol Teixeira's artistic journey, serving as his inaugural direction for a group dance piece. This work unfolds in two chapters, beginning with a gentle overflow in the outdoor performance titled Zona de Derrama: First Chapter, and culminating in its final chapter, Arrebentação.
+The term Arrebentação refers to the area of the sea where waves crash. It is a space where one can observe the wind interacting with the water's surface, negotiating the forces at play just before the moment of descent and break. Arrebentação is the zone where one either waits in anticipation or learns how to pierce it.
+There is a distinct sound associated with this experience; the crashing waves against the rocks resonate as you feel the power of the water reaching the shore. 
+It is magnetic. It is constant. It embodies the trembling essence of the earth.
+
+In this space, they connect and embrace the dynamics of falling. They find harmony and discord in their interactions. Though they lack a shared language, they intuitively understand the presence of something greater. They meet at the intersection of their voices, listening intently, trusting in the magic between them. They express themselves through screams and tears, or perhaps through exuberant laughter.
+They strive to forge a conspiracy without a predetermined narrative, inspired by the ideas of Valentina Desideri and Stefano Harney*1.
+
+(It carries its secrets, as it should.
+It is laid bare, as it should.
+It is vulnerable but not fragile.)
+
+Arrebentação may evoke the potential for what is destined to shift and fall. It serves as a vignette for the end of this world*2.
+In Arrebentação 5 dancers create a choreography that is rooted in kuir disorientations and trembling imaginaries.
 
 `,
     poems: "",
-    inspirations: "",
     media: {
       head: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/arrebatacao_head.jpg`,
       single: "",
@@ -321,43 +344,80 @@ Movement, transitions, and fragments of a choreographic composition: we dance in
       ],
     },
     usePoemImageLayout: false,
+    navigationBanner: {
+      state: true,
+      prev: "zona-de-derrama-1",
+      next: "zona-de-derrama-3",
+      namePrev: "ZONA DE DERRAMA - first chapter",
+      nameNext: "Before it starts, after it’s finished",
+    },
   },
   "zona-de-derrama-3": {
-    title: "Before it starts, after it’s finished",
+    title: "Before it starts, after it's finished",
     credits: `Choreography, concept and performance: <enhanced style="blackbold">Catol Teixeira</enhanced>
 Sound creation: <enhanced style="blackbold">Sandar Tun Tun</enhanced>
+Photo Credits: <enhanced style="blackbold">Catol Teixeira, Jerome Pique</enhanced>
 `,
     description: `
-<enhanced style="readme">PREMIERE: NOVEMBER 2025</enhanced>
+<enhanced style="readme">PREMIERE: MAY 2025</enhanced>
+
     `,
     poems: {
-      head: `This piece draws on artistic materials - such as movement, poetics and imaginary - that have remained “in secret” from the Zona de Derrama project. It is born within a fascination to sketches, "study", footnotes.. It wishes to tremble and move, in dislocation across the space. It is the continuation of a perceptive experimental journey, curious to approach contemporary dance forms in relation to circus aerial language, sonic dimensions and performative gestures.
-
-      Before it starts after its finished deals with moments before a change, before a fall, before a touch. and implies a sequence where one event concludes, and another one is about to begin. It's a dance dedicated to these moments of "falling into change". The work seeks to dive into a diverse emotional landscape connected to those moments, when we sense that something is about to happen, or even has already passed.
-
-      Dealing with a perception of time that is in a constant curve, in a constant fall, never captured. As when something has already occurred, and a reminiscence lands in the body. These raw moments leave an embodied sensation -akin to a dream, a remembrance - moving through emotional density, crossing the zones and calling to transmutation.`,
-      end: ``,
+      head: `<enhanced style="cutietitle">Before it starts after its finished</enhanced> draws on artistic materials - such as movement, poetics and imaginary - that have remained “in secret” from the Zona de Derrama project. It is born within a fascination with sketches, "study", footnotes. It wishes to tremble and move, in dislocation across the space.
+This piece deals with moments before a change, before a fall, before a touch. The work seeks to dive into a diverse emotional landscape connected to those moments, when we sense that something is about to happen, or even has already passed. Dealing with a perception of time that is in a constant curve, in a constant fall, never captured. As when something has already occurred and a reminiscence lands in the body. These raw moments leave an embodied sensation -akin to a dream, a remembrance - moving through emotional density, crossing the zones and calling to transmutation.
+`,
+      end: `<enhanced style="cutie">antes do toque antes do sonho antes da chuva antes do grito antes de lembrar antes do cheiro depois de esquecer depois de encostar antes de rir depois de chorar antes de cair depois de cair 
+quase na curva da mata 
+vento com cheiro que toca nas costas 
+lembra do receio de encontrar de baixo da cachoeira 
+olhar pro poço e achar que é o céu por causa do reflexo que ta longe 
+provocaçoes insensatas 
+pra suar pelos olhos gritar sem som 
+rir na cara do perigo daquilo que ta prestes a acontecer
+antes de pular flertar com o risco da queda 
+pular no meio das estrelas segurar a respiração voltar pra borda soltar o ar inteiro lembrando que ta vive
+no encontro da pele com a água doce fria da noite 
+corpo fantasia absurda gargalhando do pulo 
+o que ta prestes a acontecer 
+flerte do tempo:
+quase que eu não venho quase que eu vou embora quase que eu fico 
+antes do choro estômago antes do gozo o olho 
+antes do grito a nuca antes do suor o compasso 
+as promessas de antes quebradas depois 
+depois quase que antes
+</enhanced>
+`,
     },
-    inspirations: "",
     media: {
       head: "",
       single: "",
-      dual: [`${import.meta.env.VITE_SUPABASE_STORAGE_URL}/before01.webp`, ""],
+      dual: [
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/before01.webp`,
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/before02.webp`,
+      ],
     },
     usePoemImageLayout: true,
+    navigationBanner: {
+      state: true,
+      prev: "zona-de-derrama-2",
+      next: "zona-de-derrama-1",
+      namePrev: "ARREBENTAÇÃO - last chapter",
+      nameNext: "ZONA DE DERRAMA - first chapter",
+    },
   },
-  "la-peaux-entre-les-doigts": {
-    title: "LA PEAUX ENTRE LES DOIGTS",
+  "la-peau-entre-les-doigts": {
+    title: "LA PEAU ENTRE LES DOIGTS",
     credits: `
     2021- Conclusion Work/Bachelor Contemporary Dance a La Manufacture
 2022 - Extended Version
-Concept, Choreography, Performance: <enhanced style"blackbold">Catol Teixeira</enhanced>
-Lights: <enhanced style="blackbold">Justine Bouillet</enhanced>
-Music tracks: Tunga - <enhanced style="blackbold">DEDO</enhanced> , Revelation - <enhanced style="blackbold">Necxya , Chaos Clay - FuckCopace’ic </enhanced>(extracts) Sound edition: <enhanced style="blackbold">Nico Wasmmer</enhanced>
-`,
-    description: `Before it starts, after it is finished:
 
-<enhanced style="cutie">la peau entre les doigts / the skin between the fingers</enhanced> - is a choreographic dispositive that experiment and proposes to instigate questions of positionality, the perceptions of the other, to challenge social identity marks. “La Peau Entre Les Doigts” plays while deviating, while escaping.
+Concept, Choreography, Performance: <enhanced style="blackbold">Catol Teixeira</enhanced>
+Lights: <enhanced style="blackbold">Justine Bouillet</enhanced>
+Music tracks: <enhanced style="blackbold">Tunga</enhanced> - DEDO ,  <enhanced style="blackbold">Revelation</enhanced> - Necxya ,  <enhanced style="blackbold">Chaos Clay</enhanced> - FuckCopace’ic (extracts)
+Sound edition: <enhanced style="blackbold">Nico Wasmmer</enhanced>
+
+`,
+    description: `<enhanced style="cutietitle">La Peau entre Les Doigts / The Skin Between The Fingers</enhanced> is a choreographic dispositive that experiments and proposes to instigate questions of positionality, the perceptions of the other, to challenge social identity marks. “La Peau Entre Les Doigts” plays while deviating, while escaping.
 
 <enhanced style="readme">LETTER FROM DOING:</enhanced>
 La Peau Entre Les Doigts is therefore a created context where I keep space to un-learn body inscriptions when I perform it. It is intimately related with presences - which for me speaks of absences - that can potentially take part on it.
@@ -370,23 +430,18 @@ I am completely passionate about the dancing... it seems to me that there is alw
 The relation of the body and movement with celebration, death, the spiritual.
 
 The performance is built on the oscillation between presence and absence, on offering and denying one’s own body, and on the looks and movements of
-the audience. <enhancedm style="cutie">la peau entre les doigts</enhanced> is a dance about intimacy, distance and separation. A dance dedicated to what is left behind, abandoned. The work wishes to evoke the collective archive that one’s body carry - and move with, from, against, through it.
+the audience. La Peau entre Les Doigts is a dance about intimacy, distance and separation. A dance dedicated to what is left behind, abandoned. The work wishes to evoke the collective archive that one’s body carry - and move with, from, against, through it.
 La Peau Entre Les Doigts does not seek clarity or purity, it goes hand in hand with uncertainty, with the unknown, observing opposition and the surrender of the body to gravity. Catol dances, moving where there is a crack to be crossed, surrendering and resisting, in perpetual transition, without a destination.
+
+
+
+<enhanced style="cutie">♥ Inspirations ♥</enhanced>
+
+<enhanced style="cutielink" link="https://static1.squarespace.com/static/58ad660603596eec00ce71a3/t/58bec800b8a79b7c599de24a/1488898050432/Orientations+Toward+a+Queer+Phenomenology.pdf">Orientations Toward a Queer Phenomenology</enhanced> 
+<enhanced style="cutielink" link="https://morula.com.br/wp-content/uploads/2020/05/Encantamento.pdf">Encantamento</enhanced>
+<enhanced style="cutielink" link="https://www.cobogo.com.br/produto/nao-vao-nos-matar-agora-they-won-t-kill-us-now-665">Não Vão Nos Matar Agora </enhanced> 
 `,
     poems: "",
-    inspirations: {
-      title: "++ Inspirations ++",
-      content: [
-        "orientations toward a queer phenomenology",
-        "encantamento",
-        "não vão nos matar agora",
-      ],
-      urls: [
-        "https://static1.squarespace.com/static/58ad660603596eec00ce71a3/t/58bec800b8a79b7c599de24a/1488898050432/Orientations+Toward+a+Queer+Phenomenology.pdf",
-        "https://morula.com.br/wp-content/uploads/2020/05/Encantamento.pdf",
-        "https://www.cobogo.com.br/produto/nao-vao-nos-matar-agora-they-won-t-kill-us-now-665",
-      ],
-    },
     media: {
       head: "https://player.vimeo.com/video/1023516278",
       single: "",
@@ -396,48 +451,84 @@ La Peau Entre Les Doigts does not seek clarity or purity, it goes hand in hand w
       ],
     },
     usePoemImageLayout: false,
+    navigationBanner: false,
   },
 };
 
 export const biotext = `
-<enhanced style="cutie">Catol Teixeira performs and creates dances.</enhanced> Born in Porto Alegre, Brazil, with a diverse journey across various cities, including Rio de Janeiro, Belo Horizonte, Salzburg, Berlin, and is currently based in between Geneva (Switzerland) and Rio de Janeiro (Brasil). They develop a choreographic practice as means of translations and engage into searching for a dance that embraces queer ways of living. 
+<enhanced style="cutietitle">Catol Teixeira performs and creates dances</enhanced>. Born in Porto Alegre, Brazil, with a diverse journey across various cities, including Rio de Janeiro, Belo Horizonte, Salzburg, Berlin, and is currently based in between Geneva (Switzerland) and Rio de Janeiro (Brasil). They develop a choreographic practice as means of translations and engage into searching for a dance that embraces queer ways of living. 
 
 
 They obtained a Bachelor’s degree in Contemporary Dance from La Manufacture in Lausanne in 2021. Prior to formal dance education, Catol worked as an interpreter for dance companies in Brazil such as “Cia Palacio das Artes” and “Cia Mário Nascimento” in Belo Horizonte, Brazil, during 2013 and 2014. They also worked as artistic collaborator and acrobat to the contemporary circus group “Intrepida Trupe” from to 2010 to 2012 as in 2016. They were resident artist at Ponderosa Tanzland, a place they visited and studied several times.
-<enhanced style="readme">CATOL DANCES WHILE TRANSITIONING AND CRAFT PERFORMANCES AS INVOCATIONS</enhanced>. They are curious to deal with physical endurance, somatic practices and drawing influence from sources as diverse as circus aerial dances, classical ballet, partying and celebrations.
+<enhanced style="readme">CATOL DANCES WHILE TRANSITIONING AND CRAFT PERFORMANCES AS INVOCATIONS</enhanced>. They are curious to deal with physical endurance, somatic practices and drawing influence from sources
+as diverse as circus aerial dances, classical ballet, partying and celebrations.
 
 
 CATOL’S CHOREOGRAPHIC EXPERIMENTATION WITH DANCE SERVES AS A CONDUIT FOR UNCOVERING NUANCES AND TACTICS OF TOGETHERNESS. THEIR INTEREST IS ORIENTED TO COLLABORATIVE PROCESSES, AMIDST
 PERSONAL CONCERNS, ARTISTIC PRACTICES AND ARTISTS, ESTABLISHING WITH DANCING AND COMPOSITIONAL WORK AN INTIMATE DIALOGUE WITH KUIR (QUEER) (DIS)ORIENTATIONS TO REMEMBER A DREAM, A STUBBORN ACT TO ESCAPE THE PLOT, TO UNLEARN, TO CRY AND TO CELEBRATE.
+
 `;
 
 export const performances: Performance[] = [
   {
     title: `Eu vou aparecer bem no meio do seu sonho`,
-    text: `<enhanced style="cutie">Eu vou aparecer bem no meio do seu sonho  </enhanced> August 2024 - at Halle Berghain, Berlin (GE) - in collaboration with Luara Raio  - During the exhibition of Danielle Brathwait-Shirley, “SOUL STATION” - curated by Mawena Yehouessi. The performance emerged from an ongoing artistic dialogue between Catol Teixeira and Luara Raio. Together, they searched for spells to cast in performative spaces, devising tactics to escape the binaries imposed by Western colonial-modern society. Their dance moved fluidly, always in curves and transitions. This performance was shaped as an improvised score, unfolding in silence yet in tune with the echoes and reverberations of the charged atmosphere of the vast Halle of Berghain. It was performed within the context of the SOUL STATION exhibition, where the space itself became an active participant in their movement and dance`,
+    text: `<enhanced style="cutietitle">Eu vou aparecer bem no meio do seu sonho  </enhanced> August 2024 - at Halle Berghain, Berlin (GE) - in collaboration with Luara Raio  - During the exhibition of Danielle Brathwait-Shirley, “SOUL STATION” - curated by Mawena Yehouessi. The performance emerged from an ongoing artistic dialogue between Catol Teixeira and Luara Raio. Together, they searched for spells to cast in performative spaces, devising tactics to escape the binaries imposed by Western colonial-modern society. Their dance moved fluidly, always in curves and transitions. This performance was shaped as an improvised score, unfolding in silence yet in tune with the echoes and reverberations of the charged atmosphere of the vast Halle of Berghain. It was performed within the context of the SOUL STATION exhibition, where the space itself became an active participant in their movement and dance. `,
     image: `${
       import.meta.env.VITE_SUPABASE_STORAGE_URL
     }/eu-vou-aparecer-bem-no-meio-do-seu-sonho.jpg`,
+    credits: { activity: "Photo Credit", names: "Milena Wegner" },
   },
   {
     title: `Rivers`,
-    text: `<enhanced style="cutie">Rivers </enhanced> in collaboration with Gorge Bataille and Eden Levi Am, during the portraits exhibition “RIVERS” by Eden Levi Am at the Halle Norde Galerie Geneve / Performance part of the Fessestival, Geneva 2023 `,
+    text: `<enhanced style="cutietitle">Rivers </enhanced> in collaboration with Gorge Bataille and Eden Levi Am, during the portraits exhibition “RIVERS” by Eden Levi Am at the Halle Norde Galerie Geneve / Performance part of the Fessestival, Geneva 2023 
+
+“We are not mere witnesses of what is happening. We are the bodies through which mutation arrives and settles. The question is not who we are, but what we want to become. "1 (Preciado Paul B., Hypothèse révolution, Dysphoria mundi, Grasset, 2022, page 65).
+It is said of the Naiads that they could live for thousands of years, while always remaining young and beautiful. That they had healing talents. That the sick came to drink the water from their spring. It is also said that the mere sight of a Naiad was risky because it could lead to temporary madness. eden levi am invokes the Naiads, and proposes a new mythology. Of the one who gives in to intimacy, lets it commune with the surrounding nature - of clay and water. 
+(text by Gorge) `,
     image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/rivers.jpg`,
+    credits: { activity: "Photo Credit", names: "Zohra Sans" },
   },
   {
     title: `zona1`,
-    text: `<enhanced style="cutie">zona1 </enhanced> at one gee in fog, while their second episode of “collective imaginary studies”  Geneva CH (in collaboration with Luara Raio) 
+    text: `<enhanced style="cutietitle">zona1 </enhanced> at one gee in fog, while their second episode of “collective imaginary studies”  
+Geneva CH (in collaboration with Luara Raio) 
 Luara and Catol propose to exercise and perform 3 different dislocations on the galerie space: 
 “ a ronda”  , “the pattern of the soil calling the head”, “ the washing over”. During these 3 different moments, the performance is built as a constant negotiation between the two performers. 
 They use repetitive and persistence as a way to evoke rituals for change: to change the violent state of things -  that are inscribed into capitalist-modern-colonial society. 
-They wash over their body and let the drops fall. `,
+They wash over their body and let the drops fall.  `,
     image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/zona1_perfo.webp`,
+    credits: { activity: "Photo Credit", names: "Errel Le Pape" },
   },
   {
     title: "notes on licking",
-    text: `<enhanced style="cutie"> Notes on licking </enhanced> Halle Nord Geneva CH, Fessestival Geneva CH, Kunsthaus Pasquart /Exhibition “Un.certain Ground” Bien CH, Istituto Svizzero & MACRO Roma IT (in collaboration with Sandar Tun Tun), Krone Couronne Bienne CH
+    text: `<enhanced style="cutietitle"> Notes on licking </enhanced> was initially developed during a research residency at the Halle Norde Gallerie in Geneva. Over the course of a week, Catol immersed themselves in the gallery space, focusing on material related to the creation of Clashes Licking. The residency allowed for an exploration of movement, objects, and themes central to their choreographic practice.
+One key element that emerged was the use of a wig, which became both a prop and a “situation” within the performance. The wig took on various roles, evolving with each context and invitation where the performance was presented. It served as a tactile, transformative object that informed the dance’s fluidity, offering both restraint and freedom in movement.
+In this work, both the wig and the improvised dance score engaged with themes of eroticism, as well as the shifting dynamics of distance and proximity between bodies. These themes were explored through subtle and charged gestures, creating a layered dialogue between intimacy, object, and space, while constantly adapting to different performative environments.
+
 `,
     image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/notesOnLicking.webp`,
+    credits: "",
+  },
+  {
+    title: "de la pra ca daqui pra la",
+    text: `<enhanced style="cutietitle"> de la pra ca daqui pra la </enhanced> site specific performance created for the exhibition “Between the Lines” curated by Danniel Tostes
+Antoine Simeão Schalk
+
+This performance was proposed as a gesture of “carrying and “draging” one material across the exhibition space. Catol proposed to the space of the gallery a dislocation of materials: a shell, sand and a heavy stone. All these materials were shaping the physicality and possible dislocations of their body, till the opposite location of the galerie. Things remained on the way, other ones arrived on the other side. The final gesture of this performative gesture were to leave the materials (“things”) exposed on the floor, as a metaphysic manner to tell the story of its “dislocation” 
+`,
+    image: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/deAcaPraLa_perfo.webp`,
+    credits: "",
+  },
+  {
+    title: "antes de voltar (h)ouve uma onda",
+    text: `<enhanced style="cutietitle"> antes de voltar (h)ouve uma onda  </enhanced> Contextual performance in Rio de Janeiro (2019)
+an improvisation in between Luisa Lemgruber and Catol Teixeira at Espaço Montagem, RJ
+A performance imagined as a moment of farewell. It happened simultaneous as other artistic performances, shows and party activities - a self managed independent scene in the city Rio de Janeiro, 2018 
+(no register) `,
+    image: `${
+      import.meta.env.VITE_SUPABASE_STORAGE_URL
+    }/antesDeVoltar_perfo.webp`,
+    credits: "",
   },
 ];
 
@@ -453,12 +544,12 @@ export const menuItems: MenuItem[] = [
     icon: ClashesGif,
   },
   {
-    id: "la-peaux-entre-les-doigts",
-    name: "LA PEAUX ENTRE LES DOIGTS",
+    id: "la-peau-entre-les-doigts",
+    name: "LA PEAU ENTRE LES DOIGTS",
     icon: LaPeauGif,
   },
   {
-    name: "WRITING DANCING AROUND",
+    name: "WRITINGS DANCING AROUND",
     path: "/writing-dancing-around",
     icon: WritingsGif,
   },

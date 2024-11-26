@@ -84,6 +84,8 @@ const BackgroundHome: React.FC = () => {
       window.addEventListener("resize", handleResize);
     }
 
+    console.log("BackgroundHome");
+
     return () => {
       if (hydraRef.current) {
         // Clean up Hydra instance

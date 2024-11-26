@@ -20,7 +20,11 @@ const TimelineCalendar: React.FC<TimelineCalendarProps> = ({
         onClick={onToggle}
         className="w-full py-6 flex items-center justify-center text-center focus:outline-none group"
       >
-        <span className="border-b border-black w-full text-4xl xl:text-6xl font-chuchi tracking-wider transition-colors group-hover:text-gray-600">
+        <span
+          className={`${
+            isExpanded ? "border-b" : "border-b-0"
+          } border-black w-full text-4xl xl:text-6xl font-chuchi transition-all group-hover:text-catolHover`}
+        >
           {yearData.year}
         </span>
       </button>
@@ -32,16 +36,12 @@ const TimelineCalendar: React.FC<TimelineCalendarProps> = ({
       >
         <div className="pb-6 space-y-2">
           {yearData.events.map((event, index) => (
-            <div
-              key={index}
-              className="font-bold text-lg xl:text-2xl text-center mx-auto"
-            >
-              <div className=" mb-1">
-                {event.date} {!isMobile && " → " + event.description}
+            <div key={index} className=" text-xl text-center mx-auto">
+              <div className=" mb-2">
+                <strong>{event.date}</strong> {!isMobile && <strong>→</strong>}{" "}
+                {!isMobile && event.description}
               </div>
-              {isMobile && (
-                <div className="text-gray-600">{event.description}</div>
-              )}
+              {isMobile && <div className="">{event.description}</div>}
             </div>
           ))}
         </div>

@@ -28,6 +28,7 @@ import PageTransition from "./components/PageTransition";
 import ComingSoon from "./pages/ComingSoon";
 import Calendar from "./pages/Calendar";
 
+
 export const CursorContext = React.createContext<{
   setCurrentIcon: (icon: React.ElementType | null) => void;
 }>({ setCurrentIcon: () => {} });
@@ -52,7 +53,7 @@ const projectIcons = {
   "zona-de-derrama-1": DerramaGif,
   "zona-de-derrama-2": DerramaGif,
   "zona-de-derrama-3": DerramaGif,
-  "la-peaux-entre-les-doigts": LaPeauGif,
+  "la-peau-entre-les-doigts": LaPeauGif,
 };
 
 const ProjectWrapper = () => {

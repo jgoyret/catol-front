@@ -39,16 +39,12 @@ const Header: React.FC<HeaderProps> = ({ icon: Icon }) => {
         to={"/"}
         className="w-full h-full transparent bg-slate-100 border border-b-black"
       >
-        <Marquee
-          pauseOnHover
-          direction={"right"}
-          className="h-full mx-auto font-jungaBook"
-        >
-          <div className="mx-10 font-mattoneBold">HOME</div>
+        <Marquee pauseOnHover direction={"right"} className="h-full mx-auto">
+          <div className="mx-10 font-jungaMedium">HOME</div>
           <Icon type="hover" className="h-10 md:h-16" />
-          <div className="mx-10 font-mattoneBold">HOME</div>
+          <div className="mx-10 font-jungaMedium">HOME</div>
           <Icon type="hover" className="h-10 md:h-16 " />
-          <div className="mx-10 font-mattoneBold">HOME</div>
+          <div className="mx-10 font-jungaMedium">HOME</div>
           <Icon type="hover" className="h-10 md:h-16" />
         </Marquee>
       </Link>

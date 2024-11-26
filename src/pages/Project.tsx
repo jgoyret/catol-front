@@ -1,13 +1,16 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { projects } from "../data/data";
 import EnhancedText from "../components/EnhancedText";
 import PoemImageLayout from "../components/PoemImageLayout";
+import { usePageLoad } from "../context/PageLoadContext";
 
 const Project: React.FC = () => {
   const { id } = useParams<{ id: string }>();
 
   const project = projects[id as keyof typeof projects];
+
+  const { isPageLoaded } = usePageLoad();
 
   if (!project) {
     return <div>Project not found</div>;
@@ -36,6 +39,11 @@ const Project: React.FC = () => {
     }
   };
 
+  React.useEffect(() => {
+    // Este console.log se ejecutará cada vez que el valor del contexto cambie
+    console.log("Context value - isPageLoaded:", isPageLoaded);
+  }, [isPageLoaded]);
+
   return (
     <div className=" lg:pl-10 text-sm md:text-lg 2xl:text-2xl">
       <h1 className="text-6xl lg:text-8xl 2xl:text-9xl text-center font-chuchi mb-4">
@@ -44,9 +52,9 @@ const Project: React.FC = () => {
       {project.media.head !== "" && (
         <div className="">{renderMedia(project.media.head)}</div>
       )}
-      <p className="whitespace-pre-line  text-center  m-2 mx-5 lg:mx-5 3xl:mx-5 font-jungaBook">
+      <h2 className="whitespace-pre-line  text-center  m-2 mx-5 lg:mx-5 3xl:mx-5 font-jungaBook">
         <EnhancedText>{project.description}</EnhancedText>
-      </p>
+      </h2>
       {project.usePoemImageLayout &&
         typeof project.poems === "object" &&
         project.media.dual[0] !== "" &&
@@ -109,7 +117,27 @@ const Project: React.FC = () => {
           </div>
         )}
 
-      <p className="whitespace-pre-line text-center px-2 text-xs md:text-sm font-jungaBook leading-tight">
+      {project.navigationBanner &&
+        typeof project.navigationBanner === "object" && (
+          <div>
+            <div className="flex justify-between my-16">
+              <Link
+                to={`/project/${project.navigationBanner.prev}`}
+                className="text-lg lg:text-2xl 2xl:text-4xl font-chuchi hover:text-catolHover hover:underline"
+              >
+                ← {project.navigationBanner.namePrev}
+              </Link>
+              <Link
+                to={`/project/${project.navigationBanner.next}`}
+                className="text-lg lg:text-2xl 2xl:text-4xl font-chuchi hover:text-catolHover hover:underline"
+              >
+                {project.navigationBanner.nameNext} →
+              </Link>
+            </div>
+          </div>
+        )}
+
+      <p className="whitespace-pre-line text-center px-2 text-xs md:text-sm font-jungaBook leading-tight max-w-7xl mx-auto">
         <EnhancedText>{project.credits}</EnhancedText>
       </p>
     </div>
