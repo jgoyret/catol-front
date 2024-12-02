@@ -314,14 +314,12 @@ Thanks to: <enhanced style="blackbold">Maria Cristina Teixeira, Lea Genoud, Made
 Photo Credits: <enhanced style="blackbold">Gregory Bataradon</enhanced>
 `,
     description: `
-  tumultuous touches polyphonic feelings / 
-arrebentação is arriving with extravagant tears , furious laughs and genuine failures. 
+  tumultuous touches polyphonic feelings /
+arrebentação is arriving with extravagant tears , furious laughs and genuine failures .
 
-
-<enhanced style="cutietitle">Arrebentação - Zona de Derrama last chapter</enhanced> represents a milestone moment in Catol Teixeira's artistic journey, serving as his inaugural direction for a group dance piece. This work unfolds in two chapters, beginning with a gentle overflow in the outdoor performance titled Zona de Derrama: First Chapter, and culminating in its final chapter, Arrebentação.
-The term Arrebentação refers to the area of the sea where waves crash. It is a space where one can observe the wind interacting with the water's surface, negotiating the forces at play just before the moment of descent and break. Arrebentação is the zone where one either waits in anticipation or learns how to pierce it.
-There is a distinct sound associated with this experience; the crashing waves against the rocks resonate as you feel the power of the water reaching the shore. 
-It is magnetic. It is constant. It embodies the trembling essence of the earth.
+<enhanced style="cutietitle">Arrebentação - Zona de Derrama last chapter.</enhanced>The term "Arrebentação" refers to the area of the sea where waves crash. It is a space where one can observe the wind interacting with the water's surface, negotiating the forces at play just before the moment of descent and break. Arrebentação is the zone where one either waits in anticipation or learns how to pierce it.
+There is a distinct sound associated with this experience; the crashing waves against the rocks resonate as you feel the power of the water reaching the shore.
+It is magnetic. It is constant. It embodies the trembling condition of the earth.
 
 In this space, they connect and embrace the dynamics of falling. They find harmony and discord in their interactions. Though they lack a shared language, they intuitively understand the presence of something greater. They meet at the intersection of their voices, listening intently, trusting in the magic between them. They express themselves through screams and tears, or perhaps through exuberant laughter.
 They strive to forge a conspiracy without a predetermined narrative, inspired by the ideas of Valentina Desideri and Stefano Harney*1.
@@ -330,8 +328,9 @@ They strive to forge a conspiracy without a predetermined narrative, inspired by
 It is laid bare, as it should.
 It is vulnerable but not fragile.)
 
-Arrebentação may evoke the potential for what is destined to shift and fall. It serves as a vignette for the end of this world*2.
-In Arrebentação 5 dancers create a choreography that is rooted in kuir disorientations and trembling imaginaries.
+"Arrebentação" may evoke the potential for what is destined to shift and fall. It serves as a vignette for the end of this world*2.
+In « arrebentação » 5 dancers create a choreography that is rooted in kuir disorientations and trembling imaginaries.
+
 
 `,
     poems: "",
