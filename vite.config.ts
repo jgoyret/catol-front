@@ -24,7 +24,7 @@ export default defineConfig({
         img-src 'self' data: https:;
         media-src 'self' https:;
         frame-src https://player.vimeo.com;
-        connect-src 'self' http://localhost:1337;
+        connect-src 'self' http://localhost:1337 https://cbb7-2800-a4-c1d9-cb00-14c8-8ab-583d-de78.ngrok-free.app;
       `
         .replace(/\s{2,}/g, " ")
         .trim(),
