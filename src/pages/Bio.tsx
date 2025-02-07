@@ -28,7 +28,7 @@ const Bio: React.FC = () => {
       </div>
       <div className="absolute top-5 left-0 lg:left-32 m-10 md:m-40 lg:m-52 2xl:m-80 3xl:m-96 text-md md:text-lg xl:text-xl 2xl:text-2xl text-center text-white">
         {/* <EnhancedText>{biotext}</EnhancedText> */}
-        {bioInfo.length > 0 ? (
+        {bioInfo && bioInfo.length > 0 ? (
           bioInfo.map((paragraph: any, index: number) => (
             <p key={index}>
               {paragraph.children[0].text} <br />
