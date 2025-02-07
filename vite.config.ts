@@ -24,6 +24,7 @@ export default defineConfig({
         img-src 'self' data: https:;
         media-src 'self' https:;
         frame-src https://player.vimeo.com;
+        connect-src 'self' http://localhost:1337;
       `
         .replace(/\s{2,}/g, " ")
         .trim(),
