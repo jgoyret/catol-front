@@ -1,6 +1,6 @@
 import React from "react";
-import { biotext } from "../data/data";
-import EnhancedText from "../components/EnhancedText";
+// import { biotext } from "../data/data";
+// import EnhancedText from "../components/EnhancedText";
 import { getBioInfo } from "../utils/get-bio";
 
 const Bio: React.FC = () => {
