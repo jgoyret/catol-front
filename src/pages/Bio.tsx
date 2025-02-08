@@ -1,16 +1,14 @@
 import React from "react";
-// import { biotext } from "../data/data";
-// import EnhancedText from "../components/EnhancedText";
+import { biotext } from "../data/data";
+import EnhancedText from "../components/EnhancedText";
 import { getBioInfo } from "../utils/get-bio";
 
 const Bio: React.FC = () => {
   const [bioInfo, setBioInfo] = React.useState<any>(null);
+
   React.useEffect(() => {
     getBioInfo().then((res) => {
-      setBioInfo(res.data.bio);
-      res.data.bio.map((paragraph: any) =>
-        console.log(paragraph.children[0].text)
-      );
+      setBioInfo(res);
     });
     return () => console.log("Document Ready State", document.readyState);
   }, []);
@@ -27,15 +25,15 @@ const Bio: React.FC = () => {
         ></video>
       </div>
       <div className="absolute top-5 left-0 lg:left-32 m-10 md:m-40 lg:m-52 2xl:m-80 3xl:m-96 text-md md:text-lg xl:text-xl 2xl:text-2xl text-center text-white">
-        {/* <EnhancedText>{biotext}</EnhancedText> */}
         {bioInfo && bioInfo.length > 0 ? (
-          bioInfo.map((paragraph: any, index: number) => (
-            <p key={index}>
-              {paragraph.children[0].text} <br />
-            </p>
-          ))
+          // bioInfo.map((paragraph: any, index: number) => (
+          //   <p key={index}>
+          //     {paragraph.children[0].text} <br />
+          //   </p>
+          // ))
+          <EnhancedText>{bioInfo}</EnhancedText>
         ) : (
-          <p>Cargando...</p>
+          <p>...</p>
         )}
         <div className="h-96"></div>
       </div>
