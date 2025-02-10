@@ -1,5 +1,5 @@
 import React from "react";
-import { biotext } from "../data/data";
+// import { biotext } from "../data/data";
 import EnhancedText from "../components/EnhancedText";
 import { getBioInfo } from "../utils/get-bio";
 
