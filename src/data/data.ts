@@ -279,9 +279,9 @@ _</enhanced>
     usePoemImageLayout: true,
     navigationBanner: {
       state: true,
-      prev: "zona-de-derrama-3",
+      prev: "",
       next: "zona-de-derrama-2",
-      namePrev: "Before it starts, after it’s finished",
+      namePrev: "",
       nameNext: "ARREBENTAÇÃO - last chapter",
     },
   },
@@ -346,9 +346,9 @@ In « arrebentação » 5 dancers create a choreography that is rooted in kuir d
     navigationBanner: {
       state: true,
       prev: "zona-de-derrama-1",
-      next: "zona-de-derrama-3",
+      next: "",
       namePrev: "ZONA DE DERRAMA - first chapter",
-      nameNext: "Before it starts, after it’s finished",
+      nameNext: "",
     },
   },
   "zona-de-derrama-3": {
