@@ -1,5 +1,6 @@
 import { query } from "./strapi";
 
+// RICH TEXT
 // interface StrapiChild {
 //   text: string;
 //   [key: string]: any;
@@ -23,6 +24,7 @@ interface StrapiResponse {
   };
 }
 
+// RICH TEXT
 // Función para extraer y combinar los textos de los bloques
 // function parseStrapiContent(blocks: StrapiBlock[]): string {
 //   return blocks
