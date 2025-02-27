@@ -289,7 +289,7 @@ _</enhanced>
     title: "ARREBENTAÇÃO - last chapter",
     credits: `
   ♥ Footnotes ♥
-*1 → Formless Formation by <enhanced style="blackbold">Hypatia Varloumis</enhanced> and <enhanced style="blackbold">Sandra Ruiz</enhanced>
+*1 → Formless Formation by <enhanced style="blackbold">Hypatia Vourloumis</enhanced> and <enhanced style="blackbold">Sandra Ruiz</enhanced>
 *2 → Conspiracy Without a Plot by <enhanced style="blackbold">Valentina Desideri</enhanced> and <enhanced style="blackbold">Stefano Harney</enhanced>
 ♥‿♥
 
@@ -311,7 +311,7 @@ Co-Production : Création dans le cadre du programme <enhanced style="blackbold"
 Residency support: <enhanced style="blackbold">Point Éphémère</enhanced> (DRAC France), <enhanced style="blackbold">Festival actoral, CCN Ballet national de Marseille.</enhanced>
 With support from : <enhanced style="blackbold">Pro Helvetia, Loterie Romande, Fondation Hans Wilsdorf, Ernst Göhner Stiftung</enhanced>
 Thanks to: <enhanced style="blackbold">Maria Cristina Teixeira, Lea Genoud, Madeleine Amsler, Barbara Giongo, Chloe Demetriades, Simone Frey, Marcela Santander, Alessandra Domingues</enhanced>
-Photo Credits: <enhanced style="blackbold">Gregory Bataradon</enhanced>
+Photo Credits: <enhanced style="blackbold">Gregory Bataradon, Mirian theus</enhanced>
 `,
     description: `
   tumultuous touches polyphonic feelings /
@@ -333,13 +333,17 @@ In « arrebentação » 5 dancers create a choreography that is rooted in kuir d
 
 
 `,
-    poems: "",
+    poems: ``,
     media: {
-      head: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/arrebatacao_head.jpg`,
-      single: "",
+      head: `https://player.vimeo.com/video/1040017932`,
+      single: `${
+        import.meta.env.VITE_SUPABASE_STORAGE_URL
+      }/arrebatacao_head.jpg`,
       dual: [
-        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/arrebatacao_1.jpg`,
-        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/arrebatacao_2.jpg`,
+        `${
+          import.meta.env.VITE_SUPABASE_STORAGE_URL
+        }/arrebatacao_horizontal_1.webp`,
+        ``,
       ],
     },
     usePoemImageLayout: false,
@@ -455,16 +459,12 @@ La Peau Entre Les Doigts does not seek clarity or purity, it goes hand in hand w
 };
 
 export const biotext = `
-<enhanced style="cutietitle">Catol Teixeira performs and creates dances</enhanced>. Born in Porto Alegre, Brazil, with a diverse journey across various cities, including Rio de Janeiro, Belo Horizonte, Salzburg, Berlin, and is currently based in between Geneva (Switzerland) and Rio de Janeiro (Brasil). They develop a choreographic practice as means of translations and engage into searching for a dance that embraces queer ways of living. 
+<enhanced style="cutietitle">Catol Teixeira performs and creates dances</enhanced>. Born in Porto Alegre and living in Rio de Janeiro since adolescence, Catol has received technical training in ballet, circus, and some contemporary dance approaches. They develop a choreographic practice as a means of translation and are engaged in the search for a dance that embraces trans-kuir ways of life.
 
+Catol worked with companies in Belo Horizonte from 2013 to 2015 (Palácio das Artes, SESC MG, Mário Nascimento) as well as with the group Intrépida Trupe in Rio de Janeiro between 2010 and 2016. In 2016, they began their journey of studies and work outside Brazil—initially in Salzburg, Austria (SEAD-Bodhi Project), and later in Berlin, Germany (ROAR). In 2021, they earned a bachelor's degree in Contemporary Dance from La Manufacture Haute École des Arts de la Scène in Lausanne, Switzerland. Since then, Catol has also been a member of the Geneva School of Arts (HEAD), and in recent years, they have been developing choreographic and performance practices that shape the body of their dance work. Their works have been presented at Pavillon ADC in Geneva, Théâtre Vidy in Lausanne, La Ménagerie de Verre in Paris, Points Communs in Cergy, Tanzquartier in Vienna, Festival Actoral in Marseille, Festival Santarcangelo, Sélection Suisse at the Avignon Festival, Gessnerallee in Zurich, MACRO in Rome, among others. Their first choreographic direction for a group, entitled arrebentação (Breakdown), premiered in Geneva in November 2024.
 
-They obtained a Bachelor’s degree in Contemporary Dance from La Manufacture in Lausanne in 2021. Prior to formal dance education, Catol worked as an interpreter for dance companies in Brazil such as “Cia Palacio das Artes” and “Cia Mário Nascimento” in Belo Horizonte, Brazil, during 2013 and 2014. They also worked as artistic collaborator and acrobat to the contemporary circus group “Intrepida Trupe” from to 2010 to 2012 as in 2016. They were resident artist at Ponderosa Tanzland, a place they visited and studied several times.
-<enhanced style="readme">CATOL DANCES WHILE TRANSITIONING AND CRAFT PERFORMANCES AS INVOCATIONS</enhanced>. They are curious to deal with physical endurance, somatic practices and drawing influence from sources
-as diverse as circus aerial dances, classical ballet, partying and celebrations.
+Catol’s choreographic experimentation with dance serves as a channel for revealing nuances and tactics of coexistence and relationship. Their interest is centered on collaborative processes between artistic practices and personal-collective inquiries, establishing an intimate dialogue in their composition work with kuir (“queer”) and trans (dis)orientations—to recall a dream and enact an obstinate act of escape from the given-created plot of modernity-coloniality.
 
-
-CATOL’S CHOREOGRAPHIC EXPERIMENTATION WITH DANCE SERVES AS A CONDUIT FOR UNCOVERING NUANCES AND TACTICS OF TOGETHERNESS. THEIR INTEREST IS ORIENTED TO COLLABORATIVE PROCESSES, AMIDST
-PERSONAL CONCERNS, ARTISTIC PRACTICES AND ARTISTS, ESTABLISHING WITH DANCING AND COMPOSITIONAL WORK AN INTIMATE DIALOGUE WITH KUIR (QUEER) (DIS)ORIENTATIONS TO REMEMBER A DREAM, A STUBBORN ACT TO ESCAPE THE PLOT, TO UNLEARN, TO CRY AND TO CELEBRATE.
 
 `;
 

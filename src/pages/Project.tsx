@@ -55,6 +55,11 @@ const Project: React.FC = () => {
       <h2 className="whitespace-pre-line  text-center  m-2 mx-5 lg:mx-5 3xl:mx-5 font-jungaBook">
         <EnhancedText>{project.description}</EnhancedText>
       </h2>
+      {project.media.dual[0] !== "" &&
+        project.media.dual[1] === "" &&
+        project.poems === "" && (
+          <div className="">{renderMedia(project.media.dual[0])}</div>
+        )}
       {project.usePoemImageLayout &&
         typeof project.poems === "object" &&
         project.media.dual[0] !== "" &&
