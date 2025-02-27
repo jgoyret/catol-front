@@ -26,7 +26,7 @@ const ZonaDeDerremaChapters: React.FC = () => {
           to="/project/zona-de-derrama-2"
           className="text-xl md:text-2xl lg:text-4xl 2xl:text-6xl hover:text-catolHover hover:italic transition-colors drop-shadow-md shadow-black"
         >
-          ARREBENTAÇÃO - last chapter
+          ARREBENTAÇÃO
         </Link>
         {/* <Link
           to="/project/zona-de-derrama-3"

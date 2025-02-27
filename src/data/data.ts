@@ -282,11 +282,11 @@ _</enhanced>
       prev: "",
       next: "zona-de-derrama-2",
       namePrev: "",
-      nameNext: "ARREBENTAÇÃO - last chapter",
+      nameNext: "ARREBENTAÇÃO",
     },
   },
   "zona-de-derrama-2": {
-    title: "ARREBENTAÇÃO - last chapter",
+    title: "ARREBENTAÇÃO",
     credits: `
   ♥ Footnotes ♥
 *1 → Formless Formation by <enhanced style="blackbold">Hypatia Vourloumis</enhanced> and <enhanced style="blackbold">Sandra Ruiz</enhanced>
@@ -317,7 +317,7 @@ Photo Credits: <enhanced style="blackbold">Gregory Bataradon, Mirian theus</enha
   tumultuous touches polyphonic feelings /
 arrebentação is arriving with extravagant tears , furious laughs and genuine failures .
 
-<enhanced style="cutietitle">Arrebentação - Zona de Derrama last chapter.</enhanced>The term "Arrebentação" refers to the area of the sea where waves crash. It is a space where one can observe the wind interacting with the water's surface, negotiating the forces at play just before the moment of descent and break. Arrebentação is the zone where one either waits in anticipation or learns how to pierce it.
+<enhanced style="cutietitle">Arrebentação - Zona de Derrama.</enhanced>The term "Arrebentação" refers to the area of the sea where waves crash. It is a space where one can observe the wind interacting with the water's surface, negotiating the forces at play just before the moment of descent and break. Arrebentação is the zone where one either waits in anticipation or learns how to pierce it.
 There is a distinct sound associated with this experience; the crashing waves against the rocks resonate as you feel the power of the water reaching the shore.
 It is magnetic. It is constant. It embodies the trembling condition of the earth.
 
@@ -404,7 +404,7 @@ depois quase que antes
       state: true,
       prev: "zona-de-derrama-2",
       next: "zona-de-derrama-1",
-      namePrev: "ARREBENTAÇÃO - last chapter",
+      namePrev: "ARREBENTAÇÃO",
       nameNext: "ZONA DE DERRAMA - first chapter",
     },
   },
