@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+# 🌈 Catol Teixeira – Artist Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A custom-built, immersive web portfolio designed for artist **Catol Teixeira**, blending performance, visual experimentation, and kuir expression through technology.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ About the Project
 
-## Expanding the ESLint configuration
+This website was created as a digital extension of Catol Teixeira’s artistic practice.  
+Catol is a trans-kuir dancer and choreographer whose work explores embodiment, transformation, and poetic resistance through movement. The site reflects this identity through carefully crafted design choices and dynamic visual elements.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+A defining feature of the site is the use of **real-time GLSL visuals** generated with [`hydra-synth`](https://github.com/ojack/hydra), which create a living, reactive background—an invocation of Catol’s performative world.
 
-- Configure the top-level `parserOptions` property like this:
+## 🌐 Live Site
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+👉 https://www.catolteixeira.com/
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🛠 Tech Stack
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **React** – Frontend framework
+- **hydra-synth** – Real-time GLSL visual engine
+- **Tailwind CSS** – Styling with utility classes
+- **Framer Motion** – UI animations
+- **Responsive Design** – Optimized for desktop & mobile
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🎨 Design & Features
+
+- **GLSL generative backgrounds** with hydra-synth
+- **Minimal, poetic interface** tailored to Catol’s aesthetics
+- **Project sections** that document works, bio, and performance history
+- Fully responsive and lightweight performance
+
+
+
