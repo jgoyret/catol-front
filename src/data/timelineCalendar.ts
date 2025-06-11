@@ -10,6 +10,19 @@ export interface YearData {
 
 export const timelineData: YearData[] = [
   {
+    year: "2026",
+    events: [
+      {
+        date: "26. - 29. February",
+        description: "ODE @ VIDY teatre, Lausanne CH",
+      },
+      {
+        date: "20. - 22. January",
+        description: "Clashes Licking @ Teatro Nacional D. Maria II, Lisbon PT",
+      },
+    ],
+  },
+  {
     year: "2025",
     events: [
       {
@@ -29,8 +42,25 @@ export const timelineData: YearData[] = [
         description: "Arrebentação @ Points communs Cergy, France",
       },
       {
+        date: "9. & 10. May",
+        description: "La peau entre les doigts @ BIT Teatergarasjen, Norway",
+      },
+      {
         date: "15. - 24. May",
         description: "Before it starts and after it's finished @ Théâtre Vidy",
+      },
+      {
+        date: "1. & 3. August",
+        description:
+          "Arrebentaçao - zona de derrama last chapter @ 8:tension series Impulstanz Festival, Vienna",
+      },
+      {
+        date: "3. & 4. Oct",
+        description: "Clashes Licking @ Chateau Thierry, France",
+      },
+      {
+        date: "26. - 29. Nov",
+        description: "ODE @ Festival Next , France",
       },
     ],
   },

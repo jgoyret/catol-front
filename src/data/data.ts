@@ -356,50 +356,42 @@ In « arrebentação » 5 dancers create a choreography that is rooted in kuir d
     },
   },
   "zona-de-derrama-3": {
-    title: "Before it starts, after it's finished",
-    credits: `Choreography, concept and performance: <enhanced style="blackbold">Catol Teixeira</enhanced>
-Sound creation: <enhanced style="blackbold">Sandar Tun Tun</enhanced>
-Photo Credits: <enhanced style="blackbold">Catol Teixeira, Jerome Pique</enhanced>
+    title: "ODE",
+    credits: `Concept, choreography, dance: <enhanced style="blackbold">Catol Teixeira</enhanced>
+Poetic conversation: <enhanced style="blackbold">Gabriela Perigo</enhanced>
+Sound creation: <enhanced style="blackbold">Mbé, Luisa Lemgruber</enhanced>
+Textile piece: <enhanced style="blackbold">Barbara Tavares, Catol Teixeira</enhanced>
+Lights: <enhanced style="blackbold">Catol Teixeira, Gautier Teuscher</enhanced>
+Administration production: <enhanced style="blackbold">Rabea Grand</enhanced>
+Residency support at <enhanced style="blackbold">Espaço do tempo (POR)</enhanced>
+With the support of <enhanced style="blackbold">SIS - Fondation suisse des artistes interprètes</enhanced>
+Coproduction : <enhanced style="blackbold">Théâtre de Vidy-Lausanne (CH)</enhanced>
+Thanks to: <enhanced style="blackbold">Cristina Teixeira, Maikon k, Juan Ferrari, Luana Bezerra, Fabian Barba, Ayla  Gabriela, Pierre-Nicolas Moulin</enhanced>
+Photo credits: <enhanced style="blackbold"> Binta Kopp</enhanced>
 `,
     description: `
-<enhanced style="readme">PREMIERE: MAY 2025</enhanced>
-
+<enhanced style="cutie">Synonymous with homage, an ode is a poem traditionally accompanied by music, dedicated to a person or event. Here, ODE unfolds as a dance dedicated to gaps, to ruptures and to transformations. Catol Teixeira’s choreographic research takes the form of a homage to that which does not occur, to that which never really settles in. ODE thus becomes a practice session devoted to the unaccomplished. In the rehearsal room at the Vidy Theatre, Catol Teixeira offers the audience a dance solo, an ode to the fleeting, to what might have been.</enhanced>
     `,
     poems: {
-      head: `<enhanced style="cutietitle">Before it starts after its finished</enhanced> draws on artistic materials - such as movement, poetics and imaginary - that have remained “in secret” from the Zona de Derrama project. It is born within a fascination with sketches, "study", footnotes. It wishes to tremble and move, in dislocation across the space.
-This piece deals with moments before a change, before a fall, before a touch. The work seeks to dive into a diverse emotional landscape connected to those moments, when we sense that something is about to happen, or even has already passed. Dealing with a perception of time that is in a constant curve, in a constant fall, never captured. As when something has already occurred and a reminiscence lands in the body. These raw moments leave an embodied sensation -akin to a dream, a remembrance - moving through emotional density, crossing the zones and calling to transmutation.
+      head: `It carries the ache of departures, the friction of what resists, the pulse of something unknown. The body, caught between what was and what will be, absorbs the after-effect—a tremor in the hands, a tightness in the chest, a hesitation in the step. Some traces linger like stains, stubborn and unrelenting, carried even when they are not seen. Others, with time, reveal themselves as grace—subtle, fleeting, a lightness that comes only in the wake of surrender.
+There is sorrow here, yes. The body knows its weight, holds it in the spine, in the way a shoulder folds inward, the way the momentum turns over and over again, in the way a hand retracts before reaching. And yet, in movement, something shifts. A hesitation softens into fluidity. A burden transforms into momentum. There is also joy—the quiet kind, the one that emerges not in spite of - but because of it. A reminder that even what stains can shimmer, that dense and heavy steps also leave a rhythm behind, too fleeting to hold.
+	A shift in a path is never clean. It carries the friction of what was left behind, the tension of what is yet to come. In this performance, Catol embody this in-between state—the body as a map of previous movements, an archive of steps taken, hesitated, or resisted, a surfacing event.
 `,
-      end: `<enhanced style="cutie">antes do toque antes do sonho antes da chuva antes do grito antes de lembrar antes do cheiro depois de esquecer depois de encostar antes de rir depois de chorar antes de cair depois de cair 
-quase na curva da mata 
-vento com cheiro que toca nas costas 
-lembra do receio de encontrar de baixo da cachoeira 
-olhar pro poço e achar que é o céu por causa do reflexo que ta longe 
-provocaçoes insensatas 
-pra suar pelos olhos gritar sem som 
-rir na cara do perigo daquilo que ta prestes a acontecer
-antes de pular flertar com o risco da queda 
-pular no meio das estrelas segurar a respiração voltar pra borda soltar o ar inteiro lembrando que ta vive
-no encontro da pele com a água doce fria da noite 
-corpo fantasia absurda gargalhando do pulo 
-o que ta prestes a acontecer 
-flerte do tempo:
-quase que eu não venho quase que eu vou embora quase que eu fico 
-antes do choro estômago antes do gozo o olho 
-antes do grito a nuca antes do suor o compasso 
-as promessas de antes quebradas depois 
-depois quase que antes
-</enhanced>
+      end: `This solo proposes a return to choreographic materials left behind—traces of past works, procedures, and experimentations that remained on the way. Parallel to their on going group compositional works, initiated in 2023, Catol remain curious to dig artistically in between collaborations and dancing formats that can vary its forms.
+The dance unfolds as an act of transition: what was once a moment of uncertainty, a break in rhythm, now manifests as movement. A stumble becomes a turn. A contraction unfurls into fluidity. The body carries the past forward, but not passively—it reshapes it, negotiates with it, turns weight into momentum.
+
+	"ODE" searches to inhabit the raw space where traces linger, where steps are haunted by what came before, and yet, still pushes toward the unknown. The residue of a movement, the echo of a choice, the afterimage of impact. In the tension between stain and grace, the dance unfolds—not to answer, but to move in relation to.
 `,
     },
     media: {
-      head: "",
+      head: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/ODE3.webp`,
       single: "",
       dual: [
-        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/before01.webp`,
-        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/before02.webp`,
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/ODE1.webp`,
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/ODE2.webp`,
       ],
     },
-    usePoemImageLayout: true,
+    usePoemImageLayout: false,
     navigationBanner: {
       state: true,
       prev: "zona-de-derrama-2",
