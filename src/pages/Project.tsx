@@ -45,7 +45,7 @@ const Project: React.FC = () => {
   }, [isPageLoaded]);
 
   return (
-    <div className=" lg:pl-10 text-sm md:text-lg 2xl:text-2xl">
+    <div className=" lg:pl-10 text-sm md:text-lg 2xl:text-xl">
       <h1 className="text-6xl lg:text-8xl 2xl:text-9xl text-center font-chuchi mb-4">
         {project.title}
       </h1>
@@ -94,7 +94,7 @@ const Project: React.FC = () => {
           <img
             src={`${project.media.single}`}
             alt={`${project.title}`}
-            className=" aspect-w-16 aspect-h-9 w-full h-screen object-cover"
+            className=" aspect-w-16 aspect-h-9 w-full h-full object-cover"
           />
         </div>
       )}
@@ -148,7 +148,7 @@ const Project: React.FC = () => {
           </div>
         )}
 
-      <p className="whitespace-pre-line text-center px-2 text-xs md:text-sm font-jungaBook leading-tight max-w-7xl mx-auto">
+      <p className="whitespace-pre-line text-center px-2 text-xs font-jungaBook leading-tight max-w-7xl mx-auto">
         <EnhancedText>{project.credits}</EnhancedText>
       </p>
     </div>

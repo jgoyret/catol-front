@@ -23,7 +23,7 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             return (
               <span
                 key={index}
-                className={`font-chuchi text-xl md:text-2xl 2xl:text-[35px] ${
+                className={`font-chuchi text-base md:text-xl 2xl:text-2xl${
                   location.pathname === "/bio" ? "text-white" : "text-black"
                 } whitespace-pre-line`}
               >
@@ -35,7 +35,7 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
               <Link to={linkName} target="_blank" rel="noopener noreferrer">
                 <span
                   key={index}
-                  className={`font-chuchi text-xl md:text-2xl 2xl:text-[35px] ${
+                  className={`font-chuchi text-base md:text-xl ${
                     location.pathname === "/bio" ? "text-white" : "text-black"
                   } whitespace-pre-line hover:text-catolHover hover:underline`}
                 >
@@ -47,7 +47,7 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             return (
               <span
                 key={index}
-                className={`uppercase font-chuchi text-xl lg:text-2xl 2xl:text-5xl  ${
+                className={`uppercase font-chuchi text-xl lg:text-2xl 2xl:text-4xl  ${
                   location.pathname === "/bio" ? "text-white" : "text-black"
                 } whitespace-pre-line`}
               >
@@ -92,7 +92,7 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
   };
 
   return (
-    <div key={React.useId()} className="whitespace-pre-line">
+    <div key={React.useId()} className="whitespace-pre-line ">
       {renderText(children)}
     </div>
   );
