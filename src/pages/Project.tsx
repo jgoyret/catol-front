@@ -33,7 +33,7 @@ const Project: React.FC = () => {
         <img
           src={mediaUrl}
           alt={project.title}
-          className="w-full mb-8 h-full object-cover"
+          className="w-full mb-8 h-screen object-cover"
         />
       );
     }
@@ -90,11 +90,11 @@ const Project: React.FC = () => {
           </p>
         )}
       {project.media.single !== "" && !project.usePoemImageLayout && (
-        <div className=" w-full  md:h-full flex justify-center">
+        <div className=" w-full  md:h-full flex justify-center object-cover">
           <img
             src={`${project.media.single}`}
             alt={`${project.title}`}
-            className=" aspect-w-16 aspect-h-9 w-full h-full object-cover"
+            className=" aspect-w-16 aspect-h-9 w-full h-screen object-cover"
           />
         </div>
       )}

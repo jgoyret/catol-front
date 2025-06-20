@@ -10,6 +10,16 @@ export interface YearData {
 
 export const timelineData: YearData[] = [
   {
+    year: "2026",
+    events: [
+      {
+        date: "19. Jun",
+        description:
+          "Avant-Premiere: The Tongue (Working Tittle) @ Comédie de Genève (CH)",
+      },
+    ],
+  },
+  {
     year: "2025",
     events: [
       {
@@ -29,8 +39,44 @@ export const timelineData: YearData[] = [
         description: "Arrebentação @ Points communs Cergy, France",
       },
       {
+        date: "9. & 10. May",
+        description: "La peau entre les doigts @ BIT Teatergarasjen, Norway",
+      },
+      {
         date: "15. - 24. May",
         description: "Before it starts and after it's finished @ Théâtre Vidy",
+      },
+      {
+        date: "1. & 3. August",
+        description:
+          "Arrebentaçao - zona de derrama last chapter @ 8:tension series Impulstanz Festival, Vienna",
+      },
+      {
+        date: "30. Aug",
+        description:
+          "an ODE performance version for the @ Schinkel Pavillon, Berlin DE",
+      },
+      {
+        date: "19. & 20. Sep",
+        description: "ODE @ Rio de Janeiro BR",
+      },
+      {
+        date: "26. & 27. Sep",
+        description:
+          "Zona de Derrama - First Chapter @ SESC Bienal de Dança, Campinas BR",
+      },
+      {
+        date: "4. Oct",
+        description: "Clashes Licking @ L’Echangeur CDCN, Château-Thierry FR",
+      },
+      {
+        date: "25. Oct",
+        description:
+          "Eu vou aparecer bem no meio do seu sonho @ Art Émergence, Paris FR",
+      },
+      {
+        date: "27. - 29. Nov",
+        description: "ODE @ Espace Pasolini, Valenciennes FR",
       },
     ],
   },
