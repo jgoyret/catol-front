@@ -13,12 +13,9 @@ export const timelineData: YearData[] = [
     year: "2026",
     events: [
       {
-        date: "26. - 29. February",
-        description: "ODE @ VIDY teatre, Lausanne CH",
-      },
-      {
-        date: "20. - 22. January",
-        description: "Clashes Licking @ Teatro Nacional D. Maria II, Lisbon PT",
+        date: "19. Jun",
+        description:
+          "Avant-Premiere: The Tongue (Working Tittle) @ Comédie de Genève (CH)",
       },
     ],
   },
@@ -55,12 +52,31 @@ export const timelineData: YearData[] = [
           "Arrebentaçao - zona de derrama last chapter @ 8:tension series Impulstanz Festival, Vienna",
       },
       {
-        date: "3. & 4. Oct",
-        description: "Clashes Licking @ Chateau Thierry, France",
+        date: "30. Aug",
+        description:
+          "an ODE performance version for the @ Schinkel Pavillon, Berlin DE",
       },
       {
-        date: "26. - 29. Nov",
-        description: "ODE @ Festival Next , France",
+        date: "19. & 20. Sep",
+        description: "ODE @ Rio de Janeiro BR",
+      },
+      {
+        date: "26. & 27. Sep",
+        description:
+          "Zona de Derrama - First Chapter @ SESC Bienal de Dança, Campinas BR",
+      },
+      {
+        date: "4. Oct",
+        description: "Clashes Licking @ L’Echangeur CDCN, Château-Thierry FR",
+      },
+      {
+        date: "25. Oct",
+        description:
+          "Eu vou aparecer bem no meio do seu sonho @ Art Émergence, Paris FR",
+      },
+      {
+        date: "27. - 29. Nov",
+        description: "ODE @ Espace Pasolini, Valenciennes FR",
       },
     ],
   },
