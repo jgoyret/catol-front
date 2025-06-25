@@ -23,7 +23,7 @@ import Performance from "./pages/Performance";
 import Bio from "./pages/Bio";
 import InterviewsAndPress from "./pages/InterviewsAndPress";
 import Contact from "./pages/Contact";
-import ZonaDeDerremaChapters from "./pages/ZonaDeDerramaChapters";
+// import ZonaDeDerremaChapters from "./pages/ZonaDeDerramaChapters";
 import PageTransition from "./components/PageTransition";
 import ComingSoon from "./pages/ComingSoon";
 import Calendar from "./pages/Calendar";
@@ -82,14 +82,14 @@ const router = createBrowserRouter([
       </PageTransition>
     ),
   },
-  {
-    path: "/project/zona-de-derrama",
-    element: (
-      <PageTransition>
-        <ZonaDeDerremaChapters />
-      </PageTransition>
-    ),
-  },
+  // {
+  //   path: "/project/zona-de-derrama",
+  //   element: (
+  //     <PageTransition>
+  //       <ZonaDeDerremaChapters />
+  //     </PageTransition>
+  //   ),
+  // },
   {
     path: "/writing-dancing-around",
     element: (

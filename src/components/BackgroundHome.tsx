@@ -84,19 +84,18 @@ const BackgroundHome: React.FC = () => {
       window.addEventListener("resize", handleResize);
     }
 
-    console.log("BackgroundHome");
+    // console.log("BackgroundHome");
 
     return () => {
       if (hydraRef.current) {
-        // Clean up Hydra instance
-        if (
-          hydraRef.current.synth &&
-          typeof hydraRef.current.synth.destroy === "function"
-        ) {
-          hydraRef.current.synth.regl.destroy();
-          hydraRef.current.synth.pb.destroy();
-          hydraRef.current.synth.destroy();
-          hydraRef.current.synth = null;
+        try {
+          const synth = hydraRef.current.synth;
+          synth?.regl?.gl?.getExtension("WEBGL_lose_context")?.loseContext();
+          synth?.regl?.destroy?.();
+          synth?.pb?.destroy?.();
+          synth?.destroy?.();
+        } catch (err) {
+          console.warn("Error al limpiar Hydra:", err);
         }
         hydraRef.current = null;
       }
