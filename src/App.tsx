@@ -13,6 +13,7 @@ import {
   LaPeauGif,
   BioGif,
   DerramaGif,
+  OdeGif,
   PerfoGif,
 } from "./components/Gifs";
 import Header from "./components/Header";
@@ -49,9 +50,9 @@ const Layout = ({
 
 const projectIcons = {
   "clashes-licking": ClashesGif,
-  "zona-de-derrama-1": DerramaGif,
-  "zona-de-derrama-2": DerramaGif,
-  "zona-de-derrama-3": DerramaGif,
+  "zona-de-derrama": DerramaGif,
+  "arrebatacao": DerramaGif,
+  "ode": OdeGif,
   "la-peau-entre-les-doigts": LaPeauGif,
 };
 

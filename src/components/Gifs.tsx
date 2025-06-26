@@ -27,6 +27,7 @@ const gifUrls = {
   derrama: `${
     import.meta.env.VITE_SUPABASE_STORAGE_URL
   }/derrama.gif?cache-bust=1`,
+  ode: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/ode.gif?cache-bust=1`,
   perfo: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/perfo.gif?cache-bust=1`,
   calendar: `${
     import.meta.env.VITE_SUPABASE_STORAGE_URL
@@ -49,6 +50,7 @@ const gifUrls = {
   derramaHome: `${
     import.meta.env.VITE_SUPABASE_STORAGE_URL
   }/derramaHome.gif?cache-bust=1`,
+  odeHome: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/odeHome.gif?cache-bust=1`,
   perfoHome: `${
     import.meta.env.VITE_SUPABASE_STORAGE_URL
   }/perfoHome.gif?cache-bust=1`,
@@ -100,6 +102,7 @@ const BioGif = (props: GifProps) => <GifComponent {...props} gifKey="bio" />;
 const DerramaGif = (props: GifProps) => (
   <GifComponent {...props} gifKey="derrama" />
 );
+const OdeGif = (props: GifProps) => <GifComponent {...props} gifKey="ode" />;
 const PerfoGif = (props: GifProps) => (
   <GifComponent {...props} gifKey="perfo" />
 );
@@ -116,6 +119,7 @@ export {
   LaPeauGif,
   BioGif,
   DerramaGif,
+  OdeGif,
   PerfoGif,
   CalendarGif,
 };

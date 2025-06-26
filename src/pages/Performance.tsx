@@ -18,7 +18,7 @@ const Performance: React.FC = () => {
         {performances.map((performance, index) => (
           <div
             key={index}
-            className="flex flex-col my-20 lg:flex-row items-center md:items-start gap-0 "
+            className="flex flex-col my-20 lg:flex-row items-center md:items-start gap-0"
           >
             <div className="w-full lg:w-1/2">
               <img

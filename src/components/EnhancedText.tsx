@@ -47,7 +47,7 @@ const EnhancedText: React.FC<EnhancedTextProps> = ({ children }) => {
             return (
               <span
                 key={index}
-                className={`uppercase font-chuchi text-xl lg:text-2xl 2xl:text-5xl  ${
+                className={`uppercase font-chuchi text-xl lg:text-2xl 2xl:text-4xl  ${
                   location.pathname === "/bio" ? "text-white" : "text-black"
                 } whitespace-pre-line`}
               >

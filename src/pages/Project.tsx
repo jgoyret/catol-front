@@ -101,7 +101,7 @@ const Project: React.FC = () => {
       {project.media.dual[0] !== "" &&
         project.media.dual[1] !== "" &&
         !project.usePoemImageLayout && (
-          <div className=" w-full flex flex-col lg:flex-row justify-center lg:space-x-4 overflow-hidden my-10">
+          <div className="w-full flex flex-col lg:flex-row justify-center lg:space-x-4 overflow-hidden my-10">
             <img
               className="w-full h-full md:min-h-96 lg:w-1/2 object-cover object-center mb-10 lg:mb-0 overflow-hidden"
               src={`${project.media.dual[0]}`}
