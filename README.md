@@ -8,7 +8,7 @@
 This website was created as a digital extension of Catol Teixeira’s artistic practice.  
 Catol is a trans-kuir dancer and choreographer whose work explores embodiment, transformation, and poetic resistance through movement. The site reflects this identity through carefully crafted design choices and dynamic visual elements.
 
-A defining feature of the site is the use of **real-time GLSL visuals** generated with [`hydra-synth`](https://github.com/ojack/hydra), which create a living, reactive background—an invocation of Catol’s performative world.
+A defining feature of the site is the use of **real-time GLSL visuals** generated with [`hydra-synth`](https://github.com/ojack/hydra).
 
 ## 🌐 Live Site
 
@@ -27,7 +27,6 @@ A defining feature of the site is the use of **real-time GLSL visuals** generate
 - **GLSL generative backgrounds** with hydra-synth
 - **Minimal, poetic interface** tailored to Catol’s aesthetics
 - **Project sections** that document works, bio, and performance history
-- Fully responsive and lightweight performance
 
 
 

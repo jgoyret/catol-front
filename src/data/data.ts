@@ -448,8 +448,8 @@ export const biotext = `
 <enhanced style="cutietitle">Catol Teixeira performs and creates dances</enhanced>. Born in Porto Alegre and living in Rio de Janeiro since adolescence, Catol has received technical training in ballet, circus, and some contemporary dance approaches. They develop a compositional practice as a means of translation.
 <enhanced style="readme"> CATOL DANCES WHILE TRANSITIONING AND CRAFT PERFORMANCES AS INVOCATIONS </enhanced>
 
-Catol worked with companies in Belo Horizonte (BR) from 2013 to 2015 (Palácio das Artes, SESC MG, Mário Nascimento), as well as with the group Intrépida Trupe in Rio de Janeiro
-between 2010 and 2016. In 2016, they began theirjourney of studies and work outside Brazil—initially in Salzburg, Austria (SEAD-Bodhi Project), and later in Berlin, Germany (ROAR). In 2021, they earned a bachelor's degree in Contemporary Dance from La Manufacture Haute École des Arts de la Scène in Lausanne, Switzerland and studied at the “work.master” in the Geneva School of Arts (HEAD).
+Catol worked with companies in Belo Horizonte (BR) from 2013 to 2015 (Palácio das Artes, SESC MG, Mário Nascimento), as well as with the group Intrépida Trupe in Rio de Janeiro between 2010 and 2016. In 2016, they began theirjourney of studies and work outside Brazil—initially in Salzburg, Austria (SEAD-Bodhi Project), and later in Berlin, Germany (ROAR). In 2021, they earned a bachelor's degree in Contemporary Dance from La Manufacture Haute École des Arts de la Scène in Lausanne, Switzerland and studied at the “work.master” in the Geneva School of Arts (HEAD).
+
 
 Since then, they have been developing choreographic and performance practices that shape the body of their dance works. Their choreographies have been presented at Pavillon ADC in Geneva, Théâtre Vidy in Lausanne, La Ménagerie de Verre in Paris, Points Communs in Cergy, Festival Rakete/Tanzquartier in Vienna, Festival Actoral in Marseille, Festival Santarcangelo, Sélection Suisse at the Avignon Festival, Gessnerallee in Zurich, Institutto Svizzero in Rome, among others.
 
