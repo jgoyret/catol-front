@@ -527,7 +527,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: "arrebentacao",
-    name: "AREBENTAÇÃO",
+    name: "ARREBENTAÇÃO",
     icon: DerramaGif,
   },
   {

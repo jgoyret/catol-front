@@ -51,7 +51,7 @@ const Layout = ({
 const projectIcons = {
   "clashes-licking": ClashesGif,
   "zona-de-derrama": DerramaGif,
-  "arrebatacao": DerramaGif,
+  "arebetacao": DerramaGif,
   "ode": OdeGif,
   "la-peau-entre-les-doigts": LaPeauGif,
 };
