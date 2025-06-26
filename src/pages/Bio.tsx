@@ -18,7 +18,7 @@ const Bio: React.FC = () => {
           src="https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia/biovideo.mp4?t=2024-10-11T17%3A07%3A38.511Z"
         ></video>
         {/* <img
-          src="https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia/bioImage1.webp"
+          src="https://qermkkrhilxobhfrefim.supabase.co/storage/v1/object/public/catolmedia//bioImage1.webp"
           alt="catol sitting in the floor performing"
           className="w-screen h-screen object-cover opacity-60"
         /> */}

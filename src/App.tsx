@@ -13,6 +13,7 @@ import {
   LaPeauGif,
   BioGif,
   DerramaGif,
+  OdeGif,
   PerfoGif,
 } from "./components/Gifs";
 import Header from "./components/Header";
@@ -23,7 +24,7 @@ import Performance from "./pages/Performance";
 import Bio from "./pages/Bio";
 import InterviewsAndPress from "./pages/InterviewsAndPress";
 import Contact from "./pages/Contact";
-import ZonaDeDerremaChapters from "./pages/ZonaDeDerramaChapters";
+// import ZonaDeDerremaChapters from "./pages/ZonaDeDerramaChapters";
 import PageTransition from "./components/PageTransition";
 import ComingSoon from "./pages/ComingSoon";
 import Calendar from "./pages/Calendar";
@@ -49,9 +50,9 @@ const Layout = ({
 
 const projectIcons = {
   "clashes-licking": ClashesGif,
-  "zona-de-derrama-1": DerramaGif,
-  "zona-de-derrama-2": DerramaGif,
-  "zona-de-derrama-3": DerramaGif,
+  "zona-de-derrama": DerramaGif,
+  "arebetacao": DerramaGif,
+  "ode": OdeGif,
   "la-peau-entre-les-doigts": LaPeauGif,
 };
 
@@ -82,14 +83,14 @@ const router = createBrowserRouter([
       </PageTransition>
     ),
   },
-  {
-    path: "/project/zona-de-derrama",
-    element: (
-      <PageTransition>
-        <ZonaDeDerremaChapters />
-      </PageTransition>
-    ),
-  },
+  // {
+  //   path: "/project/zona-de-derrama",
+  //   element: (
+  //     <PageTransition>
+  //       <ZonaDeDerremaChapters />
+  //     </PageTransition>
+  //   ),
+  // },
   {
     path: "/writing-dancing-around",
     element: (
