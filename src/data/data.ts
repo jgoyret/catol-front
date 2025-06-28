@@ -286,7 +286,7 @@ _</enhanced>
       nameNext: "ARREBENTAÇÃO",
     },
   },
-  "arrebentacao": {
+  arrebentacao: {
     title: "ARREBENTAÇÃO",
     credits: `
   ♥ Footnotes ♥
@@ -356,7 +356,7 @@ In « arrebentação » 5 dancers create a choreography that is rooted in kuir d
       nameNext: "",
     },
   },
-  "ode": {
+  ode: {
     title: "ODE",
     credits: `Concept, choreography, dance:  <enhanced style="blackbold">Catol Teixeira</enhanced>
 Poetic conversation: <enhanced style="blackbold">Gabriela Perigo</enhanced>
@@ -381,7 +381,7 @@ There is sorrow here, yes. The body knows its weight, holds it in the spine, in 
 
 This solo proposes a return to choreographic materials left behind—traces of past works, procedures, and experimentations that remained on the way. Parallel to their on going group compositional works, initiated in 2023, Catol remain curious to dig artistically in between collaborations and dancing formats that can vary its forms.
 
-<enhanced style="readme">The dance unfolds as an act of transition:</enhanced> <enhanced style="cutie">what was once a moment of uncertainty, a break in rhythm, now manifests as movement. A stumble becomes a turn. A contraction unfurls into fluidity. The body carries the past forward, but not passively—it reshapes it, negotiates with it, turns weight into momentum.</enhanced>
+The dance unfolds as an act of transition: what was once a moment of uncertainty, a break in rhythm, now manifests as movement. A stumble becomes a turn. A contraction unfurls into fluidity. The body carries the past forward, but not passively—it reshapes it, negotiates with it, turns weight into momentum.
     `,
     poems: {
       head: ``,
