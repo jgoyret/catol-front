@@ -62,7 +62,7 @@ const Home: React.FC = () => {
       <BackgroundHome />
       <h1 className="absolute text-transparent">Catol Teixeira</h1>
       <h2 className="absolute text-transparent">Catol Teixeira portfolio</h2>
-      <nav className="text-center">
+      <nav className="text-center my-20">
         <ul className="space-y-6 md:space-y-10">{memoizedMenuItems}</ul>
       </nav>
     </div>
