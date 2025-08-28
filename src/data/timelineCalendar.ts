@@ -57,8 +57,18 @@ export const timelineData: YearData[] = [
           "an ODE performance version for the @ Schinkel Pavillon, Berlin DE",
       },
       {
-        date: "19. & 20. Sep",
-        description: "ODE @ Rio de Janeiro BR",
+        date: "14. Sep",
+        description:
+          "zona de derrama first chapter @poaemcena, - Porto Alegre, Brasil ",
+      },
+      {
+        date: "16. & 17. Sep",
+        description: "ODE @poaemcena, - Porto Alegre, Brasil",
+      },
+      {
+        date: "18. & 19. Sep",
+        description:
+          "La Peau Entre Les Doigts @poaemcena, - Porto Alegre, Brasil",
       },
       {
         date: "26. & 27. Sep",
