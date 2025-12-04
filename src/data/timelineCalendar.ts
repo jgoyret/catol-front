@@ -15,7 +15,7 @@ export const timelineData: YearData[] = [
       {
         date: "5. February",
         description:
-          "ODE @ Parallèle 15 Festival des pratiques artistiques émergentes, Marseille, (FR)",
+          "ODE @ Parallèle 15 Festival des pratiques artistiques émergentes, Marseille (FR)",
       },
       {
         date: "11. & 12. February",
