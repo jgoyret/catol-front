@@ -13,9 +13,25 @@ export const timelineData: YearData[] = [
     year: "2026",
     events: [
       {
-        date: "19. Jun",
+        date: "5. February",
         description:
-          "Avant-Premiere: The Tongue (Working Tittle) @ Comédie de Genève (CH)",
+          "ODE @ Parallèle 15 Festival des pratiques artistiques émergentes internationales. Marseille, France",
+      },
+      {
+        date: "11. & 12. February",
+        description: "ODE @ Swiss Dance Days, Bern CH",
+      },
+      {
+        date: "« AVANT PREMIÈRE » 19. & 20. June",
+        description: " BABY TEETH @ Comédie de Genève (CH)",
+      },
+      {
+        date: "(dates tba) Nov",
+        description: "BABY TEETH @ Comédie de Genève (CH)",
+      },
+      {
+        date: "(dates tba) Nov",
+        description: "BABY TEETH @ Theatre Vidy, Lausanne (CH)",
       },
     ],
   },
@@ -44,7 +60,7 @@ export const timelineData: YearData[] = [
       },
       {
         date: "15. - 24. May",
-        description: "Before it starts and after it's finished @ Théâtre Vidy",
+        description: "ODE @ Théâtre Vidy",
       },
       {
         date: "1. & 3. August",
@@ -95,7 +111,7 @@ export const timelineData: YearData[] = [
     events: [
       {
         date: "27. February - 1. March",
-        description: "Clashes Licking @ Theatre Vidy, Lausanne CH ",
+        description: "Clashes Licking @ Theatre Vidy, ,Lausanne CH ",
       },
       {
         date: "5. & 6. April ",

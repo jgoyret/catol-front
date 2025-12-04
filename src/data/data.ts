@@ -449,15 +449,14 @@ La Peau Entre Les Doigts does not seek clarity or purity, it goes hand in hand w
 };
 
 export const biotext = `
-<enhanced style="cutietitle">Catol Teixeira performs and creates dances</enhanced>. Born in Porto Alegre and living in Rio de Janeiro since adolescence, Catol has received technical training in ballet, circus, and some contemporary dance approaches. They develop a compositional practice as a means of translation.
-<enhanced style="readme"> CATOL DANCES WHILE TRANSITIONING AND CRAFT PERFORMANCES AS INVOCATIONS </enhanced>
+<enhanced style="cutietitle">Catol Teixeira</enhanced> is a dancer and choreographer living and working between Rio de Janeiro and Geneva. Born in Porto Alegre and based in Rio since adolescence, Catol trained in ballet, circus, and various contemporary dance approaches, 
+<enhanced style="readme"> developing a practice in which composition becomes a form of translation.</enhanced>
 
-Catol worked with companies in Belo Horizonte (BR) from 2013 to 2015 (Palácio das Artes, SESC MG, Mário Nascimento), as well as with the group Intrépida Trupe in Rio de Janeiro between 2010 and 2016. In 2016, they began theirjourney of studies and work outside Brazil—initially in Salzburg, Austria (SEAD-Bodhi Project), and later in Berlin, Germany (ROAR). In 2021, they earned a bachelor's degree in Contemporary Dance from La Manufacture Haute École des Arts de la Scène in Lausanne, Switzerland and studied at the “work.master” in the Geneva School of Arts (HEAD).
+They started by working as an interpreter in dance companies -  in Belo Horizonte, Palácio das Artes, SESC MG, and Mário Nascimento—between 2013 and 2015, and with the circus group Intrépida Trupe in Rio de Janeiro from 2010 to 2016. In 2016, they began working and studying outside Brazil, first at SEAD–Bodhi Project in Salzburg and later with ROAR in Berlin.
 
+In 2021, Catol completed a BA in Contemporary Dance at La Manufacture – Haute École des Arts de la Scène in Lausanne and further studied in the Master program at HEAD – Genève. Since then, they have been developing choreographic and performance practices that shape the body of their works, presented at venues and festivals such as Pavillon ADC (Geneva), Théâtre Vidy (Lausanne), La Ménagerie de Verre (Paris), Points Communs (Cergy), Festival Rakete - Tanzquartier (Vienna), Festival Actoral (Marseille), Festival Santarcangelo, Sélection Suisse at Festival d’Avignon, Gessnerallee (Zurich), KINANI Bienal Afrique (Maputo), MACRO (Rome), Bienal de Dança SESC (Campinas–São Paulo), 8:tension series /ImPulsTanz Festival (Vienna), among others.
 
-Since then, they have been developing choreographic and performance practices that shape the body of their dance works. Their choreographies have been presented at Pavillon ADC in Geneva, Théâtre Vidy in Lausanne, La Ménagerie de Verre in Paris, Points Communs in Cergy, Festival Rakete/Tanzquartier in Vienna, Festival Actoral in Marseille, Festival Santarcangelo, Sélection Suisse at the Avignon Festival, Gessnerallee in Zurich, Institutto Svizzero in Rome, among others.
-
-Catol’s choreographic experimentation with dance serves as a channel for revealing nuances and tactics of coexistence and relationship. Their interest is centered on collaborative processes between artistic practices and personal-collective inquiries, establishing an intimate dialogue in their composition work with kuir (“queer”) and trans-(dis)orientations —to recall a dream and enact an obstinate act of escape from the given-created plot of modernity-coloniality. Their last group choreographic work “arrebentação”, was premiered at Pavillon ADC - Geneva in November 2024. And their last solo work “ODE” was premiered in Mai 2025, at VIDY - Lausanne. 
+Catol’s choreographic experimentations function as channels for revealing nuances and tactics of coexistence and relation, and their interests center on collaborative processes that bring together artistic practices and personal-collective inquiries, generating an intimate dialogue with kuir (“queer”) and trans-(dis)orientations—recalling dreams and enacting an obstinate act of escape from the imposed narratives of modernity–coloniality. Their first group choreographic direction, arrebentação, premiered at Pavillon ADC in November 2024; their solo ODE premiered at Théâtre Vidy Lausanne in May 2025; and for 2026 Catol is creating BABY TEETH, produced in collaboration with Comédie de Genève.
 `;
 
 export const performances: Performance[] = [
@@ -525,6 +524,16 @@ A performance imagined as a moment of farewell. It happened simultaneous as othe
 
 export const menuItems: MenuItem[] = [
   {
+    name: "CALENDAR",
+    path: "/calendar",
+    icon: CalendarGif,
+  },
+  {
+    name: "BIO",
+    path: "/bio",
+    icon: BioGif,
+  },
+  {
     id: "ode",
     name: "ODE",
     icon: OdeGif,
@@ -559,11 +568,7 @@ export const menuItems: MenuItem[] = [
     path: "/performance",
     icon: PerfoGif,
   },
-  {
-    name: "BIO",
-    path: "/bio",
-    icon: BioGif,
-  },
+
   {
     name: "INTERVIEWS AND PRESS",
     path: "/interviews-and-press",
@@ -573,11 +578,6 @@ export const menuItems: MenuItem[] = [
     name: "CONTACT",
     path: "mailto:catol.teixeira@protonmail.com?subject=(your%20subject%20here)&body=(your%20question%20here)",
     icon: ContactoGif,
-  },
-  {
-    name: "CALENDAR",
-    path: "/calendar",
-    icon: CalendarGif,
   },
 ];
 
