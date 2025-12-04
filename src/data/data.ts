@@ -449,8 +449,7 @@ La Peau Entre Les Doigts does not seek clarity or purity, it goes hand in hand w
 };
 
 export const biotext = `
-<enhanced style="cutietitle">Catol Teixeira</enhanced> is a dancer and choreographer living and working between Rio de Janeiro and Geneva. Born in Porto Alegre and based in Rio since adolescence, Catol trained in ballet, circus, and various contemporary dance approaches, 
-<enhanced style="readme"> developing a practice in which composition becomes a form of translation.</enhanced>
+Catol Teixeira is a dancer and choreographer living and working between Rio de Janeiro and Geneva. Born in Porto Alegre and based in Rio since adolescence, Catol trained in ballet, circus, and various contemporary dance approaches, developing a practice in which composition becomes a form of translation.
 
 They started by working as an interpreter in dance companies -  in Belo Horizonte, Palácio das Artes, SESC MG, and Mário Nascimento—between 2013 and 2015, and with the circus group Intrépida Trupe in Rio de Janeiro from 2010 to 2016. In 2016, they began working and studying outside Brazil, first at SEAD–Bodhi Project in Salzburg and later with ROAR in Berlin.
 

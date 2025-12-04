@@ -15,19 +15,19 @@ export const timelineData: YearData[] = [
       {
         date: "5. February",
         description:
-          "ODE @ Parallèle 15 Festival des pratiques artistiques émergentes internationales. Marseille, France",
+          "ODE @ Parallèle 15 Festival des pratiques artistiques émergentes. Marseille, (FR)",
       },
       {
         date: "11. & 12. February",
-        description: "ODE @ Swiss Dance Days, Bern CH",
+        description: "ODE @ Swiss Dance Days, Bern (CH)",
       },
       {
-        date: "« AVANT PREMIÈRE » 19. & 20. June",
-        description: " BABY TEETH @ Comédie de Genève (CH)",
+        date: "« PRE PREMIÈRE » 19. & 20. June",
+        description: " BABY TEETH @ Comédie de Genève, Genève (CH)",
       },
       {
         date: "(dates tba) Nov",
-        description: "BABY TEETH @ Comédie de Genève (CH)",
+        description: "BABY TEETH @ Comédie de Genève, Genève (CH)",
       },
       {
         date: "(dates tba) Nov",
