@@ -22,8 +22,21 @@ export const timelineData: YearData[] = [
         description: "ODE @ Swiss Dance Days, Bern (CH)",
       },
       {
+        date: "21. May",
+        description: "ODE @ Migros Museum, Zurich (CH)",
+      },
+      {
         date: "« PRE PREMIÈRE » 19. & 20. June",
         description: " BABY TEETH @ Comédie de Genève, Genève (CH)",
+      },
+      {
+        date: "27. June",
+        description: "ODE @ Belluard Bollwerk Festival, Fribourg (CH)",
+      },
+
+      {
+        date: "10. 11. & 12. July",
+        description: "ODE @ Santarcangelo Festival, Santarcangelo (IT)",
       },
       {
         date: "(dates tba) Nov",
