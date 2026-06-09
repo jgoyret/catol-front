@@ -9,6 +9,7 @@ import {
   OdeGif,
   PerfoGif,
   CalendarGif,
+  TeethGif,
 } from "../components/Gifs";
 
 export interface ProjectStructure {
@@ -72,6 +73,53 @@ export interface PressSection {
 export type ProjectType = ProjectStructure;
 
 export const projects: Record<string, ProjectType> = {
+  "baby-teeth": {
+    title: "BABY TEETH",
+    credits: `
+
+      Artistic direction - <enhanced style="blackbold"> Catol Teixeira</enhanced>
+Dramaturgical Collaborator - <enhanced style="blackbold"> Catalina Insignares </enhanced>
+Artistic Conversation / Ghost Dramaturgy - <enhanced style="blackbold"> Jonas Van </enhanced>
+Sound Design - <enhanced style="blackbold"> Chaos Clay </enhanced>
+Lighting Design - <enhanced style="blackbold"> Lui L'Abbate </enhanced>
+Choreographed with and performed by - <enhanced style="blackbold"> Auguste de Boursetty, Bast Hippocrat, Catol Teixeira, Carolina Repetto, Collin Cabanis, Iara Izzidoro, Luana Bezerra, Luara Raio, Naline Ferraz, Shereya </enhanced>
+Rigger and Technical Coordination - <enhanced style="blackbold"> Rive Vayrou </enhanced>
+Poetic Accompaniment - <enhanced style="blackbold"> Gabriela Perigo </enhanced>
+Costume Design - <enhanced style="blackbold"> Barbara Tavares </enhanced>
+Scenographic Piece - <enhanced style="blackbold"> Bisoro </enhanced>
+Costume Assistant - <enhanced style="blackbold"> Barbara Faccioli </enhanced>
+Visual Research - <enhanced style="blackbold"> Juana Ferrari </enhanced>
+Technical and Production Team from the <enhanced style="blackbold">Comédie de Genève </enhanced>
+Production - <enhanced style="blackbold">Rabea Grand and Cynthia Naef </enhanced>
+Production of the Rio de Janeiro project - <enhanced style="blackbold"> Eva Cantele and Catol Teixeira </enhanced>
+Guest Artists (contribution to the research) - <enhanced style="blackbold"> Eduardo Fukushima, Davi Pontes, Wallace Ferreira </enhanced>
+Production - <enhanced style="blackbold"> Association UÀ and Comédie de Genève </enhanced>
+Co-production - <enhanced style="blackbold"> Théâtre Vidy-Lausanne </enhanced>
+With the support of <enhanced style="blackbold"> Pro Helvetia, Ernst Göhner Stiftung, Fondation Leenaards, Fondation Stanley Thomas Johnson </enhanced>
+Residencies - <enhanced style="blackbold"> Gessnerallee Zürich, Casa Rocha Rio de Janeiro, CAM – Centro de Artes da Maré </enhanced>
+Photo credits - <enhanced style="blackbold"> Benza and Juana Ferrari </enhanced>
+`,
+    description: `
+<enhanced style="cutietitle">Baby Teeth</enhanced> dance piece is interested to touch some of the absurdity of not-understanding. That troubled zone, where meaning slips away, withdraws, gives up or transforms.
+
+A dance that moves through, escaping the stakes of capture by "naming," slipping out of language's assignments and opening up spaces of sensation.
+Bringing together artists with multiple practices (choreography, visual arts, poetry, lighting design, cooking/processes of digestion) BABY TEETH inhabits the mouth as a shared landscape, while desire and contagion call us in, nutrition and metabolism start.
+
+BABY TEETH might be a chorus of voices, languages, and gestures that answer one another, relate to one another, escape, bite, laugh and cry. Showing its teeth out.
+Gathering a multidisciplinary team from Brazil, Colombia, Uruguay, France, and Switzerland, Catol Teixeira proposes a dance for becoming something that is not yet there.
+`,
+    poems: "",
+    media: {
+      head: "",
+      single: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/BBT3.webp`,
+      dual: [
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/BBT1.webp`,
+        `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/BBT2.webp`,
+      ],
+    },
+    usePoemImageLayout: false,
+    navigationBanner: false,
+  },
   "clashes-licking": {
     title: "CLASHES LICKING",
     credits: `
@@ -531,6 +579,11 @@ export const menuItems: MenuItem[] = [
     name: "BIO",
     path: "/bio",
     icon: BioGif,
+  },
+  {
+    id: "baby-teeth",
+    name: "BABY TEETH",
+    icon: TeethGif,
   },
   {
     id: "ode",

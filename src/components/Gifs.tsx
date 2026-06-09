@@ -57,6 +57,12 @@ const gifUrls = {
   calendarHome: `${
     import.meta.env.VITE_SUPABASE_STORAGE_URL
   }/calendarHome.gif?cache-bust=1`,
+  teeth: `${
+    import.meta.env.VITE_SUPABASE_STORAGE_URL
+  }/clashes.gif?cache-bust=1`,
+  teethHome: `${
+    import.meta.env.VITE_SUPABASE_STORAGE_URL
+  }/clashesHome.gif?cache-bust=1`,
 };
 
 // Precarga de GIFs
@@ -109,6 +115,9 @@ const PerfoGif = (props: GifProps) => (
 const CalendarGif = (props: GifProps) => (
   <GifComponent {...props} gifKey="calendar" />
 );
+const TeethGif = (props: GifProps) => (
+  <GifComponent {...props} gifKey="teeth" />
+);
 
 export {
   preloadGifs,
@@ -122,4 +131,5 @@ export {
   OdeGif,
   PerfoGif,
   CalendarGif,
+  TeethGif,
 };
