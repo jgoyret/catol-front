@@ -74,7 +74,7 @@ export type ProjectType = ProjectStructure;
 
 export const projects: Record<string, ProjectType> = {
   "baby-teeth": {
-    title: "BABY TEETH",
+    title: "",
     credits: `
 
       Artistic direction - <enhanced style="blackbold"> Catol Teixeira</enhanced>
@@ -110,7 +110,7 @@ Gathering a multidisciplinary team from Brazil, Colombia, Uruguay, France, and S
 `,
     poems: "",
     media: {
-      head: "",
+      head: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/BabyTeeth_LogoBlack.png`,
       single: `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/BBT3.webp`,
       dual: [
         `${import.meta.env.VITE_SUPABASE_STORAGE_URL}/BBT1.webp`,
