@@ -33,7 +33,7 @@ const Project: React.FC = () => {
         <img
           src={mediaUrl}
           alt={project.title}
-          className="w-full mb-8 h-screen object-cover"
+          className="w-full mb-8 max-h-screen object-contain"
         />
       );
     }
