@@ -15,6 +15,7 @@ import {
   DerramaGif,
   OdeGif,
   PerfoGif,
+  TeethGif,
 } from "./components/Gifs";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -54,6 +55,7 @@ const projectIcons = {
   arebetacao: DerramaGif,
   ode: OdeGif,
   "la-peau-entre-les-doigts": LaPeauGif,
+  "baby-teeth": TeethGif,
 };
 
 const ProjectWrapper = () => {

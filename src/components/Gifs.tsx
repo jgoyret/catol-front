@@ -59,10 +59,10 @@ const gifUrls = {
   }/calendarHome.gif?cache-bust=1`,
   teeth: `${
     import.meta.env.VITE_SUPABASE_STORAGE_URL
-  }/clashes.gif?cache-bust=1`,
+  }/teeth.gif?cache-bust=1`,
   teethHome: `${
     import.meta.env.VITE_SUPABASE_STORAGE_URL
-  }/clashesHome.gif?cache-bust=1`,
+  }/teeth-home.gif?cache-bust=1`,
 };
 
 // Precarga de GIFs
