@@ -101,12 +101,9 @@ Photo credits - <enhanced style="blackbold"> Benza and Juana Ferrari </enhanced>
 `,
     description: `
 
-<enhanced style="cutietitle">Baby Teeth</enhanced> dance piece is interested to touch some of the absurdity of not-understanding. That troubled zone, where meaning slips away, withdraws, gives up or transforms.
-A dance that moves through, escaping the stakes of capture by "naming," slipping out of language's assignments and opening up spaces of sensation.
-Bringing together artists with multiple practices (choreography, visual arts, poetry, lighting design, cooking/processes of digestion) <enhanced style="cutietitle">BABY TEETH</enhanced> inhabits the mouth as a shared landscape, while desire and contagion call us in, nutrition and metabolism start.
+<enhanced style="cutietitle">Baby Teeth</enhanced> dance piece is interested to touch some of the absurdity of not-understanding. That troubled zone, where meaning slips away, withdraws, gives up or transforms. A dance that moves through, escaping the stakes of capture by "naming," slipping out of language's assignments and opening up spaces of sensation. Bringing together artists with multiple practices (choreography, visual arts, poetry, lighting design, cooking/processes of digestion) <enhanced style="cutietitle">BABY TEETH</enhanced> inhabits the mouth as a shared landscape, while desire and contagion call us in, nutrition and metabolism start.
 
-<enhanced style="cutietitle">BABY TEETH</enhanced> might be a chorus of voices, languages, and gestures that answer one another, relate to one another, escape, bite, laugh and cry. Showing its teeth out.
-Gathering a multidisciplinary team from Brazil, Colombia, Uruguay, France, and Switzerland, Catol Teixeira proposes a dance for becoming something that is not yet there.
+<enhanced style="cutietitle">BABY TEETH</enhanced> might be a chorus of voices, languages, and gestures that answer one another, relate to one another, escape, bite, laugh and cry. Showing its teeth out. Gathering a multidisciplinary team from Brazil, Colombia, Uruguay, France, and Switzerland, Catol Teixeira proposes a dance for becoming something that is not yet there.
 
 `,
     poems: "",
