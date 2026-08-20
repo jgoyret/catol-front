@@ -39,12 +39,30 @@ export const timelineData: YearData[] = [
         description: "ODE @ Santarcangelo Festival, Santarcangelo (IT)",
       },
       {
-        date: "(dates tba) Nov",
+        date: "19. & 20. September",
+        description: "ODE @ Lafayette Anticipations, Paris (FR)",
+      },
+      {
+        date: "7. & 8. October",
+        description:
+          "with <3 out provisions” 01 * by catol & clay @ Centre Culturel Suisse X Jerk Off Festival, Paris (FR)",
+      },
+      {
+        date: "16. October",
+        description:
+          "with <3 out provisions” 02 * by catol & clay @ Opening Season for Brut, Vienna (AT)",
+      },
+      {
+        date: "12. 13. 14. & 15. November",
         description: "BABY TEETH @ Comédie de Genève, Genève (CH)",
       },
       {
-        date: "(dates tba) Nov",
-        description: "BABY TEETH @ Theatre Vidy, Lausanne (CH)",
+        date: "18. & 19. November",
+        description: "BABY TEETH @ VIDY Theatre, Lausanne (CH)",
+      },
+      {
+        date: "3. 4. 5. & 6. December",
+        description: "ODE @ Pavillon ADC, Genève (CH)",
       },
     ],
   },
